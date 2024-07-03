@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://emilosman.com/pages/ood-managing-dependencies/">
+        <link rel="canonical" href="https://emilosman.com/pages/soap-soa/">
       
       
-        <link rel="prev" href="../ood-inheritance/">
+        <link rel="prev" href="../personal-projects/">
       
       
-        <link rel="next" href="../ood-object-oriented-design/">
+        <link rel="next" href="../solid/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>OOD - Managing Dependencies - Emil Oszmánbegovity</title>
+        <title>SOAP / SOA - Emil Oszmánbegovity</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ood-managing-dependencies" class="md-skip">
+        <a href="#soap-soa" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              OOD - Managing Dependencies
+              SOAP / SOA
             
           </span>
         </div>
@@ -500,19 +500,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../ood-managing-dependencies/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -521,7 +512,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -636,10 +626,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../soap-soa/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    SOAP / SOA
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -648,6 +658,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#soap-simple-object-access-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      SOAP (Simple Object Access Protocol)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soap-vs-rest-microservices" class="md-nav__link">
+    <span class="md-ellipsis">
+      SOAP vs. REST (Microservices)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soa-service-oriented-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      SOA - Service Oriented Architecture
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -806,6 +863,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#soap-simple-object-access-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      SOAP (Simple Object Access Protocol)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soap-vs-rest-microservices" class="md-nav__link">
+    <span class="md-ellipsis">
+      SOAP vs. REST (Microservices)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soa-service-oriented-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      SOA - Service Oriented Architecture
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -819,10 +911,22 @@
                   
 
 
-<h1 id="ood-managing-dependencies">OOD - Managing Dependencies</h1>
+<h1 id="soap-soa">SOAP / SOA</h1>
 <ul>
-<li>part of: <a href="/pages/ood-object-oriented-design">OOD</a></li>
-<li>see: <a href="/pages/di-dependency-injection">Dependency Injection</a></li>
+<li><a href="/pages/sops">not SOPS!</a></li>
+</ul>
+<h2 id="soap-simple-object-access-protocol"><a href="https://www.techtarget.com/searchapparchitecture/definition/SOAP-Simple-Object-Access-Protocol">SOAP (Simple Object Access Protocol)</a></h2>
+<h2 id="soap-vs-rest-microservices">SOAP vs. REST (Microservices)</h2>
+<p>SOAP is designed to break traditional monolithic applications down into a multicomponent, distributed form without losing security and control. In contrast, <a href="rest.md">REpresentational State Transfer (REST)</a> is a model of distributed computing interaction based on the HTTP protocol and the way that web servers support clients. REST over HTTP is almost always the basis for modern microservices development and communications. RESTful APIs use HTTP requests to GET, PUT, POST and DELETE data.
+- SOAP is a heavyweight protocol vs the lightweight REST
+- REST is used in modern Microservices development</p>
+<h2 id="soa-service-oriented-architecture">SOA - Service Oriented Architecture</h2>
+<ul>
+<li>uses Smart pipes, such as Enterprise Service Bus (ESB), using heavyweight protocols, such as SOAP for Inter-service communication</li>
+<li>ESB is a smart pipe that contains business and message-processing logic to integrate the services</li>
+<li>uses global data models and shared databases</li>
+<li>SOA is used to integrate large monolithic applications</li>
+<li>SOA application usually consists of a few large services</li>
 </ul>
 
 

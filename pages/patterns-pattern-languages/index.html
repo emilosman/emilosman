@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://emilosman.com/pages/ood-managing-dependencies/">
+        <link rel="canonical" href="https://emilosman.com/pages/patterns-pattern-languages/">
       
       
-        <link rel="prev" href="../ood-inheritance/">
+        <link rel="prev" href="../oop-object-oriented-programming/">
       
       
-        <link rel="next" href="../ood-object-oriented-design/">
+        <link rel="next" href="../personal-projects/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>OOD - Managing Dependencies - Emil Oszmánbegovity</title>
+        <title>Patterns and Pattern Languages - Emil Oszmánbegovity</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ood-managing-dependencies" class="md-skip">
+        <a href="#patterns-and-pattern-languages" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              OOD - Managing Dependencies
+              Patterns and Pattern Languages
             
           </span>
         </div>
@@ -500,19 +500,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../ood-managing-dependencies/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -521,7 +512,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -594,10 +584,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../patterns-pattern-languages/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Patterns and Pattern Languages
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -606,6 +616,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pattern-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pattern-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern language
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pattern-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern groups
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pattern-for-decomposing-an-application-into-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern for decomposing an application into services
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sidecar-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sidecar pattern
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -806,6 +890,68 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pattern-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pattern-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern language
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pattern-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern groups
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pattern-for-decomposing-an-application-into-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern for decomposing an application into services
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sidecar-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sidecar pattern
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -819,11 +965,63 @@
                   
 
 
-<h1 id="ood-managing-dependencies">OOD - Managing Dependencies</h1>
+<h1 id="patterns-and-pattern-languages">Patterns and Pattern Languages</h1>
 <ul>
-<li>part of: <a href="/pages/ood-object-oriented-design">OOD</a></li>
-<li>see: <a href="/pages/di-dependency-injection">Dependency Injection</a></li>
+<li>Pattern: a reusable solution to a problem that occurs in a particular context.</li>
+<li>Pattern language: a collection of related patterns that solve problems within a particular domain.</li>
+<li>A pattern must describe the context within which it applies.</li>
 </ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="/pages/arcitura-patterns/">Arcitura patterns</a></li>
+<li><a href="/pages/azure/#reference-architectures">Azure reference architectures</a></li>
+<li>Design Patterns: Elements of Reusable Object-Oriented Software (Addison-Wesley Professional, 1994)</li>
+<li><a href="/pages/ood-inheritance/#using-the-template-method-pattern">OOD: Template Method Pattern</a></li>
+</ul>
+<h2 id="pattern-structure">Pattern structure</h2>
+<ol>
+<li><strong>Forces</strong>: The issues that you must address when solving a problem</li>
+<li>Forces can conflict, so it might not be possible to solve all of them. Which forces are more important depends on the context. You have to prioritize solving some forces over others. For example, code must be easy to understand and have good performance.
+  Code written in a reactive style has better performance than synchronous code, yet is often more difficult to understand.
+  See: <a href="/pages/synchronous-asynchronous-reactive-push-pull/">Synchronous vs Asynchronous (Ractive) programming</a>.
+  Explicitly listing the forces is useful because it makes clear which issues need to be solved.</li>
+<li><strong>Resulting context</strong>: Context are the consequences of applying a pattern</li>
+<li><em>Benefits</em>: “The benefits of the pattern, including the forces that have been resolved</li>
+<li><em>Drawbacks</em>: “The drawbacks of the pattern, including the unresolved forces</li>
+<li><em>Issues</em>: “The new problems that have been introduced by applying the pattern</li>
+<li><strong>Related patterns</strong>: the relationship between the pattern and other patterns. There are five types of relationships between patterns:</li>
+<li><em>Predecessor</em>: a pattern that motivates the need for this pattern. For example, the Microservice architecture pattern is the predecessor to the rest of the patterns in the pattern language, except the monolithic architecture pattern.</li>
+<li><em>Successor</em>: A pattern that solves an issue that has been introduced by this pattern. For example, if you apply the Microservice architecture pattern, you must then apply numerous successor patterns, including service discovery patterns and the Circuit breaker pattern.</li>
+<li><em>Alternative:</em> A pattern that provides an alternative solution to this pattern. For example, the Monolithic architecture pattern and the Microservice architecture pattern are alternative ways of architecting an application. You pick one or the other.</li>
+<li><em>Generalization</em>: A pattern that is a general solution to a problem. Ex: Single service per host pattern.</li>
+<li><em>Specialization</em>: A specialized form of a particular pattern. Ex: the Deploy a service as a container pattern is a specialization of Single service per host.</li>
+</ol>
+<h2 id="pattern-language">Pattern language</h2>
+<ul>
+<li>related patterns and their relationships form pattern languages</li>
+<li>see relationships in <a href="#pattern-structure">"pattern structure"</a></li>
+</ul>
+<h2 id="pattern-groups">Pattern groups</h2>
+<p>Patterns within a pattern language can be organized into groups:
+0. <strong>Application architecture</strong>: example: Monolithic vs Microservice architecture
+1. <strong>Infrastructure patterns</strong>: solve infrastructure issues outside of development (Deployment, Discovery, External API...)
+2. <strong>Application infrastructure</strong>: infrastructure issues that impact development (Cross-cutting concers, Security, Observability...)
+3. <strong>Application patterns</strong>: solve problems faced by developers (Decomposition, Database architecture, Querying, Maintaining and consistency, Testing...)</p>
+<ul>
+<li>patterns are grouped together based on the kinds of problems they solve. ex: Communication patterns: Transactional messaging, Communication style, Discovery...</li>
+<li>see page 94 diagram that shows different arrows representing relationships: predecesor/successor, alternatives, general/specific</li>
+</ul>
+<h2 id="pattern-for-decomposing-an-application-into-services">Pattern for decomposing an application into services</h2>
+<ol>
+<li>Decompose by business capability: organizes services around business capabilities</li>
+<li>Decompose by subdomain: organizes services around <a href="/pages/ddd-domain-driven-design/">Domain Driven Design (DDD) subdomains</a></li>
+</ol>
+<h2 id="sidecar-pattern">Sidecar pattern</h2>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar">Azure: Sidecar pattern</a>
+Deploy components of an application into a separate process or container to provide isolation and encapsulation. This pattern can also enable applications to be composed of heterogeneous components and technologies.</li>
+</ul>
+<p>This pattern is named Sidecar because it resembles a sidecar attached to a motorcycle. In the pattern, the sidecar is attached to a parent application and provides supporting features for the application. The sidecar also shares the same lifecycle as the parent application, being created and retired alongside the parent. The sidecar pattern is sometimes referred to as the sidekick pattern and is a decomposition pattern.</p>
 
 
 

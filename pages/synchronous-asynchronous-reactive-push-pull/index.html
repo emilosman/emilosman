@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://emilosman.com/pages/ood-managing-dependencies/">
+        <link rel="canonical" href="https://emilosman.com/pages/synchronous-asynchronous-reactive-push-pull/">
       
       
-        <link rel="prev" href="../ood-inheritance/">
+        <link rel="prev" href="../sops/">
       
       
-        <link rel="next" href="../ood-object-oriented-design/">
+        <link rel="next" href="../tdd-test-driven-development/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>OOD - Managing Dependencies - Emil Oszmánbegovity</title>
+        <title>Synchronous vs Asynchronous (Reactive) programming - Emil Oszmánbegovity</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ood-managing-dependencies" class="md-skip">
+        <a href="#synchronous-vs-asynchronous-reactive-programming" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              OOD - Managing Dependencies
+              Synchronous vs Asynchronous (Reactive) programming
             
           </span>
         </div>
@@ -500,19 +500,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../ood-managing-dependencies/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -521,7 +512,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -699,10 +689,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../synchronous-asynchronous-reactive-push-pull/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Synchronous vs Asynchronous (Reactive) programming
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -711,6 +721,50 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#asynchronous-reactive-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asynchronous (Reactive) programming
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Asynchronous (Reactive) programming">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#change-propagation-algorithms-push-pull" class="md-nav__link">
+    <span class="md-ellipsis">
+      Change propagation algorithms (Push Pull)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -806,6 +860,38 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#asynchronous-reactive-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asynchronous (Reactive) programming
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Asynchronous (Reactive) programming">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#change-propagation-algorithms-push-pull" class="md-nav__link">
+    <span class="md-ellipsis">
+      Change propagation algorithms (Push Pull)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -819,10 +905,24 @@
                   
 
 
-<h1 id="ood-managing-dependencies">OOD - Managing Dependencies</h1>
+<h1 id="synchronous-vs-asynchronous-reactive-programming">Synchronous vs Asynchronous (Reactive) programming</h1>
+<p>Synchronous tasks happen in order — you must finish task one before moving on to the next. Asynchronous tasks can be executed in any order, or even simultaneously.</p>
 <ul>
-<li>part of: <a href="/pages/ood-object-oriented-design">OOD</a></li>
-<li>see: <a href="/pages/di-dependency-injection">Dependency Injection</a></li>
+<li><a href="https://www.mendix.com/blog/asynchronous-vs-synchronous-programming/">Asynchronous vs. Synchronous Programming: Key Similarities and Differences</a></li>
+</ul>
+<h2 id="asynchronous-reactive-programming">Asynchronous (Reactive) programming</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Reactive_programming">Reactive programming wiki</a></li>
+</ul>
+<h3 id="change-propagation-algorithms-push-pull">Change propagation algorithms (Push Pull)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Reactive_programming#Change_propagation_algorithms">wiki</a></li>
+</ul>
+<p>The most common approaches to data propagation are:</p>
+<ul>
+<li><strong>Pull</strong>: The value consumer is in fact proactive, in that it regularly queries the observed source for values and reacts whenever a relevant value is available. This practice of regularly checking for events or value changes is commonly referred to as polling.</li>
+<li><strong>Push</strong>: The value consumer receives a value from the source whenever the value becomes available. These values are self-contained, e.g. they contain all the necessary information, and no further information needs to be queried by the consumer.</li>
+<li><strong>Push-pull</strong>: The value consumer receives a change notification, which is a short description of the change, e.g. "some value changed" – this is the push part. However, the notification does not contain all the necessary information (which means it does not contain the actual values), so the consumer needs to query the source for more information (the specific value) after it receives the notification – this is the pull part. This method is commonly used when there is a large volume of data that the consumers might be potentially interested in. So in order to reduce throughput and latency, only light-weight notifications are sent; and then those consumers which require more information will request that specific information. This approach also has the drawback that the source might be overwhelmed by many requests for additional information after a notification is sent.</li>
 </ul>
 
 

@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://emilosman.com/pages/ood-managing-dependencies/">
+        <link rel="canonical" href="https://emilosman.com/pages/ddd-domain-driven-design/">
       
       
-        <link rel="prev" href="../ood-inheritance/">
+        <link rel="prev" href="../big-o-notation/">
       
       
-        <link rel="next" href="../ood-object-oriented-design/">
+        <link rel="next" href="../di-dependency-injection/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>OOD - Managing Dependencies - Emil Oszmánbegovity</title>
+        <title>DDD - Domain Driven Design - Emil Oszmánbegovity</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ood-managing-dependencies" class="md-skip">
+        <a href="#ddd-domain-driven-design" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              OOD - Managing Dependencies
+              DDD - Domain Driven Design
             
           </span>
         </div>
@@ -332,10 +332,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../ddd-domain-driven-design/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    DDD - Domain Driven Design
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -344,6 +364,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ddd-in-ruby-on-rails" class="md-nav__link">
+    <span class="md-ellipsis">
+      DDD in Ruby on Rails
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anemic-domain-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anemic Domain Model
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -500,19 +567,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../ood-managing-dependencies/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -521,7 +579,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -806,6 +863,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ddd-in-ruby-on-rails" class="md-nav__link">
+    <span class="md-ellipsis">
+      DDD in Ruby on Rails
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anemic-domain-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anemic Domain Model
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -819,11 +911,31 @@
                   
 
 
-<h1 id="ood-managing-dependencies">OOD - Managing Dependencies</h1>
+<h1 id="ddd-domain-driven-design">DDD - Domain Driven Design</h1>
 <ul>
-<li>part of: <a href="/pages/ood-object-oriented-design">OOD</a></li>
-<li>see: <a href="/pages/di-dependency-injection">Dependency Injection</a></li>
+<li><a href="https://microservices.io/patterns/decomposition/decompose-by-subdomain.html">Pattern: Decompose by subdomain</a></li>
 </ul>
+<h2 id="ddd-in-ruby-on-rails">DDD in Ruby on Rails</h2>
+<ul>
+<li><a href="https://www.visuality.pl/posts/introduction-to-ddd-in-ruby-on-rails">Introduction to DDD in Ruby on Rails</a></li>
+<li><a href="https://beeple.atlassian.net/wiki/spaces/SD/pages/2805858305/Rails-way+vs+Service-Oriented-Way">Rails-way vs Service-Oriented-Way</a></li>
+<li><a href="https://www.youtube.com/watch?v=94Atco5-tRQ">Domain Modeling in Ruby on Rails with introduction to Domain-Driven Design - Paweł Strzałkowski</a></li>
+<li><a href="https://www.youtube.com/watch?v=tUfc7t9JW-8&amp;t=3070s">How to use DDD with Ruby on Rails, the path of a domain-driven warrior - Paweł Strzałkowski</a></li>
+</ul>
+<h2 id="solution">Solution</h2>
+<p>Define services corresponding to Domain-Driven Design (DDD) subdomains.
+DDD refers to the application’s problem space - the business - as the domain.
+A domain is consists of multiple subdomains. Each subdomain corresponds to a different part of the business.</p>
+<p>Subdomains can be classified as follows:
+- Core - key differentiator for the business and the most valuable part of the application
+- Supporting - related to what the business does but not a differentiator. These can be implemented in-house or outsourced.
+- Generic - not specific to the business and are ideally implemented using off the shelf software</p>
+<h2 id="anemic-domain-model">Anemic Domain Model</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Anemic_domain_model">wiki</a></li>
+<li><a href="https://www.martinfowler.com/bliki/AnemicDomainModel.html">Martin Fowler - Anemic Domain Model</a></li>
+</ul>
+<p>The anemic domain model is described as a programming <a href="/pages/ood-object-oriented-design.md#antipattern">antipattern</a> where the domain objects contain little or no business logic like validations, calculations, rules, and so forth. The business logic is thus baked into the architecture of the program itself, making refactoring and maintenance more difficult and time-consuming. </p>
 
 
 

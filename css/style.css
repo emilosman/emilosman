@@ -4,8 +4,8 @@ img[alt~="emil"] {
 }
 
 img[alt~="cert"] {
-  max-height: 60px;
   display: inline-block;
+  max-height: 60px;
 }
 
 img[alt~="project"] {
