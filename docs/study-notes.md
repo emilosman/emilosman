@@ -1,7 +1,7 @@
 # Study Notes
 Ripped straight from my notebooks, so excuse the shorthands and incompleteness.
 
-Note that the nature of study notes are to be messy and unedited and full of information that might once have been relevant or true or written in a moment of passion. They may no longer reflect how I feel or may even be completely inaccurate. This is not a “blog” or “site” or publication of any kind. Failure to keep this in mind when reading any notes can result in harm to owner and others. Never cite anything from this or any other notes. Instead, use it to inspire your own research and conclusions.
+Note that the nature of study notes are to be messy and unedited and full of information that might once have been relevant or true or written in a moment of passion. They may no longer reflect how I feel or may even be completely inaccurate. This is not a “blog” or “site” or publication of any kind. Failure to keep this in mind when reading any notes can result in harm to owner and others. Never cite anything from this or any other notes. Instead, use them to inspire your own research and conclusions.
 
 - [Algorithms](/pages/algorithms)
 - [BDD - Behavior Driven Development](/pages/bdd-behavior-driven-development)
