@@ -11,10 +11,13 @@ def get_title(file_path):
     return "Untitled"
 
 def generate_index():
-    index_path = "docs/articles.md"
+    index_path = "docs/study-notes.md"
+
+    disclaimer = "Ripped straight from my notebooks, so excuse the shorthands and incompleteness.\n\nNote that the nature of study notes are to be messy and unedited and full of information that might once have been relevant or true or written in a moment of passion. They may no longer reflect how I feel or may even be completely inaccurate. This is not a “blog” or “site” or publication of any kind. Failure to keep this in mind when reading any notes can result in harm to owner and others. Never cite anything from this or any other notes. Instead, use it to inspire your own research and conclusions.\n\n"
+
     with open(index_path, "w") as f:
-        f.write("# Articles\n")
-        f.write("Ripped straight from my notebooks, so excuse the shorthands and incompleteness.\n\n")
+        f.write("# Study Notes\n")
+        f.write(disclaimer)
         file_list = []
         for root, dirs, files in os.walk("docs/pages"):
             for file in files:
