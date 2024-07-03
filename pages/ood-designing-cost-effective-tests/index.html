@@ -1261,8 +1261,7 @@ Good tests don't need to be rewritten when code gets refactored.</p>
 <ul>
 <li>Don't write too many tests!</li>
 <li>Have fewer of them and remove duplication.</li>
-<li>Think of objects as black boxes. Internals are not visible from the outside,
-only a pre-defined set of messages can be passed through.</li>
+<li>Think of objects as black boxes. Internals are not visible from the outside, only a pre-defined set of messages can be passed through.</li>
 <li>Well-designed objects have strong bounderies. Nothing on the inside can see out, nor can the outside see in.</li>
 <li>Willful ignorance of the internals of every object is the core of design.</li>
 <li>Deal with objects as if they are only and exactly the messages to which they respond.</li>
@@ -1320,12 +1319,16 @@ Since tests should be reusable, the code must be reusable as well.</p>
 <p>Writing tests first, forces design decisions that create objects that can be tested in isolation.</p>
 </blockquote>
 <h2 id="knowing-how-to-test">Knowing How to Test</h2>
-<p>Popular testing frameworks:
-- <a href="https://github.com/minitest/minitest">MiniTest</a> - comes bundled since Ruby 1.9
-- <a href="https://rspec.info/">RSpec</a></p>
-<p>Testing philosophies:
-- <a href="/pages/tdd-test-driven-development">TDD - Test Driven Development</a> "inside-out"
-- <a href="/pages/bdd-behavior-driven-development">BDD - Behavior Driven Development</a> "outside-in"</p>
+<p>Popular testing frameworks:</p>
+<ul>
+<li><a href="https://github.com/minitest/minitest">MiniTest</a> - comes bundled since Ruby 1.9</li>
+<li><a href="https://rspec.info/">RSpec</a></li>
+</ul>
+<p>Testing philosophies:</p>
+<ul>
+<li><a href="/pages/tdd-test-driven-development">TDD - Test Driven Development</a> "inside-out"</li>
+<li><a href="/pages/bdd-behavior-driven-development">BDD - Behavior Driven Development</a> "outside-in"</li>
+</ul>
 <h2 id="deleting-unused-interfaces">Deleting Unused Interfaces</h2>
 <ul>
 <li>Incoming messages ought to have dependents.</li>
