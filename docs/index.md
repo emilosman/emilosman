@@ -107,6 +107,10 @@ Various projects meant to make life easier with automation and data analysis.
 Some open-source, some closed-source, most for fun.  
 [View the list here.](/pages/personal-projects)
 
+## [Articles](/articles)
+I publish my study notes online.  
+[Read them here.](/articles)
+
 ## Education and Certification
 I continually strive to advance my knowledge with industry standard resources.
 
