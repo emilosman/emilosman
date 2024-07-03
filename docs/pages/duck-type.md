@@ -87,7 +87,7 @@ The `prepare` method wants its arguments to _prepare_ the trip.
 Thus, the `prepare_trip` method becomes the _public interface_ of the `Preparer` duck.
 
 ### 2. kind_of? or is_a?
-- `kind_of?` and `is_a?` are synonims for checking class
+- `kind_of?` and `is_a?` are synonyms for checking class
 - it's the same as the case switch example previous
 - don't be fooled by the removal of explicit class references, this code still expects specific classes.
 - rewrite this using ducks!
