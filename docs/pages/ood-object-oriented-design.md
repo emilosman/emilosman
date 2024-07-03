@@ -5,6 +5,7 @@
 
 ## Designing Classes with a Single Responsibility
 Code should be:
+
 1. transparent
 2. reasonable
 3. usable
