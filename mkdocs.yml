@@ -6,3 +6,6 @@ theme:
 
 extra_css:
   - /css/style.css
+
+markdown_extensions:
+  - pymdownx.tasklist
