@@ -115,5 +115,5 @@ I continually strive to advance my knowledge with industry standard resources.
 - [My Microsoft Learn profile](https://learn.microsoft.com/en-us/users/emilosman/)
 - Actively pursuing: _AWS Certified Developer - Associate - DVA-C02_
 
-![cert](/images/az-900.svg)
-![cert](/images/ibm-enterprise-thinking.png)
+![cert](/assets/az-900.svg)
+![cert](/assets/ibm-enterprise-thinking.png)
