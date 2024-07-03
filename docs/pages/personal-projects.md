@@ -10,7 +10,7 @@ Some open-source, some closed-source, most for fun.
 - Tech used: `TypeScript, React, NextJS, ChartJS, Ruby, Sinatra`
 
 ## [Ditectrev Education Platform contributions](https://education.ditectrev.com/)
-![project](assets/images/ditectrev.jpg)
+![project](assets/ditectrev.jpg)
 
 - Contributed an AI feature that provides explanations for exam questions and answers on the open-source [Ditectrev Education Platform](https://education.ditectrev.com/).
 - [Press release](https://www.linkedin.com/posts/ditectrev_ollama-ollama-opensource-activity-7203245362797506560-c9Jk)
