@@ -13,6 +13,7 @@ Every so often, a bug in one module — for example, a memory leak — crashes a
 
 ## Scale Cube
 The scale cube defines three separate ways to scale an application:
+
 - X-axis scaling load balances requests across multiple, identical instances
   - horizontal scaling, duplication, scale by cloning
   - run multiple instances behind a load balancer
