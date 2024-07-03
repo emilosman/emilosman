@@ -46,6 +46,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://emilosman.com/pages/functional-non-functional-requirements/</loc>
+         <lastmod>2024-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://emilosman.com/pages/microservice-architecture/</loc>
          <lastmod>2024-07-03</lastmod>
          <changefreq>daily</changefreq>
@@ -97,6 +102,11 @@
     </url>
     <url>
          <loc>https://emilosman.com/pages/soap-soa/</loc>
+         <lastmod>2024-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://emilosman.com/pages/software-architecture/</loc>
          <lastmod>2024-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>

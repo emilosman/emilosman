@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://emilosman.com/pages/synchronous-asynchronous-reactive-push-pull/">
+        <link rel="canonical" href="https://emilosman.com/pages/software-architecture/">
       
       
-        <link rel="prev" href="../sops/">
+        <link rel="prev" href="../soap-soa/">
       
       
-        <link rel="next" href="../tdd-test-driven-development/">
+        <link rel="next" href="../solid/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Synchronous vs Asynchronous (Reactive) programming - Emil Oszmánbegovity</title>
+        <title>Software Architecture - Emil Oszmánbegovity</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#synchronous-vs-asynchronous-reactive-programming" class="md-skip">
+        <a href="#software-architecture" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Synchronous vs Asynchronous (Reactive) programming
+              Software Architecture
             
           </span>
         </div>
@@ -668,10 +668,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../software-architecture/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Software Architecture
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -680,6 +700,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#len-bass" class="md-nav__link">
+    <span class="md-ellipsis">
+      Len Bass
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team-topologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Team Topologies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mbse-model-based-systems-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      MBSE - Model Based Systems Engineering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-software-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Software Architecture?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-is-a-set-of-software-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Is a Set of Software Structures
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -731,30 +816,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Synchronous vs Asynchronous (Reactive) programming
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../synchronous-asynchronous-reactive-push-pull/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -763,50 +828,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#asynchronous-reactive-programming" class="md-nav__link">
-    <span class="md-ellipsis">
-      Asynchronous (Reactive) programming
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Asynchronous (Reactive) programming">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#change-propagation-algorithms-push-pull" class="md-nav__link">
-    <span class="md-ellipsis">
-      Change propagation algorithms (Push Pull)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -909,26 +930,47 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#asynchronous-reactive-programming" class="md-nav__link">
+  <a href="#len-bass" class="md-nav__link">
     <span class="md-ellipsis">
-      Asynchronous (Reactive) programming
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Asynchronous (Reactive) programming">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#change-propagation-algorithms-push-pull" class="md-nav__link">
-    <span class="md-ellipsis">
-      Change propagation algorithms (Push Pull)
+      Len Bass
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#team-topologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Team Topologies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mbse-model-based-systems-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      MBSE - Model Based Systems Engineering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-software-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Software Architecture?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-is-a-set-of-software-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Is a Set of Software Structures
+    </span>
+  </a>
   
 </li>
       
@@ -947,25 +989,41 @@
                   
 
 
-<h1 id="synchronous-vs-asynchronous-reactive-programming">Synchronous vs Asynchronous (Reactive) programming</h1>
-<p>Synchronous tasks happen in order — you must finish task one before moving on to the next. Asynchronous tasks can be executed in any order, or even simultaneously.</p>
+<h1 id="software-architecture">Software Architecture</h1>
 <ul>
-<li><a href="https://www.mendix.com/blog/asynchronous-vs-synchronous-programming/">Asynchronous vs. Synchronous Programming: Key Similarities and Differences</a></li>
+<li>see: <a href="/pages/functional-non-functional-requirements">Functional / Non-functional Requirements in Software Architecture</a></li>
+<li><a href="https://martinfowler.com/architecture/">Martin Fowler - Architecture</a></li>
 </ul>
-<h2 id="asynchronous-reactive-programming">Asynchronous (Reactive) programming</h2>
+<h2 id="len-bass">Len Bass</h2>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Reactive_programming">Reactive programming wiki</a></li>
+<li><a href="https://www.amazon.com/Software-Architecture-Practice-3rd-Engineering/dp/0321815734">Len Bass - Software Architecture in Practice (SEI Series in Software Engineering)</a></li>
+<li><a href="https://www.amazon.com/Documenting-Software-Architectures-Views-Beyond/dp/0321552687">Paul Clements, Len Bass - Documenting Software Architecture - Views and Beyond</a></li>
 </ul>
-<h3 id="change-propagation-algorithms-push-pull">Change propagation algorithms (Push Pull)</h3>
+<h2 id="team-topologies">Team Topologies</h2>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Reactive_programming#Change_propagation_algorithms">wiki</a></li>
+<li>Matthew Skelton: Team Topologies: Organizing Business and Technology Teams for Fast Flow</li>
 </ul>
-<p>The most common approaches to data propagation are:</p>
+<h2 id="mbse-model-based-systems-engineering">MBSE - Model Based Systems Engineering</h2>
 <ul>
-<li><strong>Pull</strong>: The value consumer is in fact proactive, in that it regularly queries the observed source for values and reacts whenever a relevant value is available. This practice of regularly checking for events or value changes is commonly referred to as polling.</li>
-<li><strong>Push</strong>: The value consumer receives a value from the source whenever the value becomes available. These values are self-contained, e.g. they contain all the necessary information, and no further information needs to be queried by the consumer.</li>
-<li><strong>Push-pull</strong>: The value consumer receives a change notification, which is a short description of the change, e.g. "some value changed" – this is the push part. However, the notification does not contain all the necessary information (which means it does not contain the actual values), so the consumer needs to query the source for more information (the specific value) after it receives the notification – this is the pull part. This method is commonly used when there is a large volume of data that the consumers might be potentially interested in. So in order to reduce throughput and latency, only light-weight notifications are sent; and then those consumers which require more information will request that specific information. This approach also has the drawback that the source might be overwhelmed by many requests for additional information after a notification is sent.</li>
+<li>model based systems engineering</li>
+<li>formalized system of modeling to support systems design</li>
+<li>'transformational enabler' that undelies the discipline of systems engineering</li>
+<li>a model is a graphical, mathematical, or physical representation of a concept or a construct that can be reasoned about</li>
 </ul>
+<h2 id="what-is-software-architecture">What is Software Architecture?</h2>
+<ul>
+<li>business goals lead to quality attribute requirements</li>
+</ul>
+<h2 id="architecture-is-a-set-of-software-structures">Architecture Is a Set of Software Structures</h2>
+<p>A structure is a set of elements held together by a relation.
+Software systems are composed of many structures and no single structure can lay claim to being <em>the</em> architecture.
+Structures can be grouped into categories:
+1. Component-and-connector structures
+2. Module structures
+3. Allocation structures</p>
+<p>Not all structures are architectural.
+A structure is architectural if it supports the reasoning about the system and the system's properties.
+The reasoning should be about an attribute of the system that is important to some stakeholder(s).</p>
 
 
 
