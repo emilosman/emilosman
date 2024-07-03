@@ -12,3 +12,5 @@ Ripped straight from my notebooks, so excuse the shorthands and incompleteness.
   - [Test Pyramid](/pages/test-pyramid)
   - [Unit Testing](/pages/unit-testing)
 ## [Data Structures and Algorithms](/pages/dsa-data-structures-algorithms)
+  - [Algorithms](/pages/algorithms)
+  - [Big O Notation](/pages/big-o-notation)

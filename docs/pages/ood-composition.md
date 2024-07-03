@@ -1,4 +1,4 @@
-# Composition
+# OOD - Composition
 - part of [OOD](/pages/ood-object-oriented-design#combining-objects-with-composition)
 - see: [Roles and Modules](/pages/ood-roles-modules)
 
