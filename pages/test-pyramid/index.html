@@ -1,0 +1,1338 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://emilosman.com/pages/test-pyramid/">
+      
+      
+        <link rel="prev" href="../tdd-test-driven-development/">
+      
+      
+        <link rel="next" href="../unit-testing/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
+    
+    
+      
+        <title>Test Pyramid - Emil Oszmánbegovity</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="/css/style.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#test-pyramid" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Emil Oszmánbegovity" class="md-header__button md-logo" aria-label="Emil Oszmánbegovity" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Emil Oszmánbegovity
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Test Pyramid
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Emil Oszmánbegovity" class="md-nav__button md-logo" aria-label="Emil Oszmánbegovity" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Emil Oszmánbegovity
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Senior Ruby Developer / Cloud Technology Specialist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pages
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Pages
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../algorithms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algorithms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bdd-behavior-driven-development/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BDD - Behavior Driven Development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../big-o-notation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Big O Notation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../di-dependency-injection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DI - Dependency Injection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dsa-data-structures-algorithms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DSA - Data Structures and Algorithms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../duck-type/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Duck Type
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ood-composition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Composition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ood-designing-cost-effective-tests/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OOD - Designing Cost Effective Tests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ood-inheritance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OOD - Inheritance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ood-managing-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OOD - Managing Dependencies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ood-object-oriented-design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OOD - Object Oriented Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ood-roles-modules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roles and Modules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oop-object-oriented-programming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OOP - Object Oriented Programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../personal-projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Personal Projects and Experiments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../solid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SOLID
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tdd-test-driven-development/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TDD - Test Driven Development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Test Pyramid
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Test Pyramid
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-importance-of-test-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Importance of Test Automation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parts-of-the-test-pyramid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parts of the Test Pyramid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unit-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unit Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sociable-and-solitary-unit-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sociable and Solitary Unit Tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mocking-and-stubbing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mocking and Stubbing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-private-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing Private Methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-to-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      What to Test?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementing-a-unit-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementing a Unit Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration Tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#brittle-integration-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brittle Integration Tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contract-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contract Tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consumer-driven-contract-tests-cdc-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consumer-Driven Contract Tests (CDC Tests)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#end-to-end-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      End-To-End Tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subcutaneous-tests-rest-api-end-to-end-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subcutaneous Tests / REST API End-to-End Tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acceptance-tests-do-your-features-work-correctly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acceptance Tests - Do Your Features Work Correctly?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploratory-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exploratory Testing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-tests-into-a-deployment-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting Tests Into a Deployment Pipeline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avoid-test-duplication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Avoid Test Duplication
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unit-testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit Testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-importance-of-test-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Importance of Test Automation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parts-of-the-test-pyramid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parts of the Test Pyramid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unit-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unit Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sociable-and-solitary-unit-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sociable and Solitary Unit Tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mocking-and-stubbing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mocking and Stubbing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-private-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing Private Methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-to-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      What to Test?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementing-a-unit-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementing a Unit Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration Tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#brittle-integration-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brittle Integration Tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contract-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contract Tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consumer-driven-contract-tests-cdc-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consumer-Driven Contract Tests (CDC Tests)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#end-to-end-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      End-To-End Tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subcutaneous-tests-rest-api-end-to-end-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subcutaneous Tests / REST API End-to-End Tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acceptance-tests-do-your-features-work-correctly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acceptance Tests - Do Your Features Work Correctly?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploratory-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exploratory Testing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-tests-into-a-deployment-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting Tests Into a Deployment Pipeline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avoid-test-duplication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Avoid Test Duplication
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="test-pyramid">Test Pyramid</h1>
+<ul>
+<li>[x] <a href="https://martinfowler.com/articles/practical-test-pyramid.html">Ham Vocke - The Practical Test Pyramid</a></li>
+<li>
+<p><a href="https://github.com/hamvocke/spring-testing">Sample Spring application</a></p>
+</li>
+<li>
+<p><a href="#end-to-end-tests">End-to-End Tests</a> + <a href="#ui-tests">UI Tests</a></p>
+</li>
+<li><a href="#integration-tests">Integration Tests</a> + <a href="#contract-tests">Contract Tests</a></li>
+<li><a href="#unit-test">Unit Tests</a></li>
+</ul>
+<p>The "Test Pyramid" is a metaphor that groups software tests into buckets of different granularity.</p>
+<p>Production-ready software requires testing before it gets deployed.
+Instead of manual software testers, development teams now use automated testing.
+This increases speed of delivery and reduces cost.
+The shortened feedback loop of automated testing goes hand in hand with Agile, Continuous Delivery and DevOps culture.</p>
+<h2 id="the-importance-of-test-automation">The Importance of Test Automation</h2>
+<ul>
+<li>see: <a href="/pages/devops">DevOps</a></li>
+<li>see: <a href="/pages/ci-cd">CI/CD</a></li>
+</ul>
+<p>As the amount and sophistication of software grows, software must be delivered faster, without sacrificing quality.</p>
+<p><a href="/pages/ci-cd#continuous-delivery">Continuous Delivery</a> allows you to deliver software to production at any time.
+CD uses a <strong>build pipline</strong> to automatically test software and deploy it to <em>testing</em> and <em>production</em> environments.</p>
+<p>Doing all of this manually is impossible, as it requires manual repetative work.
+Automating everything from tests, deployment and infrastructure is the only way forward.</p>
+<p>Steps of a <em>build pipeline</em>:
+1. build
+2. test
+3. provide infrastructure
+4. deploy
+5. test more</p>
+<p>Traditional software testing relies on overly manual work.
+The application would be deployed to a test environment, with QAs performing black-box style testing of clicking through the user interface to see if anything is broken.
+QAs would follow a test script, ensuring consistent checking.
+This is time-consuming, repetative and tedious, leading to mistakes.</p>
+<p>The remedy for repetative tasks is <em>automation</em>.
+Automated tests make large-scale refactoring possible.</p>
+<h2 id="parts-of-the-test-pyramid">Parts of the Test Pyramid</h2>
+<ol>
+<li><strong>End-to-End Tests</strong>: very few high-level tests</li>
+<li><strong>Integration Tests</strong>: some coarse-grained tests</li>
+<li><strong>Unit Tests</strong>: lots of small and fast unit tests</li>
+</ol>
+<p>Rules of the test pyramid:
+- write tests with different granularity
+- the more high-level you get the fewer tests you should have</p>
+<h2 id="unit-test">Unit Test</h2>
+<p>The foundation of your test suite is made up of <a href="/pages/unit-testing">unit tests</a>.
+A unit test makes sure that a certain unit (subject under test) of your codebase functions as intended.
+Unit tests have the narrowest scope of all the tests in your test suite.
+The number of unit tests will largely outnumber any other type of test.</p>
+<p>In functional programming a unit will most likely be a single function.
+In OOP it can range from a single method to an entire class.</p>
+<h2 id="sociable-and-solitary-unit-tests">Sociable and Solitary Unit Tests</h2>
+<ul>
+<li>see: <a href="/pages/tdd-test-driven-development#mocks--mocking">Mocks / Mocking</a></li>
+<li>coined by: <a href="https://leanpub.com/wewut">Jay Fields - Working Effectively with Unit Tests</a></li>
+</ul>
+<p>Some argue that all collaborators (e.g. other classes that are called by your class under test)
+of your subject under test should be substituted with <em>mocks and stubs</em>,
+to come up with perfect isolation to avoid side-effects and complicated test setup.</p>
+<p>Others argue that only collaborators that are slow or have bigger side-effects
+(e.g. classes that access databases or make network calls) should be stubbed or mocked.</p>
+<ul>
+<li><strong>solitary unit tests</strong>: tests that stub all collaborators</li>
+<li><strong>sociable unit tests</strong>: tests that allow talking to real collaborators</li>
+</ul>
+<h2 id="mocking-and-stubbing">Mocking and Stubbing</h2>
+<ul>
+<li>see: TDD <a href="/pages/tdd-test-driven-development#mocks--mocking">Mocks / Mocking</a></li>
+</ul>
+<p><em>Mocks</em> and <em>Stubs</em> are two different kinds of <a href="/pages/bdd-behavior-driven-development#doubles--stubs--stubbing">Test Doubles</a>.
+Doubles are used to replace objects used in production with an implementation that helps testing.</p>
+<p>Doubles replace real classes and modules with objects that answer the same method calls,
+with <em>canned</em> responses defined at the beginning of a unit tests.</p>
+<p>Doubles are not specific to unit testing, as more elaborate doubles can be created that simulate
+entire parts of a system in a controlled way.
+They are frequently encountered in unit testing, as testing frameworks make creating them easy.</p>
+<h2 id="testing-private-methods">Testing Private Methods</h2>
+<ul>
+<li>see: <a href="/pages/ood-designing-cost-effective-tests#ignoring-private-methods-during-tests">OOD: Ignoring Private Methods During Tests</a></li>
+</ul>
+<p>You shouldn't test private methods!
+They are indicative of a design problem, rather than a scoping problem.
+Classes that are too complex violate the <a href="/pages/solid#s---single-responsiblity-principle">Single Responsibility Principle</a>, the S from <a href="/pages/solid">SOLID</a>.</p>
+<p>The solution is to split the class and move the private method you wish to test to the public interface of a new class.</p>
+<h2 id="what-to-test">What to Test?</h2>
+<ul>
+<li>see: <a href="/pages/ood-designing-cost-effective-tests#knowing-what-to-test">OOD: Knowing What to Test</a></li>
+</ul>
+<p>Rules:
+- One test class per production class.
+- Test only the public interface of a class.</p>
+<h2 id="test-structure">Test Structure</h2>
+<ol>
+<li>Set up the test data</li>
+<li>Call methods under test</li>
+<li>Assert that the expected results are returned</li>
+</ol>
+<p>Other mnemonics to remember, taken from <a href="/pages/bdd-behavior-driven-development">BDD - Behavior Driven Development</a>:
+- "Arrange, Act, Assert"
+- "Given, When, Then"</p>
+<p>This pattern can be applied to high-level tests as well, not only to unit tests.</p>
+<h2 id="implementing-a-unit-test">Implementing a Unit Test</h2>
+<ul>
+<li>see: <a href="/pages/unit-testing">Unit Test</a></li>
+</ul>
+<h2 id="integration-tests">Integration Tests</h2>
+<p>All non-trivial applications integrate with databases, filesystems, network calls to applications, etc.
+This means that these services need to run alongside your application.</p>
+<p><em>Integration tests</em> can replace separate services and databases with <em>doubles</em>, or run spin up of them.</p>
+<p>Example of a database integration test:
+1. start a database
+2. connect application to database
+3. trigger a function within the code that writes data to the database
+4. check that the expected data has been written to the database, by reading the data from the database</p>
+<p>Example of integrating an outside services via a REST API:
+1. start application
+2. start instance of the separate service (or a test double with the same interface)
+3. trigger a function that reads from the separate service's API
+4. check that the application can correctly parse the response</p>
+<p>Examples when <em>serializing and deserializing</em> data:
+- calls to a service's REST API
+- reading and writig from databases
+- calling other application's APIs
+- reading and writing from queues
+- writing to the filesystem</p>
+<p>These serialization tests ensure that writing and reading data with external collaborators works fine.</p>
+<h2 id="brittle-integration-tests">Brittle Integration Tests</h2>
+<p>When we <em>mock</em> and create a fake service in place of a real one to test if we can parse a response correctly,
+we create <em>brittle</em> tests. We can't guarantee that our fake service behaves like the real one.</p>
+<p>The real service could change its API - our tests would still pass, while production breaks.</p>
+<p>End-to-End tests <strong>interact with a test instance of a real services</strong> but require the availability of that test service.</p>
+<p>A solution to this dilemma are <strong>contract tests</strong>:
+They run against the fake and real version of the service
+to ensure that the fake in our integration tests is a faithful test double.</p>
+<h2 id="contract-tests">Contract Tests</h2>
+<p><em>Contracts</em> clearly specify the interface of services you integrate with.</p>
+<p><a href="/pages/microservice-architecture">Microservices architecture</a> requires you to interact with many
+different services using APIs, commonly using one of the following:
+- REST and JSON via HTTPS
+- <a href="/pages/rpc-remote-procedure-call">RPC -Remote Procedure Call</a> using something like gRPC
+- event-driven architecture using queues</p>
+<p>Here, a <em>consumer</em> and a <em>provider</em> communicate via API.</p>
+<p><a href="https://martinfowler.com/bliki/ContractTest.html">Automated contract tests</a> make sure that the implementations on the consumer and provider side stick to the defined contract.
+They serve as a good regression test suite and make sure that deviations from the contract will be noticed early.</p>
+<h2 id="consumer-driven-contract-tests-cdc-tests">Consumer-Driven Contract Tests (CDC Tests)</h2>
+<p>Let the consumers drive the implementation of a contract:
+- Using CDC, consumers of an interface write tests that check the interface for all data they need from that interface.
+- The <em>consuming team</em> then publishes these tests so that the <em>publishing team</em> can fetch and execute these tests easily.
+- The providing team can now develop their API by running the CDC tests.
+- Once all tests pass they know they have implemented everything the consuming team needs.</p>
+<blockquote>
+<p>Consumer <em>writes and publishes</em> the Executable Tests, the Provider <em>fetches and executes</em> the Executable Test.</p>
+</blockquote>
+<p>CDC tests keep teams autonomous.</p>
+<p>Tools that help with writing and exchanging CDC tests
+- <a href="https://github.com/pact-foundation/pact-ruby">pact</a></p>
+<h2 id="ui-tests">UI Tests</h2>
+<p>UI tests ensure that the interface of the application works correctly.</p>
+<p>When performing an End-To-End test, the UI is tested as well,
+but UI tests are not all encompassing End-To-End tests.
+A UI test could be as simple as writing some JavaScript unit tests
+and stubbing out the backend.</p>
+<p><a href="https://www.selenium.dev/documentation/webdriver/">Selenium</a> can be used to automate frontend tests.</p>
+<h2 id="end-to-end-tests">End-To-End Tests</h2>
+<p>End-To-End tests test the entire, complete integrated system.
+Webdriver driven UI tests are a good example of End-To-End tests.
+These automated tests drive a headless browser, performing clicks, entering data, etc.</p>
+<p>End-To-End tests are notoriously flaky and fail for unforeseeable reasons. Often thair failure is a false positve.
+The more complex the UI, the harder it is to test.
+Quirks in browsers exacerbate these problems.</p>
+<p>Microservices also raise the question of who is responsible for writing these tests.
+See: <a href="/pages/qa#centralised-qa-team-as-antipattern">Centralised QA Team As Antipattern</a></p>
+<p>End-To-End tests requier a lot of maintenance and run slow.</p>
+<p>Since these tests are expensive to run, you should have the smallest number of them in the Test Pyramid.
+The lower level tests should cover edge cases.</p>
+<p>Write End-To-End tests only for the most valuable and important user interactions.</p>
+<h2 id="subcutaneous-tests-rest-api-end-to-end-tests">Subcutaneous Tests / REST API End-to-End Tests</h2>
+<p>Avoiding the UI and testing the REST API in End-To-End tests produces less flaky results.
+These are called <a href="https://martinfowler.com/bliki/SubcutaneousTest.html">Subcutaneous  Tests</a></p>
+<h2 id="acceptance-tests-do-your-features-work-correctly">Acceptance Tests - Do Your Features Work Correctly?</h2>
+<p>Tests that make sure things work from a user's perspective are called
+<strong>functional test</strong> or <strong>acceptance tests</strong>.</p>
+<p>This falls under <a href="/pages/bdd-behavior-driven-development">BDD - Behavior Driven Development</a>, where you can use tools like
+<a href="https://cucumber.io/">Cucumber</a></p>
+<h2 id="exploratory-testing">Exploratory Testing</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Exploratory_testing">wiki</a></li>
+</ul>
+<p>Even the most diligent test automation efforts miss certain edge cases.
+Some bugs are impossible to detect with unit tests.
+Certain quality issues may not be apparent within automated tests (like <em>design</em> or <em>usability</em>).
+Despite best intentions regarding to test automation, manual testing is still a good idea.</p>
+<p>Exploratory Testing emphasises the tester's freedom to dick around and find bugs.</p>
+<p>The bugs you find through exploratory testing can be later covered with automated tests.</p>
+<h2 id="putting-tests-into-a-deployment-pipeline">Putting Tests Into a Deployment Pipeline</h2>
+<p>Tests should run in <a href="/pages/ci-cd#deployment-pipeline">Deployment Pipelines</a>, as part of <a href="/pages/ci-cd">CI/CD</a>.
+These pipelines are split into several stages that ensure software is ready to be deployed to production.</p>
+<p>Tests should be placed in the deployment pipeline
+following one of the core tenets of <a href="http://www.extremeprogramming.org/values.html">Extreme Programming</a> and Agile: <strong>Fast Feeback</strong>.</p>
+<p>A good pipeline detects problems fast:
+- put fast running tests up front
+- longer running tests with broader scope at the later stages of the deploy process</p>
+<h2 id="avoid-test-duplication">Avoid Test Duplication</h2>
+<p>Avoid test duplication at all cost:
+1. If a higher-level test spots an error and there's no lower-level test failing, write a lower-level test
+2. Push tests as far down the test pyramid as possible</p>
+<p>These rules increase the speed of the test suite.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>

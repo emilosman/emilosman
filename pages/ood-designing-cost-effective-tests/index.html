@@ -1,0 +1,1309 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://emilosman.com/pages/ood-designing-cost-effective-tests/">
+      
+      
+        <link rel="prev" href="../ood-composition/">
+      
+      
+        <link rel="next" href="../ood-inheritance/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
+    
+    
+      
+        <title>OOD - Designing Cost Effective Tests - Emil Oszmánbegovity</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="/css/style.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ood-designing-cost-effective-tests" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Emil Oszmánbegovity" class="md-header__button md-logo" aria-label="Emil Oszmánbegovity" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Emil Oszmánbegovity
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              OOD - Designing Cost Effective Tests
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Emil Oszmánbegovity" class="md-nav__button md-logo" aria-label="Emil Oszmánbegovity" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Emil Oszmánbegovity
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Senior Ruby Developer / Cloud Technology Specialist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pages
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Pages
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../algorithms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algorithms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bdd-behavior-driven-development/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BDD - Behavior Driven Development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../big-o-notation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Big O Notation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../di-dependency-injection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DI - Dependency Injection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dsa-data-structures-algorithms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DSA - Data Structures and Algorithms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../duck-type/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Duck Type
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ood-composition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Composition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    OOD - Designing Cost Effective Tests
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    OOD - Designing Cost Effective Tests
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#refactoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Refactoring
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intentional-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intentional Testing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#know-your-intentions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Know your intentions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knowing-what-to-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Knowing What to Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-state-queries-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test state, queries, commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knowing-when-to-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Knowing When to Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knowing-how-to-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Knowing How to Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deleting-unused-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deleting Unused Interfaces
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proving-the-public-interface-unit-test-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proving the Public Interface / Unit Test Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#isolating-the-object-under-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Isolating the Object Under Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#injecting-dependencies-using-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Injecting Dependencies Using Classes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-test-doubles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Test Doubles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-tests-to-document-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Tests to Document Roles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ignoring-private-methods-during-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ignoring Private Methods During Tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removing-private-methods-from-the-class-under-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removing Private Methods from the Class Under Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ignoring-query-messages-during-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ignoring Query Messages During Tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proving-command-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proving Command Messages
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ood-inheritance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OOD - Inheritance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ood-managing-dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OOD - Managing Dependencies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ood-object-oriented-design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OOD - Object Oriented Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ood-roles-modules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roles and Modules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oop-object-oriented-programming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OOP - Object Oriented Programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../personal-projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Personal Projects and Experiments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../solid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SOLID
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tdd-test-driven-development/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TDD - Test Driven Development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../test-pyramid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test Pyramid
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unit-testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit Testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#refactoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Refactoring
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intentional-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intentional Testing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#know-your-intentions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Know your intentions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knowing-what-to-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Knowing What to Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-state-queries-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test state, queries, commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knowing-when-to-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Knowing When to Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knowing-how-to-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Knowing How to Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deleting-unused-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deleting Unused Interfaces
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proving-the-public-interface-unit-test-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proving the Public Interface / Unit Test Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#isolating-the-object-under-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Isolating the Object Under Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#injecting-dependencies-using-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Injecting Dependencies Using Classes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-test-doubles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Test Doubles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-tests-to-document-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Tests to Document Roles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ignoring-private-methods-during-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ignoring Private Methods During Tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removing-private-methods-from-the-class-under-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removing Private Methods from the Class Under Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ignoring-query-messages-during-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ignoring Query Messages During Tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proving-command-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proving Command Messages
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="ood-designing-cost-effective-tests">OOD - Designing Cost Effective Tests</h1>
+<ul>
+<li>see: <a href="/pages/tdd-test-driven-development">TDD - Test Driven Development</a></li>
+<li>see: <a href="/pages/bdd-behavior-driven-development">BDD - Behavior Driven Development</a></li>
+</ul>
+<h2 id="refactoring">Refactoring</h2>
+<ul>
+<li><a href="/pages/refactoring#martin-fowler---refactoring-improving-the-design-of-existing-code">Martin Fowler - Refactoring: Improving the Design of Existing Code</a></li>
+</ul>
+<p>The art of changeable code requires the ability to write high-value tests.
+Tests give confidence to refactor code constantly.
+Good tests don't need to be rewritten when code gets refactored.</p>
+<h2 id="intentional-testing">Intentional Testing</h2>
+<p>Common arguments for having tests:
+- reduction of bugs
+- provide documentation
+- writing tests <em>first</em> improves application design</p>
+<p>The true purpose of testing, just like the true purpose of design is <strong>to reduce costs</strong>.</p>
+<h2 id="know-your-intentions">Know your intentions</h2>
+<p>Benefits of writing tests:</p>
+<ol>
+<li>Finding Bugs</li>
+<li>Finding faults and bugs early in development yields dividends.</li>
+<li>It is easier to find and fix bugs nearer to the time of creation.</li>
+<li>Getting the code <em>right</em> earlier improves design.</li>
+<li>Knowing that you can/can't do something early makes you choose alternatives in the present,
+  rather than have limited options in the future</li>
+<li>As code accumulates, embedded bugs acquire dependencies. Fixing bugs late in the process necessitates changing dependent code.</li>
+<li>Fixing bugs early always lowers cost.</li>
+<li>Supplying Documentation</li>
+<li>Tests provide the only reliable documentation of design.</li>
+<li>Deferring Design Decisions</li>
+<li>Tests allow you to safely defer design decisions.</li>
+<li>When you lack the information to make a design decision, you will temporarily write hardcoded <em>hacks</em>.
+    At some point you will create an abstraction from the many concrete cases you have.</li>
+<li>When tests depend on interfaces, you can refactor the underlying code to your heart's content.</li>
+<li>Tests verify the continued good behavior of your application, while you continue to change the code.</li>
+<li>Refactoring does not break tests!</li>
+<li>Intentionally depending on interfaces allows you to use tests to put off making design decisions safely and without penalty.</li>
+<li>Supporting Abstractions</li>
+<li>When enough information finally arrives to support you making a design decision,
+    you will change code in ways to increase its abstraction.</li>
+<li>As abstractions grow, tests become necessary.</li>
+<li>There is a level of abstraction where it is unsafe to make changes without relying on tests.</li>
+<li>Tests are a record of the interface of every abstraction.</li>
+<li>Exposing Design Flaws</li>
+<li>Tests expose design flaws in the code.</li>
+<li>If a test is too hard to set up, the code requires too much context.</li>
+<li>If testing one object drags more objects into the mix, the code has too many dependencies.</li>
+<li>If tests are hard to write, other objects will find the code difficult to use.</li>
+<li>When a design is bad, testing is hard!</li>
+</ol>
+<h2 id="knowing-what-to-test">Knowing What to Test</h2>
+<ul>
+<li>Don't write too many tests!</li>
+<li>Have fewer of them and remove duplication.</li>
+<li>Think of objects as black boxes. Internals are not visible from the outside,
+only a pre-defined set of messages can be passed through.</li>
+<li>Well-designed objects have strong bounderies. Nothing on the inside can see out, nor can the outside see in.</li>
+<li>Willful ignorance of the internals of every object is the core of design.</li>
+<li>Deal with objects as if they are only and exactly the messages to which they respond.</li>
+<li>Each test is merely another application object that needs to use an existing class.</li>
+<li>Do not couple tests tightly to classes! They musn't be forced to change. Tests should only interact with public interfaces.</li>
+<li>The public interface is the most stable part of any object. Test the messages defined in the public interface!</li>
+<li>"One object's outgoing message, is another object's incoming message".</li>
+<li>Never write tests that are coupled to unstable object internals (private classes).</li>
+<li>Tests should only concern themselves with the inbound and outbound messages.</li>
+</ul>
+<blockquote>
+<p>Incoming messages make up the public interface of the receiving object.
+The outgoing messages, by definition, are incoming into other objects and so are part of some other object's interface.</p>
+</blockquote>
+<h2 id="test-state-queries-commands">Test state, queries, commands</h2>
+<pre><code>Incoming    _______   Outgoing     Incoming   _______
+---------&gt; |       | ----------&gt; | --------&gt; |       |
+           |  Foo  |                         |  Bar  |
+---------&gt; |_______| ----------&gt; | --------&gt; |_______|
+</code></pre>
+<p>A message sent by <code>Foo</code> to <code>Bar</code> is outgoing from <code>Foo</code> and incoming to <code>Bar</code>.
+This message is part of <code>Bar</code>s public interface, and all tests of <strong>state</strong> should should be confined to <code>Bar</code>.
+<code>Foo</code> need not and should not test these outgoing messages for state!</p>
+<ol>
+<li>
+<p><strong>state</strong>: Objects should make assertions about <em>state</em> only of incoming messages to their public interface.
+Tests that make assertions about the values that messages return are tests of <strong>state</strong>.</p>
+</li>
+<li>
+<p><strong>queries</strong>: Some outgoing messages have no side effect and matter only to their senders.
+The sender is the only one that cares about these messages (why else would it send them?), but they do not affect the application.
+These messages should not be tested by the sender. They are known as <strong>queries</strong>.
+Query messages are part of the public interface of the receiver, which already implements every necessary test of state.
+See: <a href="#ignoring-query-messages-during-tests">Ignoring Query Messages in Testing</a></p>
+</li>
+<li>
+<p><strong>commands</strong>: Some outgoing messages do have side effects:
+A file gets written, a database record is saved, an action is taken by an observer...
+The application depends on these effects.
+These messages are <strong>commands</strong> and it is the responsibility of the sending object to test if they are properly sent.</p>
+</li>
+</ol>
+<p>Rules:
+- Incoming messages should be tested for the state they return.
+- Outgoing query messages should not be tested.
+- Outgoing command messages should be tested to ensure they get sent.</p>
+<p>The application should be architected to only rely on messages being sent.
+Tests should be written only for these public interfaces.
+This makes tests tolerant of internal changes made to objects, the public interface remains stable.</p>
+<h2 id="knowing-when-to-test">Knowing When to Test</h2>
+<p>Tests should be written first, when it makes sense to do so.
+Novices write code that is tightly coupled, which makes retroactively writing testing difficult.
+Since tests should be reusable, the code must be reusable as well.</p>
+<blockquote>
+<p>Writing tests first, forces design decisions that create objects that can be tested in isolation.</p>
+</blockquote>
+<h2 id="knowing-how-to-test">Knowing How to Test</h2>
+<p>Popular testing frameworks:
+- <a href="https://github.com/minitest/minitest">MiniTest</a> - comes bundled since Ruby 1.9
+- <a href="https://rspec.info/">RSpec</a></p>
+<p>Testing philosophies:
+- <a href="/pages/tdd-test-driven-development">TDD - Test Driven Development</a> "inside-out"
+- <a href="/pages/bdd-behavior-driven-development">BDD - Behavior Driven Development</a> "outside-in"</p>
+<h2 id="deleting-unused-interfaces">Deleting Unused Interfaces</h2>
+<ul>
+<li>Incoming messages ought to have dependents.</li>
+<li>Do not test incoming messages that do not have dependents, delete them.</li>
+<li>Eliminate unused code, this lowers costs.</li>
+</ul>
+<h2 id="proving-the-public-interface-unit-test-example">Proving the Public Interface / Unit Test Example</h2>
+<ul>
+<li>Incoming messages are tested by making assertions about their value, their state, that invocation returns.</li>
+<li>The first requirement for testing an incoming message is to prove that it returns the correct value every possible time.</li>
+<li>see: <a href="/pages/unit-testing">Unit Testing</a></li>
+</ul>
+<p>A test of <code>Wheel.diameter</code> method from <a href="/pages/ood-managing-dependencies">Managing Dependencies</a>:</p>
+<pre><code class="language-ruby">class WheelTest &lt; MiniTest::Unit::TestCase
+
+  def test_calculates_diameter
+    wheel = Wheel.new(26, 1.5) # creates instance of Wheel
+
+    assert_in_delta(29,        # asserts that this instance of Wheel has diameter of 29
+                    wheel.diameter,
+                    0.01)
+  end
+end
+</code></pre>
+<p>Wheel has no hidden dependencies, so no other application object gets created as a side effect of running the test.
+Wheel's design allows you to test independently of every other class in the application.
+This is important, becasue a long runtime incurs extra cost.
+Tests run long when other dependencies are invoked: if an object creates another object.</p>
+<h2 id="isolating-the-object-under-test">Isolating the Object Under Test</h2>
+<p>When you can't test an object in isolation, it exposes a design flaw.
+Refactoring for Dependency Injection (DI) leads to decoupling, making it easier to test</p>
+<h2 id="injecting-dependencies-using-classes">Injecting Dependencies Using Classes</h2>
+<p>Test should use the same collaborating objects as the code in the application. Test will break when they should!</p>
+<h2 id="creating-test-doubles">Creating Test Doubles</h2>
+<ul>
+<li>part of: <a href="/pages/bdd-behavior-driven-development">BDD</a></li>
+</ul>
+<p>A fake object is a <em>test double</em>.
+A test double is a stylized instance of a role player that is used exclusively for testing.
+Doubles are easy to make and you can create them for every possible situation.</p>
+<p>This double <em>stubs</em> a diameter and returns returns a canned answer:</p>
+<pre><code class="language-ruby">class DiameterDouble
+  def diameter
+    10
+  end
+end
+
+class GearTest &lt; MiniTest::Unit::TestCase
+  def test_calculates_gear_inches
+    gear = Gear.new(
+        chainring: 52,
+        cog:       11,
+        wheel:     DiameterDouble.new
+    )
+
+    assert_in_delta(47.27,
+                    gear.gear_inches,
+                    0.01)
+  end
+end
+</code></pre>
+<ul>
+<li><strong>WARNING:</strong> Stubbing and mocking makes for brittle tests that pass even when the application is obviously broken.</li>
+<li>DiameterDouble is not a <a href="/pages/tdd-test-driven-development#mocks--mocking">mock</a>!</li>
+</ul>
+<h2 id="using-tests-to-document-roles">Using Tests to Document Roles</h2>
+<ul>
+<li>Forgetting what roles <em>doubles</em> play in test is inevitable.</li>
+<li>Test names serve as documentation for roles and prove that interfaces are implemented correctly.</li>
+</ul>
+<pre><code class="language-ruby">class WheelTest &lt; MiniTest::Unit::TestCase
+  def setup
+    @wheel = Wheel.new(26,1.5)
+  end
+
+  def test_implements_the_diameterizable_interface
+    assert_respond_to(@wheel, :diameter)
+  end
+
+  def test_calculates_diameter
+    @wheel = Wheel.new(26,1.5)
+
+    assert_in_delta(29,
+                    wheel.diameter,
+                    0.01)
+  end
+end
+</code></pre>
+<h2 id="ignoring-private-methods-during-tests">Ignoring Private Methods During Tests</h2>
+<ul>
+<li>Private methods are invoked by public methods <em>that already have tests</em>.</li>
+<li>A bug in a private method can break the application, but this is exposed in existing tests of public methods.</li>
+<li>Private methods change frequently with refactoring, writing tests is a waste of time.</li>
+</ul>
+<h2 id="removing-private-methods-from-the-class-under-test">Removing Private Methods from the Class Under Test</h2>
+<p>An object with many private method calls exudes the design smell of having too many responsibilities.
+You may extract these methods into a new object, but this does not guarantee that the new object will have a stable interface.
+It is costly to couple to unstable methods, be they public or private.</p>
+<h2 id="ignoring-query-messages-during-tests">Ignoring Query Messages During Tests</h2>
+<ul>
+<li>see: <a href="#test-state-queries-commands">Test state, queries, commands</a>
+Messages that have no side effect are known as <em>query</em> messages.</li>
+</ul>
+<p>Example of <code>grear_inches</code> sending <code>diameter</code>:</p>
+<pre><code class="language-ruby">class Gear
+  # ...
+  def gear_inches
+    ratio * wheel.diameter
+  end
+end
+</code></pre>
+<p>This is an <em>outgoing</em> <em>query</em> message. It has no effect on the application, it merely responds with a value.
+It should not be tested by the sending object.
+It is part of the interface of the receiving object, where tests are implemented.</p>
+<h2 id="proving-command-messages">Proving Command Messages</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>
