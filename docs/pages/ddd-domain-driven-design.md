@@ -3,7 +3,6 @@
 
 ## DDD in Ruby on Rails
 - [Introduction to DDD in Ruby on Rails](https://www.visuality.pl/posts/introduction-to-ddd-in-ruby-on-rails)
-- [Rails-way vs Service-Oriented-Way](https://beeple.atlassian.net/wiki/spaces/SD/pages/2805858305/Rails-way+vs+Service-Oriented-Way)
 - [Domain Modeling in Ruby on Rails with introduction to Domain-Driven Design - Paweł Strzałkowski](https://www.youtube.com/watch?v=94Atco5-tRQ)
 - [How to use DDD with Ruby on Rails, the path of a domain-driven warrior - Paweł Strzałkowski](https://www.youtube.com/watch?v=tUfc7t9JW-8&t=3070s)
 
