@@ -12,7 +12,7 @@ Skilled communicator with in-depth technical knowledge.
 
 ## Tech skills
 - Ruby, Rails
-- JavaScript, React, Next.js
+- JavaScript, TypeScript, React, Next.js
 - PostgreSQL, MongoDB
 - Sidekiq, Elasticsearch, Redis
 - Object-Oriented Programming
@@ -102,7 +102,7 @@ Started professional career building Ruby on Rails applications. Worked with the
 
 I publish my open-source work on GitHub: [emilosman](https://www.github.com/emilosman)
 
-## [Personal projects and experiments](/pages/personal-projects)
+## [Personal Projects and Experiments](/pages/personal-projects)
 Various projects meant to make life easier with automation and data analysis.  
 Some open-source, some closed-source, most for fun.  
 [View the list here.](/pages/personal-projects)

@@ -1,4 +1,4 @@
-# Personal projects and experiments
+# Personal Projects and Experiments
 Various projects meant to make life easier with automation and data analysis.  
 Some open-source, some closed-source, most for fun.
 
@@ -46,3 +46,15 @@ Some open-source, some closed-source, most for fun.
 - Dedicated Telegram bot
 - DDNS
 - Tech used: `Linux, Bash, Python`
+
+## emil-graphics-bots
+![project](/images/emilgraphicsbots.jpg)
+
+- Bots that share art on X (Twitter) and Telegram
+- Tech used: `Python, Twitter and Telegram API`
+
+## emil.graphics
+![project](/images/emilgraphics.jpg)
+
+- Personal art archive
+- Tech used: `JavaScript, React, NextJS`
