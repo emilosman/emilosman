@@ -1150,19 +1150,21 @@ Every so often, a bug in one module — for example, a memory leak — crashes a
 <li><a href="/pages/functional-non-functional-requirements">functional / non-functional requirements</a></li>
 </ul>
 <h2 id="scale-cube">Scale Cube</h2>
-<p>The scale cube defines three separate ways to scale an application:
-- X-axis scaling load balances requests across multiple, identical instances
-  - horizontal scaling, duplication, scale by cloning
-  - run multiple instances behind a load balancer
-  - N identical instances of an application
-- Y-axis functionally decomposes an application into services.
-  - this is microservices architecture
-  - scale by splitting things that are different, by function
-  - each service can then be scaled on X-axis again
-- Z-axis scaling routes requests based on an attribute of the request
-  - data partitioning
-  - each application instance is responsible for a subset of users.
-  - scale by splitting similar things, such as by customer ID</p>
+<p>The scale cube defines three separate ways to scale an application:</p>
+<ul>
+<li>X-axis scaling load balances requests across multiple, identical instances</li>
+<li>horizontal scaling, duplication, scale by cloning</li>
+<li>run multiple instances behind a load balancer</li>
+<li>N identical instances of an application</li>
+<li>Y-axis functionally decomposes an application into services.</li>
+<li>this is microservices architecture</li>
+<li>scale by splitting things that are different, by function</li>
+<li>each service can then be scaled on X-axis again</li>
+<li>Z-axis scaling routes requests based on an attribute of the request</li>
+<li>data partitioning</li>
+<li>each application instance is responsible for a subset of users.</li>
+<li>scale by splitting similar things, such as by customer ID</li>
+</ul>
 <h2 id="microservices-as-a-form-of-modularity">Microservices as a form of modularity</h2>
 <ul>
 <li>A service has an API, which is an impermeable boundary that is difficult to violate. You can’t bypass the API and access an internal class</li>
