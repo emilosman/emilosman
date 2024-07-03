@@ -1,4 +1,4 @@
-# OOP Object Oriented Programming
+# OOP - Object Oriented Programming
 - [Matthias Noback - Object Design Style Guide](https://www.manning.com/books/object-design-style-guide) (36/418)
 
 ## static vs dynamic types in programming

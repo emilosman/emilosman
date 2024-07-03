@@ -1,1 +1,10 @@
-site_name: My Docs
+site_name: Emil Oszmanbegovity
+site_url: https://emilosman.com
+#repo_name: emilosman
+#repo_url: https://github.com/emilosman
+
+theme:
+  name: material
+
+extra_css:
+  - /css/style.css
