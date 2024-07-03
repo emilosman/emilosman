@@ -13,7 +13,7 @@ def get_title(file_path):
 def generate_index():
     index_path = "docs/study-notes.md"
 
-    disclaimer = "Ripped straight from my notebooks, so excuse the shorthands and incompleteness.\n\nNote that the nature of study notes are to be messy and unedited and full of information that might once have been relevant or true or written in a moment of passion. They may no longer reflect how I feel or may even be completely inaccurate. This is not a “blog” or “site” or publication of any kind. Failure to keep this in mind when reading any notes can result in harm to owner and others. Never cite anything from this or any other notes. Instead, use them to inspire your own research and conclusions.\n\n"
+    disclaimer = "Ripped straight from my notebooks, so excuse the shorthands, incompleteness, and mistakes.\n\n"
 
     with open(index_path, "w") as f:
         f.write("# Study Notes\n")
