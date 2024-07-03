@@ -54,8 +54,7 @@ Benefits of writing tests:
 ## Knowing What to Test
 - Don't write too many tests!
 - Have fewer of them and remove duplication.
-- Think of objects as black boxes. Internals are not visible from the outside,
-only a pre-defined set of messages can be passed through.
+- Think of objects as black boxes. Internals are not visible from the outside, only a pre-defined set of messages can be passed through.
 - Well-designed objects have strong bounderies. Nothing on the inside can see out, nor can the outside see in.
 - Willful ignorance of the internals of every object is the core of design.
 - Deal with objects as if they are only and exactly the messages to which they respond.
@@ -113,10 +112,12 @@ Since tests should be reusable, the code must be reusable as well.
 
 ## Knowing How to Test
 Popular testing frameworks:
+
 - [MiniTest](https://github.com/minitest/minitest) - comes bundled since Ruby 1.9
 - [RSpec](https://rspec.info/)
 
 Testing philosophies:
+
 - [TDD - Test Driven Development](/pages/tdd-test-driven-development) "inside-out"
 - [BDD - Behavior Driven Development](/pages/bdd-behavior-driven-development) "outside-in"
 
