@@ -14,10 +14,6 @@ Skilled communicator with in-depth technical knowledge.
 - Ruby, Rails
 - JavaScript, TypeScript, React, Next.js
 - PostgreSQL, MongoDB
-- Sidekiq, Elasticsearch, Redis
-- Object-Oriented Programming
-- Object-Oriented Design
-- SOLID Principles
 - Refactoring
 - Test Driven Development
 - Git, Version Control
@@ -27,7 +23,7 @@ Skilled communicator with in-depth technical knowledge.
 - Microservices Architecture
 - Virtualization, Hyper-V
 - Containerization, Docker, k8s
-- CI/CD, GitHub Actions
+- CI/CD, GitHub Actions, Automation
 - Linux and Unix systems
 - Scripting in Bash, Go, Ruby, Python
 
