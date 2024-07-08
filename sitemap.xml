@@ -136,7 +136,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://emilosman.com/pages/tmux/</loc>
+         <lastmod>2024-07-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://emilosman.com/pages/tools/</loc>
+         <lastmod>2024-07-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://emilosman.com/pages/unit-testing/</loc>
+         <lastmod>2024-07-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://emilosman.com/pages/vim-nvim/</loc>
          <lastmod>2024-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
