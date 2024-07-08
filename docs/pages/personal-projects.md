@@ -47,14 +47,3 @@ Some open-source, some closed-source, most for fun.
 - DDNS
 - Tech used: `Linux, Bash, Python`
 
-## emil-graphics-bots
-![project](assets/emilgraphicsbots.jpg)
-
-- Bots that share art on X (Twitter) and Telegram
-- Tech used: `Python, Twitter and Telegram API`
-
-## emil.graphics
-![project](assets/emilgraphics.jpg)
-
-- Personal art archive
-- Tech used: `JavaScript, React, NextJS`
