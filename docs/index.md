@@ -29,7 +29,7 @@ Skilled communicator with in-depth technical knowledge.
 - Containerization, Docker, k8s
 - CI/CD, GitHub Actions
 - Linux and Unix systems
-- Bash scripting
+- Scripting in Bash, Go, Ruby, Python
 
 ## Soft Skills
 - Excellent written and spoken English
@@ -109,7 +109,9 @@ Some open-source, some closed-source, most for fun.
 
 ## [Study Notes](/study-notes)
 I publish my study notes online.  
-[Read them here.](/study-notes)
+I do this as proof of work and to potentially inspire others to do their own research.  
+Topics covered: Programming, Design, Linux, Tooling, etc.  
+[Read my notes here.](/study-notes)
 
 ## Education and Certification
 I continually strive to advance my knowledge with industry standard resources.
