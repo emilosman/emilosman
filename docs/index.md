@@ -56,11 +56,13 @@ Clients include:
 `March 2022 to November 2022 - Sofia, Bulgaria`
 
 Projects:
+
 - Mapping of existing on-premise architecture and working closely with DevOps specialists and Technical Architects to create hybrid deployments on Azure.
 - Conducted deep interviews with key technical personnel to assess software stacks, maintenance, security and encryption, finances and spending, and regulatory compliance.
 - Consulted on greenfield projects taking into account client's functional and non-functional requirements.
 
 Responsibilities:
+
 - Creating technical and solution architectures
 - Facilitating client communication and meetings
 - Generating architecture diagrams
@@ -80,6 +82,7 @@ Taking on leadership roles and mentoring junior developers and bootcampers.
 Worked full-stack in a startup environment, developing an influencer marketing platform.
 
 Responsibilities:
+
 - Frontend Overhaul - Contributed to migration of frontend from Rails server-side rendering / Spine.js to Ember, then used Ember to build and document a component library and accelerate future development.
 - Major Features - Contributed to the frontend and backend development of: 1-on-1 and bulk messaging with merge tags, let customers do much more of their marketing process without leaving the app • Ember, Rails, Gmail API, Twitter DM API, SMTP
 
@@ -101,7 +104,7 @@ I publish my open-source work on GitHub: [emilosman](https://www.github.com/emil
 ## [Personal Projects and Experiments](/pages/personal-projects)
 Various projects meant to make life easier with automation and data analysis.  
 Some open-source, some closed-source, most for fun.  
-[View the list here.](/pages/personal-projects)
+[View my projects here.](/pages/personal-projects)
 
 ## [Study Notes](/study-notes)
 I publish my study notes online.  

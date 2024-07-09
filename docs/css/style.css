@@ -9,7 +9,7 @@ img[alt~="cert"] {
 }
 
 img[alt~="project"] {
-  max-height: 320px;
+  max-height: 400px;
   transition: filter 0.250s ease-in-out;
   filter: grayscale(100%);
   &:hover{
