@@ -6,6 +6,7 @@
 - nvim
 
 ## rwxrob
+- [vimrc](https://github.com/rwxrob/dot/blob/main/vim/vimrc)
 - [YOUR TEXT EDITOR SUCKS!](https://www.youtube.com/watch?v=iT1mP8leRsU)
 - [How to Learn Vim Quickly and Correctly [20210422163108]](https://www.youtube.com/watch?v=TWca-7q94SU)
 - [visurvive](https://rwx.gg/tools/editors/vi/how/survive/)
@@ -20,6 +21,7 @@
 - `ESC` exit mode
 - `0` move to start of line
 - `$` move to end of line
+- `i` insert mode
 - `I` move to start of line and switch to insert mode
 - `a` append text at current position (switch to insert mode)
 - `A` move to last character and switch to insert mode
@@ -34,9 +36,6 @@
 - `]]` move to last line
 - `[[` move to first line
 
-## insert mode
-- `i` insert mode
-
 ## visual mode
 - [copy + paste](https://www.warp.dev/terminus/vim-copy-paste)
 - `v` visual mode `V` visual line mode `CTRL+V` visual block mode
@@ -50,8 +49,10 @@
 ## ~/.vimrc
 - :source ~/.vimrc
 
-## unbind arrow keys
 ```
+syntax on
+set number
+
 " Unbind arrow keys in NORMAL mode
 nnoremap <Up>    <NOP>
 nnoremap <Down>  <NOP>
@@ -98,3 +99,15 @@ vnoremap <Right> <NOP>
 ## indent, dedent
 - <<
 - >>
+
+## save session plugin
+- [vim-obsession](https://github.com/tpope/vim-obsession)
+
+## apply command for multiple lines in visual mode
+- make selection
+- hit :
+- :'<,'> should appear
+
+## search and replace
+- : s/search/replace/
+- Add a `g` after the third slash if you want to replace all matches, and a `c` if you want a confirmation for every replace
