@@ -1,5 +1,7 @@
 # Senior Ruby Developer / Cloud Technology Specialist
 ## __Emil Oszmánbegovity__
+![emil](/assets/profile.jpg)
+
 - website: [emilosman.com](https://emilosman.com)
 - email: [hello@emilosman.com](mailto:hello@emilosman.com)
 - github: [emilosman](https://github.com/emilosman)

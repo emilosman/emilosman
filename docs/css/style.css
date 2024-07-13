@@ -1,6 +1,7 @@
 img[alt~="emil"] {
   width: 100%;
   max-width: 180px;
+  border-radius: 5px;
 }
 
 img[alt~="cert"] {
