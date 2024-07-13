@@ -462,6 +462,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../golang/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Golang
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../microservice-architecture/" class="md-nav__link">
         
   
@@ -955,15 +976,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#insert-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      insert mode
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#visual-mode" class="md-nav__link">
     <span class="md-ellipsis">
       visual mode
@@ -976,15 +988,6 @@
   <a href="#vimrc" class="md-nav__link">
     <span class="md-ellipsis">
       ~/.vimrc
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#unbind-arrow-keys" class="md-nav__link">
-    <span class="md-ellipsis">
-      unbind arrow keys
     </span>
   </a>
   
@@ -1048,6 +1051,33 @@
   <a href="#indent-dedent" class="md-nav__link">
     <span class="md-ellipsis">
       indent, dedent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#save-session-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      save session plugin
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apply-command-for-multiple-lines-in-visual-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      apply command for multiple lines in visual mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-and-replace" class="md-nav__link">
+    <span class="md-ellipsis">
+      search and replace
     </span>
   </a>
   
@@ -1123,15 +1153,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#insert-mode" class="md-nav__link">
-    <span class="md-ellipsis">
-      insert mode
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#visual-mode" class="md-nav__link">
     <span class="md-ellipsis">
       visual mode
@@ -1144,15 +1165,6 @@
   <a href="#vimrc" class="md-nav__link">
     <span class="md-ellipsis">
       ~/.vimrc
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#unbind-arrow-keys" class="md-nav__link">
-    <span class="md-ellipsis">
-      unbind arrow keys
     </span>
   </a>
   
@@ -1221,6 +1233,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#save-session-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      save session plugin
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apply-command-for-multiple-lines-in-visual-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      apply command for multiple lines in visual mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-and-replace" class="md-nav__link">
+    <span class="md-ellipsis">
+      search and replace
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1249,6 +1288,7 @@
 </ul>
 <h2 id="rwxrob">rwxrob</h2>
 <ul>
+<li><a href="https://github.com/rwxrob/dot/blob/main/vim/vimrc">vimrc</a></li>
 <li><a href="https://www.youtube.com/watch?v=iT1mP8leRsU">YOUR TEXT EDITOR SUCKS!</a></li>
 <li><a href="https://www.youtube.com/watch?v=TWca-7q94SU">How to Learn Vim Quickly and Correctly [20210422163108]</a></li>
 <li><a href="https://rwx.gg/tools/editors/vi/how/survive/">visurvive</a></li>
@@ -1265,6 +1305,7 @@
 <li><code>ESC</code> exit mode</li>
 <li><code>0</code> move to start of line</li>
 <li><code>$</code> move to end of line</li>
+<li><code>i</code> insert mode</li>
 <li><code>I</code> move to start of line and switch to insert mode</li>
 <li><code>a</code> append text at current position (switch to insert mode)</li>
 <li><code>A</code> move to last character and switch to insert mode</li>
@@ -1278,10 +1319,6 @@
 <li><code>}}</code> move to end of block</li>
 <li><code>]]</code> move to last line</li>
 <li><code>[[</code> move to first line</li>
-</ul>
-<h2 id="insert-mode">insert mode</h2>
-<ul>
-<li><code>i</code> insert mode</li>
 </ul>
 <h2 id="visual-mode">visual mode</h2>
 <ul>
@@ -1298,8 +1335,10 @@
 <ul>
 <li>:source ~/.vimrc</li>
 </ul>
-<h2 id="unbind-arrow-keys">unbind arrow keys</h2>
-<pre><code>&quot; Unbind arrow keys in NORMAL mode
+<pre><code>syntax on
+set number
+
+&quot; Unbind arrow keys in NORMAL mode
 nnoremap &lt;Up&gt;    &lt;NOP&gt;
 nnoremap &lt;Down&gt;  &lt;NOP&gt;
 nnoremap &lt;Left&gt;  &lt;NOP&gt;
@@ -1355,6 +1394,21 @@ vnoremap &lt;Right&gt; &lt;NOP&gt;
 <blockquote></blockquote>
 </blockquote>
 </li>
+</ul>
+<h2 id="save-session-plugin">save session plugin</h2>
+<ul>
+<li><a href="https://github.com/tpope/vim-obsession">vim-obsession</a></li>
+</ul>
+<h2 id="apply-command-for-multiple-lines-in-visual-mode">apply command for multiple lines in visual mode</h2>
+<ul>
+<li>make selection</li>
+<li>hit :</li>
+<li>:'&lt;,'&gt; should appear</li>
+</ul>
+<h2 id="search-and-replace">search and replace</h2>
+<ul>
+<li>: s/search/replace/</li>
+<li>Add a <code>g</code> after the third slash if you want to replace all matches, and a <code>c</code> if you want a confirmation for every replace</li>
 </ul>
 
 

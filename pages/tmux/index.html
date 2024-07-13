@@ -464,6 +464,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../golang/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Golang
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../microservice-architecture/" class="md-nav__link">
         
   
@@ -912,9 +933,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      plugins
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#session-save-restore" class="md-nav__link">
     <span class="md-ellipsis">
       session save + restore
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restore-vimnvim-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      restore vim/nvim session
     </span>
   </a>
   
@@ -978,6 +1017,42 @@
   <a href="#rename-window" class="md-nav__link">
     <span class="md-ellipsis">
       rename window
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#move-window-to-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      move window to index
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kill-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      kill session
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kill-tmux-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      kill tmux process
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scroll-pane" class="md-nav__link">
+    <span class="md-ellipsis">
+      scroll pane
     </span>
   </a>
   
@@ -1134,9 +1209,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      plugins
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#session-save-restore" class="md-nav__link">
     <span class="md-ellipsis">
       session save + restore
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#restore-vimnvim-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      restore vim/nvim session
     </span>
   </a>
   
@@ -1205,6 +1298,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#move-window-to-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      move window to index
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kill-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      kill session
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kill-tmux-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      kill tmux process
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scroll-pane" class="md-nav__link">
+    <span class="md-ellipsis">
+      scroll pane
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1248,10 +1377,28 @@
 <ul>
 <li>CTRL+b s</li>
 </ul>
+<h2 id="plugins">plugins</h2>
+<ul>
+<li><a href="https://github.com/tmux-plugins/tpm">tmux Plugin Manager</a></li>
+<li>~/.tmux.conf</li>
+<li>CTRL+b I install plugins from ~/.tmux.conf</li>
+</ul>
 <h2 id="session-save-restore">session save + restore</h2>
 <ul>
-<li>tmux resurrect plugin</li>
+<li><a href="https://github.com/tmux-plugins/tmux-resurrect">tmux resurrect plugin</a></li>
+<li>CTRL+b CTRL+s save</li>
+<li>CTRL+b CTRL+r restore</li>
 </ul>
+<h2 id="restore-vimnvim-session">restore vim/nvim session</h2>
+<ul>
+<li>tmux resurrect plugin</li>
+<li>~/.tmux.conf</li>
+</ul>
+<pre><code># for vim
+set -g @resurrect-strategy-vim 'session'
+# for neovim
+set -g @resurrect-strategy-nvim 'session'
+</code></pre>
 <h2 id="split-pane">split pane</h2>
 <ul>
 <li>CTRL+b % vertical split</li>
@@ -1281,6 +1428,25 @@
 <h2 id="rename-window">rename window</h2>
 <ul>
 <li>CTRL+b ,</li>
+</ul>
+<h2 id="move-window-to-index">move window to index</h2>
+<ul>
+<li>CTRL+b .</li>
+</ul>
+<h2 id="kill-session">kill session</h2>
+<ul>
+<li>CTRL+b :kill-session</li>
+</ul>
+<h2 id="kill-tmux-process">kill tmux process</h2>
+<ul>
+<li>if prefix command is ignored</li>
+<li>if [7] 0:zsh keeps incrementing with every <code>tmux new</code></li>
+<li>pkill tmux</li>
+<li>killall tmux</li>
+</ul>
+<h2 id="scroll-pane">scroll pane</h2>
+<ul>
+<li>CTRL+b [ arrows or scroll wheel</li>
 </ul>
 
 
