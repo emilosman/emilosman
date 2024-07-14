@@ -45,3 +45,5 @@ for page in "${pages[@]}"; do
   printf "\n$page\n"
   rsync -auh --no-perms --no-times "$source_path" "$destination_path"
 done
+
+python3 ./generate_index.py
