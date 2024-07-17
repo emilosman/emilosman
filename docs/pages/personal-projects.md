@@ -2,6 +2,10 @@
 Various projects meant to make life easier with automation and data analysis.  
 Some open-source, some closed-source, most for fun.
 
+## homelab
+- Test bed for practicing virtualization and containerization on my home server
+- Tech used: `Ansible, Bash, Podman`
+
 ## exo-js
 ![project](assets/exo-js.jpg)
 
