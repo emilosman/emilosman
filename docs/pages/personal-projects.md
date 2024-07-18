@@ -4,7 +4,7 @@ Some open-source, some closed-source, most for fun.
 
 ## homelab
 - Test bed for practicing virtualization and containerization on my home server
-- Tech used: `Ansible, Bash, Podman`
+- Tech used: `Ansible, Terraform, Bash, Podman, QEMU, libvirt`
 
 ## exo-js
 ![project](assets/exo-js.jpg)
