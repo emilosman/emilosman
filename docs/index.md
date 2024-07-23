@@ -42,7 +42,7 @@ Skilled communicator with in-depth technical knowledge.
 
 ## __Experience__
 
-## Senior Ruby Developer - Freelance
+## Senior Ruby Developer - [OSMAN EMIL KFT](https://emilosman.com)
 `December 2022 to present`
 
 Clients include:
