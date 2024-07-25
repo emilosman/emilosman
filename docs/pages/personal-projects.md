@@ -2,7 +2,12 @@
 Various projects meant to make life easier with automation and data analysis.  
 Some open-source, some closed-source, most for fun.
 
-## homelab
+## [exo-cli](https://github.com/emilosman/exo-cli)
+- CLI helper for my _exocortex_
+- [built with rwxrob's bonzai template](https://github.com/rwxrob/bonzai)
+Tech used: `Go`
+
+## [homelab](https://github.com/emilosman/homelab)
 - Test bed for practicing virtualization and containerization on my home server
 - Tech used: `Ansible, Terraform, Bash, Podman, QEMU, libvirt`
 
