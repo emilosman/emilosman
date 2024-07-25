@@ -104,10 +104,10 @@ Started professional career building Ruby on Rails applications. Worked with the
 
 I publish my open-source work on GitHub: [emilosman](https://www.github.com/emilosman)
 
-## [Personal Projects and Experiments](/pages/personal-projects)
+## [Personal Projects and Experiments](/personal-projects)
 Various projects meant to make life easier with automation and data analysis.  
 Some open-source, some closed-source, most for fun.  
-[View my projects here.](/pages/personal-projects)
+[View my projects here.](/personal-projects)
 
 ## [Study Notes](/study-notes)
 I publish my study notes online.  
