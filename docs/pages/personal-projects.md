@@ -5,7 +5,7 @@ Some open-source, some closed-source, most for fun.
 ## [exo-cli](https://github.com/emilosman/exo-cli)
 - CLI helper for my _exocortex_
 - [built with rwxrob's bonzai template](https://github.com/rwxrob/bonzai)
-Tech used: `Go`
+- Tech used: `Go`
 
 ## [homelab](https://github.com/emilosman/homelab)
 - Test bed for practicing virtualization and containerization on my home server
