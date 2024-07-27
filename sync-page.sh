@@ -42,8 +42,8 @@ for page in "${pages[@]}"; do
   source_path="$source_directory/$page.md"
   destination_path="$destination_directory/$page.md"
 
-  printf "\n$page\n"
-  rsync -auh --no-perms --no-times "$source_path" "$destination_path"
+  printf "$page\n"
+  rsync -uh "$source_path" "$destination_path"
 done
 
 python3 ./generate_index.py
