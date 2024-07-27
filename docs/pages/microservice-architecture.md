@@ -9,11 +9,10 @@
 ## Living in Monolithic Hell
 - monoliths have no fault isolation - because all modules are running within the same process.
 Every so often, a bug in one module — for example, a memory leak — crashes all instances of the application, one by one.
-- [functional / non-functional requirements](/pages/functional-non-functional-requirements)
+- [functional / non-functional requirements](/pages/functional-non-functional-requirements.md)
 
 ## Scale Cube
 The scale cube defines three separate ways to scale an application:
-
 - X-axis scaling load balances requests across multiple, identical instances
   - horizontal scaling, duplication, scale by cloning
   - run multiple instances behind a load balancer
@@ -39,7 +38,7 @@ The scale cube defines three separate ways to scale an application:
 - This doesn't mean that each service has to have its own database server!
 - [Pattern: Database per service](https://microservices.io/patterns/data/database-per-service.html)
 
-## [Microservices vs SOA](/pages/soap-soa#soa---service-oriented-architecture)
+## [Microservices vs SOA](soap-soa.md#soa---service-oriented-architecture)
 
 ## Benefits of microservice architecture
 - It enables the continuous delivery and deployment of large, complex applications.
@@ -58,7 +57,7 @@ The scale cube defines three separate ways to scale an application:
 - [CQRS pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs)
 CQRS stands for _Command and Query Responsibility Segregation_, a pattern that separates read and update operations for a data store. Implementing CQRS in your application can maximize its performance, scalability, and security.
 
-## [Patterns and Pattern languages](/pages/patterns-pattern-languages)
+## [Patterns and Pattern languages](/pages/patterns-pattern-languages.md)
 
 ## Warning: distributed monolith
 If you decompose a system incorrectly, you risk building a distributed monolith, a system consisting of coupled services that must be deployed together. This has the drawbacks of both monoliths and microservices.

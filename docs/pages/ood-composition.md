@@ -1,6 +1,6 @@
-# OOD - Composition
-- part of [OOD](/pages/ood-object-oriented-design#combining-objects-with-composition)
-- see: [Roles and Modules](/pages/ood-roles-modules)
+# Composition
+- part of [OOD](/pages/ood-object-oriented-design.md#combining-objects-with-composition)
+- see: [Roles and Modules](/pages/ood-roles-modules.md)
 
 Compositino allows you to combine small parts to create more complex objects,
 such that the whole becomes more than the sum of its parts.
@@ -18,7 +18,7 @@ such that the whole becomes more than the sum of its parts.
 - Parts play _roles_ and the containing object collaborates with them.
 
 ## Replacing Inheritance with Composition
-- [see Acquiring Behavior through Inheritance](/pages/ood-inheritance#acquiring-behavior-through-inheritance)
+- [see Acquiring Behavior through Inheritance](/pages/ood-inheritance.md#acquiring-behavior-through-inheritance)
 
 Example:
 - A `Bicycle` has-a `Parts`

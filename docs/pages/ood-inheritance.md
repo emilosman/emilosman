@@ -1,5 +1,5 @@
 # OOD - Inheritance
-- part of [OOD](/pages/ood-object-oriented-design#inheritance)
+- part of [OOD](/pages/ood-object-oriented-design.md#inheritance)
 
 Inheritance solves the problem of related types that share a great deal of common behavior but differ across some dimension.
 It allows you to isolate shared code and implement common algorithms in an abstract class, while also providing a structure
@@ -275,7 +275,7 @@ end
 
 See page 136 for full refactor example.
 
-## [Sharing Role Bahavior with Modules](/pages/ood-roles-modules)
+## [Sharing Role Bahavior with Modules](/pages/ood-roles-modules.md)
 
 ## Method Lookup in Classical Inheritance
 In classical inheritance, when a message is sent to an _instance_ of a class,
@@ -301,18 +301,18 @@ The usefulness and maintainability of inheritance hierarchies and modules is in 
 Sharing inherited behavior requires specific coding strategies:
 
 ## Recognizing Antipatterns (Inheritance)
-There are two [antipatterns](/pages/ood-object-oriented-design#antipattern) that indicate
+There are two [antipatterns](/pages/ood-object-oriented-design.md#antipattern) that indicate
 that code might benefit from inheritance:
 1. Objects that use a variable name like `type` or `category` to determine which message to send to `self`.
   Meaning that these objects are of highly related, but slightly different types.
   They can benefit from [Classical Inheritance](#understanding-classical-inheritance),
   where comon code is moved to an abstract superclass.
 2. When sending objects check the class of a receiving object to determine what message to send.
-  They can benefit from [Duck Types](/pages/duck-type).
+  They can benefit from [Duck Types](/pages/duck-type.md).
   In this situation all receiving objects play a common role.
   They should be codified as a duck type and receivers should implement the duck type's interface.
   Once they do, the original object can send one single message to every receiver, trusting that they will respond.
-  In addition to sharing an interface, duck types might also [share behavior](/pages/ood-roles-modules#sharing-role-bahavior-with-modules).
+  In addition to sharing an interface, duck types might also [share behavior](/pages/ood-roles-modules.md#sharing-role-bahavior-with-modules).
   When they do, place shared code in a module and include that module in each class or object that plays the role.
 
 ## Insist on the Abstraction
@@ -323,7 +323,7 @@ This restriction also applies to modules.
 ## Substitutability
 Subclasses agree to a _contract_; they promise to be substitutable for their superclasses.
 They are __substituatable__ when they implement their superclass's interface.
-- see: [Liskov Substitution Principle LSP](/pages/solid)
+- see: [Liskov Substitution Principle LSP](/pages/solid.md)
 
 ## Using the Template Method Pattern
 - [Template Method Pattern example](#template-method-pattern)
@@ -372,7 +372,7 @@ Use of inheritance results in code that can be described as __open-closed__; hie
 while being closed for modification.
 Adding a new subclass to an existing hierarchy requires no changes in code.
 Hierarchies are thus _usable_; you can easily create new subclasses to accommodate new variants.
-- see [SOLID: O](/pages/solid#o---open-closed-principle)
+- see [SOLID: O](/pages/solid.md#o---open-closed-principle)
 
 Correctly written hierarchies are easy to extend.
 Their hierarchy embodies the abstraction and every new subclass plugs in a few concrete differences.

@@ -1,5 +1,5 @@
 # Software Architecture
-- see: [Functional / Non-functional Requirements in Software Architecture](/pages/functional-non-functional-requirements)
+- see: [Functional / Non-functional Requirements in Software Architecture](/pages/functional-non-functional-requirements.md)
 - [Martin Fowler - Architecture](https://martinfowler.com/architecture/)
 
 ## Len Bass
@@ -8,7 +8,6 @@
 
 ## Team Topologies
 - Matthew Skelton: Team Topologies: Organizing Business and Technology Teams for Fast Flow
-
 
 ## MBSE - Model Based Systems Engineering
 - model based systems engineering

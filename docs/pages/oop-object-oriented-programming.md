@@ -1,4 +1,4 @@
-# OOP - Object Oriented Programming
+# OOP Object Oriented Programming
 - [Matthias Noback - Object Design Style Guide](https://www.manning.com/books/object-design-style-guide) (36/418)
 
 ## static vs dynamic types in programming
@@ -41,7 +41,7 @@ Foo.aStaticMethod();         //2
 ## factory
 - the standard way to instantiate a new instance of a class is by using the _new_ operator: `object1 = new Foo();`
 - you can also define a static _factory_ method that returns a new instance of the class:
-- Ruby: an object that manufactures objects. See [Factory (composition)](/pages/ood-composition#factory-composition)
+- Ruby: an object that manufactures objects. See [Factory (composition)](/pages/ood-composition.md#factory-composition)
 
 ```c#
     class Foo

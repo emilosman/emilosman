@@ -14,7 +14,7 @@
 ## S - Single-Responsiblity Principle
 > There should never be more than one reason for a class to change. In other words, every class should have only one responsibility.
 
-- see: [Designing Classes with a Single Responsibility](/pages/ood-object-oriented-design#designing-classes-with-a-single-responsibility)
+- see: [Designing Classes with a Single Responsibility](/pages/ood-object-oriented-design.md#designing-classes-with-a-single-responsibility)
 - The four goals of code: transparent, reasonable, usable, exemplary.
 - [wiki](https://en.wikipedia.org/wiki/Single-responsibility_principle)
 
@@ -22,7 +22,7 @@
 Use of inheritance results in code that can be described as __open-closed__; hierarchies are open for extension
 while being closed for modification.
 
-- see: [Benefits of Inheritance](/pages/ood-inheritance#benefits-of-inheritance)
+- see: [Benefits of Inheritance](/pages/ood-inheritance.md#benefits-of-inheritance)
 - [wiki](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle)
 
 ## L - Liskov Substitution Principle
@@ -32,7 +32,7 @@ while being closed for modification.
 - In order for a type system to be sane, subtypes must be substitutable for their supertypes.
 - In Ruby terms this means that an object should act like what it claims to be.
 - Named after Barbara Liskov
-- see [Substitutability](/pages/ood-inheritance#substitutability)
+- see [Substitutability](/pages/ood-inheritance.md#substitutability)
 
 ## I - Interface Segregation Principle
 > Clients should not be forced to depend upon interfaces that they do not use.
@@ -42,5 +42,5 @@ while being closed for modification.
 ## D - Dependency Inversion Principle
 > Depend upon abstractions, concretions.
 
-- see: [Inheritance](/pages/ood-inheritance)
+- see: [Inheritance](/pages/ood-inheritance.md)
 - [wiki](https://en.wikipedia.org/wiki/Dependency_inversion_principle)

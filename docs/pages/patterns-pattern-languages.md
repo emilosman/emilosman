@@ -4,16 +4,16 @@
 - A pattern must describe the context within which it applies.
 
 ## References
-- [Arcitura patterns](/pages/arcitura-patterns/)
-- [Azure reference architectures](/pages/azure/#reference-architectures)
+- [Arcitura patterns](/pages/arcitura-patterns.md)
+- [Azure reference architectures](/pages/azure.md#reference-architectures)
 - Design Patterns: Elements of Reusable Object-Oriented Software (Addison-Wesley Professional, 1994)
-- [OOD: Template Method Pattern](/pages/ood-inheritance/#using-the-template-method-pattern)
+- [OOD: Template Method Pattern](/pages/ood-inheritance.md#using-the-template-method-pattern)
 
 ## Pattern structure
 1. **Forces**: The issues that you must address when solving a problem
   - Forces can conflict, so it might not be possible to solve all of them. Which forces are more important depends on the context. You have to prioritize solving some forces over others. For example, code must be easy to understand and have good performance.
   Code written in a reactive style has better performance than synchronous code, yet is often more difficult to understand.
-  See: [Synchronous vs Asynchronous (Ractive) programming](/pages/synchronous-asynchronous-reactive-push-pull/).
+  See: [Synchronous vs Asynchronous (Ractive) programming](/pages/synchronous-asynchronous-reactive-push-pull.md).
   Explicitly listing the forces is useful because it makes clear which issues need to be solved.
 2. **Resulting context**: Context are the consequences of applying a pattern
   - _Benefits_: “The benefits of the pattern, including the forces that have been resolved
@@ -42,7 +42,7 @@ Patterns within a pattern language can be organized into groups:
 
 ## Pattern for decomposing an application into services
 1. Decompose by business capability: organizes services around business capabilities
-2. Decompose by subdomain: organizes services around [Domain Driven Design (DDD) subdomains](/pages/ddd-domain-driven-design/)
+2. Decompose by subdomain: organizes services around [Domain Driven Design (DDD) subdomains](/pages/ddd-domain-driven-design.md)
 
 ## Sidecar pattern
 - [Azure: Sidecar pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar)

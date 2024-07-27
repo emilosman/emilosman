@@ -1,6 +1,6 @@
 # Duck Type
-- part of [OOD](/pages/ood-object-oriented-design#duck-type)
-- see: [Roles and Modules](/pages/ood-roles-modules)
+- part of [OOD](/pages/ood-object-oriented-design.md#duck-type)
+- see: [Roles and Modules](/pages/ood-roles-modules.md)
 
 Messages are the center of object-oriented applications and they pass among object along public interfaces.
 Duck typing detaches these public interfaces from specific classes,
@@ -18,7 +18,7 @@ making applications cheaper to maintain and easier to change.
 - "If it walks like a duck, quacks like a duck, it's class is immaterial, it's a duck."
 
 ## Example of duck type `Preparer`
-- see: [Roles](/pages/ood-roles-modules#finding-roles)
+- see: [Roles](/pages/ood-roles-modules.md#finding-roles)
 
 ```ruby
 class Trip
@@ -87,7 +87,7 @@ The `prepare` method wants its arguments to _prepare_ the trip.
 Thus, the `prepare_trip` method becomes the _public interface_ of the `Preparer` duck.
 
 ### 2. kind_of? or is_a?
-- `kind_of?` and `is_a?` are synonyms for checking class
+- `kind_of?` and `is_a?` are synonims for checking class
 - it's the same as the case switch example previous
 - don't be fooled by the removal of explicit class references, this code still expects specific classes.
 - rewrite this using ducks!
@@ -138,5 +138,5 @@ Thus, the `prepare_trip` method becomes the _public interface_ of the `Preparer`
 - duck types protect you from unstable dependencies
 
 ## Duck Types vs Static Typing
-- [see static vs dynamic types in OOP](/pages/oop-object-oriented-programming#static-vs-dynamic-types-in-programming)
+- [see static vs dynamic types in OOP](/pages/oop-object-oriented-programming.md#static-vs-dynamic-types-in-programming)
 - in statically typed languages you must declare the type of the method parameter, making duck typing impossible

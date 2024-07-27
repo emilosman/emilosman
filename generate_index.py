@@ -21,10 +21,9 @@ def generate_index():
         file_list = []
         for root, dirs, files in os.walk("docs/pages"):
             for file in files:
-                if file.endswith(".md") and file != "index.md" and file != "personal-projects.md":
-                    path = os.path.join(root, file)
-                    rel_path = os.path.relpath(path, "docs")
-                    file_list.append(rel_path)
+                path = os.path.join(root, file)
+                rel_path = os.path.relpath(path, "docs")
+                file_list.append(rel_path)
         file_list.sort()
         for rel_path in file_list:
             url = "/" + rel_path.replace("\\", "/").replace(".md", "")

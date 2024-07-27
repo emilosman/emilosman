@@ -1,8 +1,8 @@
 # Tools I Use Daily
 
 ## Linux / Unix
-- [vim](/pages/vim-nvim)
-- [tmux](/pages/tmux)
+- [vim](/pages/vim-nvim.md)
+- [tmux](/pages/tmux.md)
 
 ## Headphones
 - Sony MDR-7506

@@ -1,5 +1,5 @@
 # Functional / Non-functional Requirements in Software Architecture
-- see: [Software Architecture](/pages/software-architecture)
+- see: [Software Architecture](/pages/software-architecture.md)
 
 Software architecture has very little to do with functional requirements.
 You can implement a set of use cases — an application’s functional requirements — with any architecture.

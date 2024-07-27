@@ -1,9 +1,9 @@
 # OOD - Designing Cost Effective Tests
-- see: [TDD - Test Driven Development](/pages/tdd-test-driven-development)
-- see: [BDD - Behavior Driven Development](/pages/bdd-behavior-driven-development)
+- see: [TDD - Test Driven Development](/pages/tdd-test-driven-development.md)
+- see: [BDD - Behavior Driven Development](/pages/bdd-behavior-driven-development.md)
 
 ## Refactoring
-- [Martin Fowler - Refactoring: Improving the Design of Existing Code](/pages/refactoring#martin-fowler---refactoring-improving-the-design-of-existing-code)
+- [Martin Fowler - Refactoring: Improving the Design of Existing Code](/pages/refactoring.md#martin-fowler---refactoring-improving-the-design-of-existing-code)
 
 The art of changeable code requires the ability to write high-value tests.
 Tests give confidence to refactor code constantly.
@@ -54,7 +54,8 @@ Benefits of writing tests:
 ## Knowing What to Test
 - Don't write too many tests!
 - Have fewer of them and remove duplication.
-- Think of objects as black boxes. Internals are not visible from the outside, only a pre-defined set of messages can be passed through.
+- Think of objects as black boxes. Internals are not visible from the outside,
+only a pre-defined set of messages can be passed through.
 - Well-designed objects have strong bounderies. Nothing on the inside can see out, nor can the outside see in.
 - Willful ignorance of the internals of every object is the core of design.
 - Deal with objects as if they are only and exactly the messages to which they respond.
@@ -112,14 +113,12 @@ Since tests should be reusable, the code must be reusable as well.
 
 ## Knowing How to Test
 Popular testing frameworks:
-
 - [MiniTest](https://github.com/minitest/minitest) - comes bundled since Ruby 1.9
 - [RSpec](https://rspec.info/)
 
 Testing philosophies:
-
-- [TDD - Test Driven Development](/pages/tdd-test-driven-development) "inside-out"
-- [BDD - Behavior Driven Development](/pages/bdd-behavior-driven-development) "outside-in"
+- [TDD - Test Driven Development](/pages/tdd-test-driven-development.md) "inside-out"
+- [BDD - Behavior Driven Development](/pages/bdd-behavior-driven-development.md) "outside-in"
 
 ## Deleting Unused Interfaces
 - Incoming messages ought to have dependents.
@@ -129,9 +128,9 @@ Testing philosophies:
 ## Proving the Public Interface / Unit Test Example
 - Incoming messages are tested by making assertions about their value, their state, that invocation returns.
 - The first requirement for testing an incoming message is to prove that it returns the correct value every possible time.
-- see: [Unit Testing](/pages/unit-testing)
+- see: [Unit Testing](/pages/unit-testing.md)
 
-A test of `Wheel.diameter` method from [Managing Dependencies](/pages/ood-managing-dependencies):
+A test of `Wheel.diameter` method from [Managing Dependencies](/pages/ood-managing-dependencies.md):
 
 ```ruby
 class WheelTest < MiniTest::Unit::TestCase
@@ -158,7 +157,7 @@ Refactoring for Dependency Injection (DI) leads to decoupling, making it easier 
 Test should use the same collaborating objects as the code in the application. Test will break when they should!
 
 ## Creating Test Doubles
-- part of: [BDD](/pages/bdd-behavior-driven-development)
+- part of: [BDD](/pages/bdd-behavior-driven-development.md)
 
 A fake object is a _test double_.
 A test double is a stylized instance of a role player that is used exclusively for testing.
@@ -189,7 +188,7 @@ end
 ```
 
 - __WARNING:__ Stubbing and mocking makes for brittle tests that pass even when the application is obviously broken.
-- DiameterDouble is not a [mock](/pages/tdd-test-driven-development#mocks--mocking)!
+- DiameterDouble is not a [mock](/pages/tdd-test-driven-development.md#mocks--mocking)!
 
 ## Using Tests to Document Roles
 - Forgetting what roles _doubles_ play in test is inevitable.
