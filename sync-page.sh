@@ -21,7 +21,6 @@ pages=(
 "ood-roles-modules"
 "oop-object-oriented-programming"
 "patterns-pattern-languages"
-"personal-projects"
 "soap-soa"
 "software-architecture"
 "solid"
@@ -33,6 +32,7 @@ pages=(
 "tools"
 "unit-testing"
 "vim-nvim"
+"networking"
 )
 
 source_directory="$HOME/ruby/exo/pages"

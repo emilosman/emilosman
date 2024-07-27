@@ -111,3 +111,7 @@ vnoremap <Right> <NOP>
 ## search and replace
 - : s/search/replace/
 - Add a `g` after the third slash if you want to replace all matches, and a `c` if you want a confirmation for every replace
+
+## list - show hidden characters
+- :set list
+- :set nolist

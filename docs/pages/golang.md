@@ -34,7 +34,7 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 ```
 
 ## go mod init
-go mod init emil
+go mod init github.com/emilosman/exo-cli
 
 ## adding and removing packages
 - go get github.com/nsf/termbox-go
@@ -56,3 +56,9 @@ go mod init emil
 - [cobra](https://github.com/spf13/cobra)
 - [gorilla websocket chat example](https://github.com/gorilla/websocket/tree/master/examples/chat)
 - [html to epub](https://github.com/gonejack/html-to-epub)
+
+## Debugging - Delve
+- [Delve](https://github.com/go-delve/delve)
+- [Install](https://github.com/go-delve/delve/tree/master/Documentation/installation)
+- [Getting Started](https://github.com/go-delve/delve/blob/master/Documentation/cli/getting_started.md)
+- dlv debug ./cmd/exo-cli/main.go
