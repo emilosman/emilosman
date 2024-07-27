@@ -551,7 +551,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Composition
+    Composition
   </span>
   
 
@@ -915,7 +915,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Managing Dependencies
+    Managing Dependencies
   </span>
   
 
@@ -957,7 +957,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Roles and Modules
+    Roles and Modules
   </span>
   
 
@@ -978,7 +978,7 @@
         
   
   <span class="md-ellipsis">
-    OOP - Object Oriented Programming
+    OOP Object Oriented Programming
   </span>
   
 
@@ -1020,7 +1020,7 @@
         
   
   <span class="md-ellipsis">
-    SOAP / SOA
+    SOAP
   </span>
   
 
@@ -1554,7 +1554,7 @@
 
 <h1 id="ood-inheritance">OOD - Inheritance</h1>
 <ul>
-<li>part of <a href="/pages/ood-object-oriented-design#inheritance">OOD</a></li>
+<li>part of <a href="../ood-object-oriented-design/#inheritance">OOD</a></li>
 </ul>
 <p>Inheritance solves the problem of related types that share a great deal of common behavior but differ across some dimension.
 It allows you to isolate shared code and implement common algorithms in an abstract class, while also providing a structure
@@ -1798,7 +1798,7 @@ class RoadBike &lt; Bicycle
 end
 </code></pre>
 <p>See page 136 for full refactor example.</p>
-<h2 id="sharing-role-bahavior-with-modules"><a href="/pages/ood-roles-modules">Sharing Role Bahavior with Modules</a></h2>
+<h2 id="sharing-role-bahavior-with-modules"><a href="../ood-roles-modules/">Sharing Role Bahavior with Modules</a></h2>
 <h2 id="method-lookup-in-classical-inheritance">Method Lookup in Classical Inheritance</h2>
 <p>In classical inheritance, when a message is sent to an <em>instance</em> of a class,
 the OO language first looks for the matching method inside that class.
@@ -1820,18 +1820,18 @@ the method lookup hierarchy is:</p>
 <p>The usefulness and maintainability of inheritance hierarchies and modules is in direct proportion to the quality of code.
 Sharing inherited behavior requires specific coding strategies:</p>
 <h2 id="recognizing-antipatterns-inheritance">Recognizing Antipatterns (Inheritance)</h2>
-<p>There are two <a href="/pages/ood-object-oriented-design#antipattern">antipatterns</a> that indicate
+<p>There are two <a href="../ood-object-oriented-design/#antipattern">antipatterns</a> that indicate
 that code might benefit from inheritance:
 1. Objects that use a variable name like <code>type</code> or <code>category</code> to determine which message to send to <code>self</code>.
   Meaning that these objects are of highly related, but slightly different types.
   They can benefit from <a href="#understanding-classical-inheritance">Classical Inheritance</a>,
   where comon code is moved to an abstract superclass.
 2. When sending objects check the class of a receiving object to determine what message to send.
-  They can benefit from <a href="/pages/duck-type">Duck Types</a>.
+  They can benefit from <a href="../duck-type/">Duck Types</a>.
   In this situation all receiving objects play a common role.
   They should be codified as a duck type and receivers should implement the duck type's interface.
   Once they do, the original object can send one single message to every receiver, trusting that they will respond.
-  In addition to sharing an interface, duck types might also <a href="/pages/ood-roles-modules#sharing-role-bahavior-with-modules">share behavior</a>.
+  In addition to sharing an interface, duck types might also <a href="../ood-roles-modules/#sharing-role-bahavior-with-modules">share behavior</a>.
   When they do, place shared code in a module and include that module in each class or object that plays the role.</p>
 <h2 id="insist-on-the-abstraction">Insist on the Abstraction</h2>
 <p>All the code in an abstract superclass should apply to every class that inherits it.
@@ -1840,7 +1840,7 @@ This restriction also applies to modules.</p>
 <h2 id="substitutability">Substitutability</h2>
 <p>Subclasses agree to a <em>contract</em>; they promise to be substitutable for their superclasses.
 They are <strong>substituatable</strong> when they implement their superclass's interface.
-- see: <a href="/pages/solid">Liskov Substitution Principle LSP</a></p>
+- see: <a href="../solid/">Liskov Substitution Principle LSP</a></p>
 <h2 id="using-the-template-method-pattern">Using the Template Method Pattern</h2>
 <ul>
 <li><a href="#template-method-pattern">Template Method Pattern example</a></li>
@@ -1881,7 +1881,7 @@ Correctly modelled hierarchies are <em>reasonable</em>; big changes in behavior 
 while being closed for modification.
 Adding a new subclass to an existing hierarchy requires no changes in code.
 Hierarchies are thus <em>usable</em>; you can easily create new subclasses to accommodate new variants.
-- see <a href="/pages/solid#o---open-closed-principle">SOLID: O</a></p>
+- see <a href="../solid/#o---open-closed-principle">SOLID: O</a></p>
 <p>Correctly written hierarchies are easy to extend.
 Their hierarchy embodies the abstraction and every new subclass plugs in a few concrete differences.
 Hierarchies are <em>exemplary</em>; by their nature they provide guidence for writing the code to extend them.

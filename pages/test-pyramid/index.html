@@ -551,7 +551,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Composition
+    Composition
   </span>
   
 
@@ -614,7 +614,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Managing Dependencies
+    Managing Dependencies
   </span>
   
 
@@ -656,7 +656,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Roles and Modules
+    Roles and Modules
   </span>
   
 
@@ -677,7 +677,7 @@
         
   
   <span class="md-ellipsis">
-    OOP - Object Oriented Programming
+    OOP Object Oriented Programming
   </span>
   
 
@@ -719,7 +719,7 @@
         
   
   <span class="md-ellipsis">
-    SOAP / SOA
+    SOAP
   </span>
   
 
@@ -1409,11 +1409,11 @@ This increases speed of delivery and reduces cost.
 The shortened feedback loop of automated testing goes hand in hand with Agile, Continuous Delivery and DevOps culture.</p>
 <h2 id="the-importance-of-test-automation">The Importance of Test Automation</h2>
 <ul>
-<li>see: <a href="/pages/devops">DevOps</a></li>
-<li>see: <a href="/pages/ci-cd">CI/CD</a></li>
+<li>see: <a href="./devops.md">DevOps</a></li>
+<li>see: <a href="./ci-cd.md">CI/CD</a></li>
 </ul>
 <p>As the amount and sophistication of software grows, software must be delivered faster, without sacrificing quality.</p>
-<p><a href="/pages/ci-cd#continuous-delivery">Continuous Delivery</a> allows you to deliver software to production at any time.
+<p><a href="./ci-cd.md#continuous-delivery">Continuous Delivery</a> allows you to deliver software to production at any time.
 CD uses a <strong>build pipline</strong> to automatically test software and deploy it to <em>testing</em> and <em>production</em> environments.</p>
 <p>Doing all of this manually is impossible, as it requires manual repetative work.
 Automating everything from tests, deployment and infrastructure is the only way forward.</p>
@@ -1439,7 +1439,7 @@ Automated tests make large-scale refactoring possible.</p>
 - write tests with different granularity
 - the more high-level you get the fewer tests you should have</p>
 <h2 id="unit-test">Unit Test</h2>
-<p>The foundation of your test suite is made up of <a href="/pages/unit-testing">unit tests</a>.
+<p>The foundation of your test suite is made up of <a href="../unit-testing/">unit tests</a>.
 A unit test makes sure that a certain unit (subject under test) of your codebase functions as intended.
 Unit tests have the narrowest scope of all the tests in your test suite.
 The number of unit tests will largely outnumber any other type of test.</p>
@@ -1447,7 +1447,7 @@ The number of unit tests will largely outnumber any other type of test.</p>
 In OOP it can range from a single method to an entire class.</p>
 <h2 id="sociable-and-solitary-unit-tests">Sociable and Solitary Unit Tests</h2>
 <ul>
-<li>see: <a href="/pages/tdd-test-driven-development#mocks--mocking">Mocks / Mocking</a></li>
+<li>see: <a href="../tdd-test-driven-development/#mocks--mocking">Mocks / Mocking</a></li>
 <li>coined by: <a href="https://leanpub.com/wewut">Jay Fields - Working Effectively with Unit Tests</a></li>
 </ul>
 <p>Some argue that all collaborators (e.g. other classes that are called by your class under test)
@@ -1461,9 +1461,9 @@ to come up with perfect isolation to avoid side-effects and complicated test set
 </ul>
 <h2 id="mocking-and-stubbing">Mocking and Stubbing</h2>
 <ul>
-<li>see: TDD <a href="/pages/tdd-test-driven-development#mocks--mocking">Mocks / Mocking</a></li>
+<li>see: TDD <a href="../tdd-test-driven-development/#mocks--mocking">Mocks / Mocking</a></li>
 </ul>
-<p><em>Mocks</em> and <em>Stubs</em> are two different kinds of <a href="/pages/bdd-behavior-driven-development#doubles--stubs--stubbing">Test Doubles</a>.
+<p><em>Mocks</em> and <em>Stubs</em> are two different kinds of <a href="../bdd-behavior-driven-development/#doubles--stubs--stubbing">Test Doubles</a>.
 Doubles are used to replace objects used in production with an implementation that helps testing.</p>
 <p>Doubles replace real classes and modules with objects that answer the same method calls,
 with <em>canned</em> responses defined at the beginning of a unit tests.</p>
@@ -1472,15 +1472,15 @@ entire parts of a system in a controlled way.
 They are frequently encountered in unit testing, as testing frameworks make creating them easy.</p>
 <h2 id="testing-private-methods">Testing Private Methods</h2>
 <ul>
-<li>see: <a href="/pages/ood-designing-cost-effective-tests#ignoring-private-methods-during-tests">OOD: Ignoring Private Methods During Tests</a></li>
+<li>see: <a href="../ood-designing-cost-effective-tests/#ignoring-private-methods-during-tests">OOD: Ignoring Private Methods During Tests</a></li>
 </ul>
 <p>You shouldn't test private methods!
 They are indicative of a design problem, rather than a scoping problem.
-Classes that are too complex violate the <a href="/pages/solid#s---single-responsiblity-principle">Single Responsibility Principle</a>, the S from <a href="/pages/solid">SOLID</a>.</p>
+Classes that are too complex violate the <a href="../solid/#s---single-responsiblity-principle">Single Responsibility Principle</a>, the S from <a href="../solid/">SOLID</a>.</p>
 <p>The solution is to split the class and move the private method you wish to test to the public interface of a new class.</p>
 <h2 id="what-to-test">What to Test?</h2>
 <ul>
-<li>see: <a href="/pages/ood-designing-cost-effective-tests#knowing-what-to-test">OOD: Knowing What to Test</a></li>
+<li>see: <a href="../ood-designing-cost-effective-tests/#knowing-what-to-test">OOD: Knowing What to Test</a></li>
 </ul>
 <p>Rules:
 - One test class per production class.
@@ -1491,13 +1491,13 @@ Classes that are too complex violate the <a href="/pages/solid#s---single-respon
 <li>Call methods under test</li>
 <li>Assert that the expected results are returned</li>
 </ol>
-<p>Other mnemonics to remember, taken from <a href="/pages/bdd-behavior-driven-development">BDD - Behavior Driven Development</a>:
+<p>Other mnemonics to remember, taken from <a href="../bdd-behavior-driven-development/">BDD - Behavior Driven Development</a>:
 - "Arrange, Act, Assert"
 - "Given, When, Then"</p>
 <p>This pattern can be applied to high-level tests as well, not only to unit tests.</p>
 <h2 id="implementing-a-unit-test">Implementing a Unit Test</h2>
 <ul>
-<li>see: <a href="/pages/unit-testing">Unit Test</a></li>
+<li>see: <a href="../unit-testing/">Unit Test</a></li>
 </ul>
 <h2 id="integration-tests">Integration Tests</h2>
 <p>All non-trivial applications integrate with databases, filesystems, network calls to applications, etc.
@@ -1530,10 +1530,10 @@ They run against the fake and real version of the service
 to ensure that the fake in our integration tests is a faithful test double.</p>
 <h2 id="contract-tests">Contract Tests</h2>
 <p><em>Contracts</em> clearly specify the interface of services you integrate with.</p>
-<p><a href="/pages/microservice-architecture">Microservices architecture</a> requires you to interact with many
+<p><a href="../microservice-architecture/">Microservices architecture</a> requires you to interact with many
 different services using APIs, commonly using one of the following:
 - REST and JSON via HTTPS
-- <a href="/pages/rpc-remote-procedure-call">RPC -Remote Procedure Call</a> using something like gRPC
+- <a href="./rpc-remote-procedure-call.md">RPC -Remote Procedure Call</a> using something like gRPC
 - event-driven architecture using queues</p>
 <p>Here, a <em>consumer</em> and a <em>provider</em> communicate via API.</p>
 <p><a href="https://martinfowler.com/bliki/ContractTest.html">Automated contract tests</a> make sure that the implementations on the consumer and provider side stick to the defined contract.
@@ -1565,7 +1565,7 @@ These automated tests drive a headless browser, performing clicks, entering data
 The more complex the UI, the harder it is to test.
 Quirks in browsers exacerbate these problems.</p>
 <p>Microservices also raise the question of who is responsible for writing these tests.
-See: <a href="/pages/qa#centralised-qa-team-as-antipattern">Centralised QA Team As Antipattern</a></p>
+See: <a href="./qa.md#centralised-qa-team-as-antipattern">Centralised QA Team As Antipattern</a></p>
 <p>End-To-End tests requier a lot of maintenance and run slow.</p>
 <p>Since these tests are expensive to run, you should have the smallest number of them in the Test Pyramid.
 The lower level tests should cover edge cases.</p>
@@ -1576,7 +1576,7 @@ These are called <a href="https://martinfowler.com/bliki/SubcutaneousTest.html">
 <h2 id="acceptance-tests-do-your-features-work-correctly">Acceptance Tests - Do Your Features Work Correctly?</h2>
 <p>Tests that make sure things work from a user's perspective are called
 <strong>functional test</strong> or <strong>acceptance tests</strong>.</p>
-<p>This falls under <a href="/pages/bdd-behavior-driven-development">BDD - Behavior Driven Development</a>, where you can use tools like
+<p>This falls under <a href="../bdd-behavior-driven-development/">BDD - Behavior Driven Development</a>, where you can use tools like
 <a href="https://cucumber.io/">Cucumber</a></p>
 <h2 id="exploratory-testing">Exploratory Testing</h2>
 <ul>
@@ -1589,7 +1589,7 @@ Despite best intentions regarding to test automation, manual testing is still a 
 <p>Exploratory Testing emphasises the tester's freedom to dick around and find bugs.</p>
 <p>The bugs you find through exploratory testing can be later covered with automated tests.</p>
 <h2 id="putting-tests-into-a-deployment-pipeline">Putting Tests Into a Deployment Pipeline</h2>
-<p>Tests should run in <a href="/pages/ci-cd#deployment-pipeline">Deployment Pipelines</a>, as part of <a href="/pages/ci-cd">CI/CD</a>.
+<p>Tests should run in <a href="./ci-cd.md#deployment-pipeline">Deployment Pipelines</a>, as part of <a href="./ci-cd.md">CI/CD</a>.
 These pipelines are split into several stages that ensure software is ready to be deployed to production.</p>
 <p>Tests should be placed in the deployment pipeline
 following one of the core tenets of <a href="http://www.extremeprogramming.org/values.html">Extreme Programming</a> and Agile: <strong>Fast Feeback</strong>.</p>

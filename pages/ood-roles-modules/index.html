@@ -22,7 +22,7 @@
     
     
       
-        <title>OOD - Roles and Modules - Emil Oszmánbegovity</title>
+        <title>Roles and Modules - Emil Oszmánbegovity</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ood-roles-and-modules" class="md-skip">
+        <a href="#roles-and-modules" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              OOD - Roles and Modules
+              Roles and Modules
             
           </span>
         </div>
@@ -551,7 +551,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Composition
+    Composition
   </span>
   
 
@@ -614,7 +614,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Managing Dependencies
+    Managing Dependencies
   </span>
   
 
@@ -665,7 +665,7 @@
           
   
   <span class="md-ellipsis">
-    OOD - Roles and Modules
+    Roles and Modules
   </span>
   
 
@@ -676,7 +676,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Roles and Modules
+    Roles and Modules
   </span>
   
 
@@ -780,7 +780,7 @@
         
   
   <span class="md-ellipsis">
-    OOP - Object Oriented Programming
+    OOP Object Oriented Programming
   </span>
   
 
@@ -822,7 +822,7 @@
         
   
   <span class="md-ellipsis">
-    SOAP / SOA
+    SOAP
   </span>
   
 
@@ -1156,21 +1156,21 @@
   
 
 
-<h1 id="ood-roles-and-modules">OOD - Roles and Modules</h1>
+<h1 id="roles-and-modules">Roles and Modules</h1>
 <ul>
-<li>part of <a href="/pages/ood-object-oriented-design#combining-objects-with-composition">OOD</a></li>
-<li>see: <a href="/pages/ood-composition">Composition</a></li>
-<li>see: <a href="/pages/duck-type">Duck Types</a></li>
+<li>part of <a href="../ood-object-oriented-design/#combining-objects-with-composition">OOD</a></li>
+<li>see: <a href="../ood-composition/">Composition</a></li>
+<li>see: <a href="../duck-type/">Duck Types</a></li>
 </ul>
 <p>When objects that play a common role need to share behavior, they do so via a Ruby module.
 The code defined in a module can be added to any object, be it an instance of a class, the class itself, or another module.</p>
 <p>When a class includes a module, the methods in that module get put into the same lookup path as methods acquired via inheritance.</p>
-<p>Modules should use the <a href="/pages/ood-inheritance#template-method-pattern">Template Method</a> pattern to invite those that include them
-to supply specializations and should implement <a href="/pages/ood-inheritance#decoupling-subclasses-using-hook-messages">hook methods</a>
+<p>Modules should use the <a href="../ood-inheritance/#template-method-pattern">Template Method</a> pattern to invite those that include them
+to supply specializations and should implement <a href="../ood-inheritance/#decoupling-subclasses-using-hook-messages">hook methods</a>
 to avoid includers to send <code>super</code> (and thus know the algorithm).</p>
-<p>When an object acquires behaviour through <a href="/pages/ood-inheritance#subclass-and-superclass">classical inheritance</a>
+<p>When an object acquires behaviour through <a href="../ood-inheritance/#subclass-and-superclass">classical inheritance</a>
 or an included module, it makes a commitment to honoring an implied contract.</p>
-<p>This contract is defined by <a href="/pages/solid#l---liskov-substitution-principle">Liskov Substitution Principle</a>
+<p>This contract is defined by <a href="../solid/#l---liskov-substitution-principle">Liskov Substitution Principle</a>
 which in mathematical terms says that a subtype should be substitutable for its supertype.
 In Ruby terms this means that an object should act like what it claims to be.</p>
 <h2 id="sharing-role-bahavior-with-modules">Sharing Role Bahavior with Modules</h2>
@@ -1189,7 +1189,7 @@ In Ruby terms this means that an object should act like what it claims to be.</p
 </ul>
 <h2 id="finding-roles">Finding Roles</h2>
 <ul>
-<li>Example: <a href="/pages/duck-type#example-of-duck-type-preparer"><code>Preparer</code> duck type is a role</a></li>
+<li>Example: <a href="../duck-type/#example-of-duck-type-preparer"><code>Preparer</code> duck type is a role</a></li>
 </ul>
 <p>Objects that implement <code>Preparer</code>s interface play the <em>role</em> of <code>Preparer</code>: Mechanic, TripCoordinator...
 Because they each implement <code>prepare_trip</code>, other objects can interact with them <em>as if</em> they were a <code>Preparer</code>.</p>
@@ -1265,7 +1265,7 @@ This includes roles like: <code>scheduleable</code>, <code>preparable</code>, <c
 1. "Although an object plays it, the role is not the object's main responsibility"
 - Example: <a href="#finding-roles">A bicycle behaves-like-a schedulable, but is-a bicycle</a>
 2. "When many otherwise unrelated objects share a desire to play the same role"
-- Example: <a href="/pages/duck-type#example-of-duck-type-preparer">Mechanic, TripCoordinator, Driver...</a></p>
+- Example: <a href="../duck-type/#example-of-duck-type-preparer">Mechanic, TripCoordinator, Driver...</a></p>
 <p>Think of roles from the outside: from the point of view of a <em>holder of a role</em>, rather than the <em>player</em> of a role.
 The holder of <code>schedulable</code> expects it to implement <code>Scheduleable</code>'s interface and to honor <code>Schedulable</code>'s contract.
 Meaning that all <em>schedulables</em> are alike in that they must meet these expectations.</p>

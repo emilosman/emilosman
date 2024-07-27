@@ -705,7 +705,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Composition
+    Composition
   </span>
   
 
@@ -768,7 +768,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Managing Dependencies
+    Managing Dependencies
   </span>
   
 
@@ -810,7 +810,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Roles and Modules
+    Roles and Modules
   </span>
   
 
@@ -831,7 +831,7 @@
         
   
   <span class="md-ellipsis">
-    OOP - Object Oriented Programming
+    OOP Object Oriented Programming
   </span>
   
 
@@ -873,7 +873,7 @@
         
   
   <span class="md-ellipsis">
-    SOAP / SOA
+    SOAP
   </span>
   
 
@@ -1260,8 +1260,8 @@
 
 <h1 id="duck-type">Duck Type</h1>
 <ul>
-<li>part of <a href="/pages/ood-object-oriented-design#duck-type">OOD</a></li>
-<li>see: <a href="/pages/ood-roles-modules">Roles and Modules</a></li>
+<li>part of <a href="../ood-object-oriented-design/#duck-type">OOD</a></li>
+<li>see: <a href="../ood-roles-modules/">Roles and Modules</a></li>
 </ul>
 <p>Messages are the center of object-oriented applications and they pass among object along public interfaces.
 Duck typing detaches these public interfaces from specific classes,
@@ -1279,7 +1279,7 @@ making applications cheaper to maintain and easier to change.</p>
 </ul>
 <h2 id="example-of-duck-type-preparer">Example of duck type <code>Preparer</code></h2>
 <ul>
-<li>see: <a href="/pages/ood-roles-modules#finding-roles">Roles</a></li>
+<li>see: <a href="../ood-roles-modules/#finding-roles">Roles</a></li>
 </ul>
 <pre><code class="language-ruby">class Trip
   attr_reader :bicycles, :customer, :vehicle
@@ -1342,7 +1342,7 @@ def prepare(preparers)
 Thus, the <code>prepare_trip</code> method becomes the <em>public interface</em> of the <code>Preparer</code> duck.</p>
 <h3 id="2-kind_of-or-is_a">2. kind_of? or is_a?</h3>
 <ul>
-<li><code>kind_of?</code> and <code>is_a?</code> are synonyms for checking class</li>
+<li><code>kind_of?</code> and <code>is_a?</code> are synonims for checking class</li>
 <li>it's the same as the case switch example previous</li>
 <li>don't be fooled by the removal of explicit class references, this code still expects specific classes.</li>
 <li>rewrite this using ducks!</li>
@@ -1395,7 +1395,7 @@ Thus, the <code>prepare_trip</code> method becomes the <em>public interface</em>
 </ul>
 <h2 id="duck-types-vs-static-typing">Duck Types vs Static Typing</h2>
 <ul>
-<li><a href="/pages/oop-object-oriented-programming#static-vs-dynamic-types-in-programming">see static vs dynamic types in OOP</a></li>
+<li><a href="../oop-object-oriented-programming/#static-vs-dynamic-types-in-programming">see static vs dynamic types in OOP</a></li>
 <li>in statically typed languages you must declare the type of the method parameter, making duck typing impossible</li>
 </ul>
 

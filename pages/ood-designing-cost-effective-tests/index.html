@@ -551,7 +551,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Composition
+    Composition
   </span>
   
 
@@ -807,7 +807,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Managing Dependencies
+    Managing Dependencies
   </span>
   
 
@@ -849,7 +849,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Roles and Modules
+    Roles and Modules
   </span>
   
 
@@ -870,7 +870,7 @@
         
   
   <span class="md-ellipsis">
-    OOP - Object Oriented Programming
+    OOP Object Oriented Programming
   </span>
   
 
@@ -912,7 +912,7 @@
         
   
   <span class="md-ellipsis">
-    SOAP / SOA
+    SOAP
   </span>
   
 
@@ -1338,12 +1338,12 @@
 
 <h1 id="ood-designing-cost-effective-tests">OOD - Designing Cost Effective Tests</h1>
 <ul>
-<li>see: <a href="/pages/tdd-test-driven-development">TDD - Test Driven Development</a></li>
-<li>see: <a href="/pages/bdd-behavior-driven-development">BDD - Behavior Driven Development</a></li>
+<li>see: <a href="../tdd-test-driven-development/">TDD - Test Driven Development</a></li>
+<li>see: <a href="../bdd-behavior-driven-development/">BDD - Behavior Driven Development</a></li>
 </ul>
 <h2 id="refactoring">Refactoring</h2>
 <ul>
-<li><a href="/pages/refactoring#martin-fowler---refactoring-improving-the-design-of-existing-code">Martin Fowler - Refactoring: Improving the Design of Existing Code</a></li>
+<li><a href="./refactoring.md#martin-fowler---refactoring-improving-the-design-of-existing-code">Martin Fowler - Refactoring: Improving the Design of Existing Code</a></li>
 </ul>
 <p>The art of changeable code requires the ability to write high-value tests.
 Tests give confidence to refactor code constantly.
@@ -1392,7 +1392,8 @@ Good tests don't need to be rewritten when code gets refactored.</p>
 <ul>
 <li>Don't write too many tests!</li>
 <li>Have fewer of them and remove duplication.</li>
-<li>Think of objects as black boxes. Internals are not visible from the outside, only a pre-defined set of messages can be passed through.</li>
+<li>Think of objects as black boxes. Internals are not visible from the outside,
+only a pre-defined set of messages can be passed through.</li>
 <li>Well-designed objects have strong bounderies. Nothing on the inside can see out, nor can the outside see in.</li>
 <li>Willful ignorance of the internals of every object is the core of design.</li>
 <li>Deal with objects as if they are only and exactly the messages to which they respond.</li>
@@ -1450,16 +1451,12 @@ Since tests should be reusable, the code must be reusable as well.</p>
 <p>Writing tests first, forces design decisions that create objects that can be tested in isolation.</p>
 </blockquote>
 <h2 id="knowing-how-to-test">Knowing How to Test</h2>
-<p>Popular testing frameworks:</p>
-<ul>
-<li><a href="https://github.com/minitest/minitest">MiniTest</a> - comes bundled since Ruby 1.9</li>
-<li><a href="https://rspec.info/">RSpec</a></li>
-</ul>
-<p>Testing philosophies:</p>
-<ul>
-<li><a href="/pages/tdd-test-driven-development">TDD - Test Driven Development</a> "inside-out"</li>
-<li><a href="/pages/bdd-behavior-driven-development">BDD - Behavior Driven Development</a> "outside-in"</li>
-</ul>
+<p>Popular testing frameworks:
+- <a href="https://github.com/minitest/minitest">MiniTest</a> - comes bundled since Ruby 1.9
+- <a href="https://rspec.info/">RSpec</a></p>
+<p>Testing philosophies:
+- <a href="../tdd-test-driven-development/">TDD - Test Driven Development</a> "inside-out"
+- <a href="../bdd-behavior-driven-development/">BDD - Behavior Driven Development</a> "outside-in"</p>
 <h2 id="deleting-unused-interfaces">Deleting Unused Interfaces</h2>
 <ul>
 <li>Incoming messages ought to have dependents.</li>
@@ -1470,9 +1467,9 @@ Since tests should be reusable, the code must be reusable as well.</p>
 <ul>
 <li>Incoming messages are tested by making assertions about their value, their state, that invocation returns.</li>
 <li>The first requirement for testing an incoming message is to prove that it returns the correct value every possible time.</li>
-<li>see: <a href="/pages/unit-testing">Unit Testing</a></li>
+<li>see: <a href="../unit-testing/">Unit Testing</a></li>
 </ul>
-<p>A test of <code>Wheel.diameter</code> method from <a href="/pages/ood-managing-dependencies">Managing Dependencies</a>:</p>
+<p>A test of <code>Wheel.diameter</code> method from <a href="../ood-managing-dependencies/">Managing Dependencies</a>:</p>
 <pre><code class="language-ruby">class WheelTest &lt; MiniTest::Unit::TestCase
 
   def test_calculates_diameter
@@ -1495,7 +1492,7 @@ Refactoring for Dependency Injection (DI) leads to decoupling, making it easier 
 <p>Test should use the same collaborating objects as the code in the application. Test will break when they should!</p>
 <h2 id="creating-test-doubles">Creating Test Doubles</h2>
 <ul>
-<li>part of: <a href="/pages/bdd-behavior-driven-development">BDD</a></li>
+<li>part of: <a href="../bdd-behavior-driven-development/">BDD</a></li>
 </ul>
 <p>A fake object is a <em>test double</em>.
 A test double is a stylized instance of a role player that is used exclusively for testing.
@@ -1523,7 +1520,7 @@ end
 </code></pre>
 <ul>
 <li><strong>WARNING:</strong> Stubbing and mocking makes for brittle tests that pass even when the application is obviously broken.</li>
-<li>DiameterDouble is not a <a href="/pages/tdd-test-driven-development#mocks--mocking">mock</a>!</li>
+<li>DiameterDouble is not a <a href="../tdd-test-driven-development/#mocks--mocking">mock</a>!</li>
 </ul>
 <h2 id="using-tests-to-document-roles">Using Tests to Document Roles</h2>
 <ul>

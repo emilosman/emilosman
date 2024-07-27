@@ -551,7 +551,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Composition
+    Composition
   </span>
   
 
@@ -614,7 +614,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Managing Dependencies
+    Managing Dependencies
   </span>
   
 
@@ -885,7 +885,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Roles and Modules
+    Roles and Modules
   </span>
   
 
@@ -906,7 +906,7 @@
         
   
   <span class="md-ellipsis">
-    OOP - Object Oriented Programming
+    OOP Object Oriented Programming
   </span>
   
 
@@ -948,7 +948,7 @@
         
   
   <span class="md-ellipsis">
-    SOAP / SOA
+    SOAP
   </span>
   
 
@@ -1411,17 +1411,15 @@
 <h1 id="ood-object-oriented-design">OOD - Object Oriented Design</h1>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox" disabled checked/> <a href="https://www.poodr.com/">Sandi Metz - Practical Object Oriented Design in Ruby</a> (200/241)</li>
-<li><a href="/pages/patterns-pattern-languages">Patterns</a></li>
+<li><a href="../patterns-pattern-languages/">Patterns</a></li>
 <li>The purpose of OOD is to reduce the cost of change.</li>
 </ul>
 <h2 id="designing-classes-with-a-single-responsibility">Designing Classes with a Single Responsibility</h2>
-<p>Code should be:</p>
-<ol>
-<li>transparent</li>
-<li>reasonable</li>
-<li>usable</li>
-<li>exemplary</li>
-</ol>
+<p>Code should be:
+1. transparent
+2. reasonable
+3. usable
+4. exemplary</p>
 <h2 id="interfaces-public-vs-private">Interfaces - public vs private</h2>
 <ul>
 <li>public interfaces (methods) should be small, and few methods of others should depend on them</li>
@@ -1459,14 +1457,14 @@
 <li>have names that don't change</li>
 <li>take a hash as options parameter</li>
 </ul>
-<h2 id="managing-dependencies"><a href="/pages/ood-managing-dependencies">Managing Dependencies</a></h2>
+<h2 id="managing-dependencies"><a href="../ood-managing-dependencies/">Managing Dependencies</a></h2>
 <h2 id="creating-flexible-interfaces">Creating Flexible interfaces</h2>
 <ul>
-<li>use <a href="/pages/uml-unified-modeling-language-c4">UML</a> sequence diagrams to illustrate passing messages</li>
+<li>use <a href="./uml-unified-modeling-language-c4.md">UML</a> sequence diagrams to illustrate passing messages</li>
 </ul>
 <h2 id="tests">Tests</h2>
 <ul>
-<li>see: <a href="/pages/ood-designing-cost-effective-tests">Designing Cost Effective Tests</a></li>
+<li>see: <a href="../ood-designing-cost-effective-tests/">Designing Cost Effective Tests</a></li>
 <li>Test public interfaces only</li>
 <li>Tests serve as documentation</li>
 </ul>
@@ -1491,7 +1489,7 @@ Rails adds a leading "_" to the beginning of private methods: ._fun_factor</p>
 <li>NO: <code>customer.bicycle.wheel.rotate</code></li>
 <li>YES: <code>customer.ride</code></li>
 </ul>
-<h2 id="duck-type"><a href="/pages/duck-type">Duck type</a></h2>
+<h2 id="duck-type"><a href="../duck-type/">Duck type</a></h2>
 <h2 id="antipattern">Antipattern</h2>
 <ul>
 <li>antipattern: a common pattern that appears to be beneficial but is actually detrimental, <em>and for which there is a well known alternative</em>.</li>
@@ -1499,14 +1497,14 @@ Rails adds a leading "_" to the beginning of private methods: ._fun_factor</p>
 <h2 id="polymorphism">Polymorphism</h2>
 <ul>
 <li>morph (form), morphism (the state of having a form), polymorphism (state of having many forms)</li>
-<li>polymorphism in OOP is the ability of many different objects to respond to the same message (<a href="/pages/duck-type">duck typing</a>, <a href="/pages/ood-roles-modules">inheritance via module, roles</a> in Ruby)</li>
+<li>polymorphism in OOP is the ability of many different objects to respond to the same message (<a href="../duck-type/">duck typing</a>, <a href="../ood-roles-modules/">inheritance via module, roles</a> in Ruby)</li>
 <li>senders do not care about the class of the receiver; receivers supply their own different versions of the behavior</li>
 <li>a single message has many (poly) forms (morphs)</li>
 <li>polymorphic methods are interchangeable from the senders point of view; objects implementing polymorphic methods can be substituted for one another</li>
 </ul>
-<h2 id="inheritance"><a href="/pages/ood-inheritance">Inheritance</a></h2>
-<h2 id="sharing-role-behavior-with-modules"><a href="/pages/ood-roles-modules">Sharing Role Behavior with Modules</a></h2>
-<h2 id="combining-objects-with-composition"><a href="/pages/ood-composition">Combining Objects With Composition</a></h2>
+<h2 id="inheritance"><a href="../ood-inheritance/">Inheritance</a></h2>
+<h2 id="sharing-role-behavior-with-modules"><a href="../ood-roles-modules/">Sharing Role Behavior with Modules</a></h2>
+<h2 id="combining-objects-with-composition"><a href="../ood-composition/">Combining Objects With Composition</a></h2>
 <h2 id="deciding-between-inheritance-and-composition">Deciding Between Inheritance and Composition</h2>
 <ol>
 <li>Classical inheritance is a <em>code arrangement technique</em></li>
@@ -1526,28 +1524,28 @@ such that automatic delegation of messages invokes the correct behavior.</li>
 - composition contains far fewer built-in dependencies than inheritance; often the better choice
 - inheritance is sometimes the better choice when it offers high reward and low risk</p>
 <ul>
-<li><a href="/pages/ood-inheritance#accepting-the-consequences-of-inheritance">Inheritance: Pros and Cons</a></li>
-<li><a href="/pages/ood-composition#accepting-the-consequences-of-composition">Composition: Pros and Cons</a></li>
+<li><a href="../ood-inheritance/#accepting-the-consequences-of-inheritance">Inheritance: Pros and Cons</a></li>
+<li><a href="../ood-composition/#accepting-the-consequences-of-composition">Composition: Pros and Cons</a></li>
 </ul>
 <h2 id="choosing-relationships">Choosing Relationships</h2>
 <p>These all solve different problems:
-- <a href="/pages/ood-inheritance">Classical Inheritance</a>
-- <a href="/pages/ood-roles-modules">Roles and Modules</a>
-- <a href="/pages/ood-composition">Composition</a></p>
+- <a href="../ood-inheritance/">Classical Inheritance</a>
+- <a href="../ood-roles-modules/">Roles and Modules</a>
+- <a href="../ood-composition/">Composition</a></p>
 <p>Tips on which one to choose:
 - "Inheritance is specialization."
 - "Inheritance is best suited for adding functionallity to existing classes
 when you use the most of the old code and add relatively small amounts of new code."
 - Use composition when behavior is more than the sum of its parts."</p>
 <ol>
-<li><a href="/pages/ood-inheritance#use-inheritance-for-is-a-relationships">Use Inheritance for is-a Relationships</a></li>
-<li><a href="/pages/ood-roles-modules#use-duck-types-for-behaves-like-a-relationships">Use Duck Types for behaves-like-a Relationships</a></li>
-<li><a href="/pages/ood-composition#use-composition-for-has-a-relationships">Use Composition for has-a Relationships</a></li>
+<li><a href="../ood-inheritance/#use-inheritance-for-is-a-relationships">Use Inheritance for is-a Relationships</a></li>
+<li><a href="../ood-roles-modules/#use-duck-types-for-behaves-like-a-relationships">Use Duck Types for behaves-like-a Relationships</a></li>
+<li><a href="../ood-composition/#use-composition-for-has-a-relationships">Use Composition for has-a Relationships</a></li>
 </ol>
 <p>The <em>is-a</em> versus <em>has-a</em> distinction is the core of deciding between inheritance and composition.
 The more parts an object has, the more likely it should be modeled as a <em>composition</em>.
 If you drill down into individual parts and find specialized varieties of parts, the more likely it is <em>inheritance</em>.</p>
-<h2 id="desigining-cost-effective-tests"><a href="/pages/ood-designing-cost-effective-tests">Desigining Cost Effective Tests</a></h2>
+<h2 id="desigining-cost-effective-tests"><a href="../ood-designing-cost-effective-tests/">Desigining Cost Effective Tests</a></h2>
 
 
 

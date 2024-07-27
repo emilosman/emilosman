@@ -708,7 +708,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Composition
+    Composition
   </span>
   
 
@@ -771,7 +771,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Managing Dependencies
+    Managing Dependencies
   </span>
   
 
@@ -813,7 +813,7 @@
         
   
   <span class="md-ellipsis">
-    OOD - Roles and Modules
+    Roles and Modules
   </span>
   
 
@@ -834,7 +834,7 @@
         
   
   <span class="md-ellipsis">
-    OOP - Object Oriented Programming
+    OOP Object Oriented Programming
   </span>
   
 
@@ -876,7 +876,7 @@
         
   
   <span class="md-ellipsis">
-    SOAP / SOA
+    SOAP
   </span>
   
 
@@ -1278,24 +1278,22 @@
 <ul>
 <li>monoliths have no fault isolation - because all modules are running within the same process.
 Every so often, a bug in one module — for example, a memory leak — crashes all instances of the application, one by one.</li>
-<li><a href="/pages/functional-non-functional-requirements">functional / non-functional requirements</a></li>
+<li><a href="../functional-non-functional-requirements/">functional / non-functional requirements</a></li>
 </ul>
 <h2 id="scale-cube">Scale Cube</h2>
-<p>The scale cube defines three separate ways to scale an application:</p>
-<ul>
-<li>X-axis scaling load balances requests across multiple, identical instances</li>
-<li>horizontal scaling, duplication, scale by cloning</li>
-<li>run multiple instances behind a load balancer</li>
-<li>N identical instances of an application</li>
-<li>Y-axis functionally decomposes an application into services.</li>
-<li>this is microservices architecture</li>
-<li>scale by splitting things that are different, by function</li>
-<li>each service can then be scaled on X-axis again</li>
-<li>Z-axis scaling routes requests based on an attribute of the request</li>
-<li>data partitioning</li>
-<li>each application instance is responsible for a subset of users.</li>
-<li>scale by splitting similar things, such as by customer ID</li>
-</ul>
+<p>The scale cube defines three separate ways to scale an application:
+- X-axis scaling load balances requests across multiple, identical instances
+  - horizontal scaling, duplication, scale by cloning
+  - run multiple instances behind a load balancer
+  - N identical instances of an application
+- Y-axis functionally decomposes an application into services.
+  - this is microservices architecture
+  - scale by splitting things that are different, by function
+  - each service can then be scaled on X-axis again
+- Z-axis scaling routes requests based on an attribute of the request
+  - data partitioning
+  - each application instance is responsible for a subset of users.
+  - scale by splitting similar things, such as by customer ID</p>
 <h2 id="microservices-as-a-form-of-modularity">Microservices as a form of modularity</h2>
 <ul>
 <li>A service has an API, which is an impermeable boundary that is difficult to violate. You can’t bypass the API and access an internal class</li>
@@ -1310,7 +1308,7 @@ Every so often, a bug in one module — for example, a memory leak — crashes a
 <li>This doesn't mean that each service has to have its own database server!</li>
 <li><a href="https://microservices.io/patterns/data/database-per-service.html">Pattern: Database per service</a></li>
 </ul>
-<h2 id="microservices-vs-soa"><a href="/pages/soap-soa#soa---service-oriented-architecture">Microservices vs SOA</a></h2>
+<h2 id="microservices-vs-soa"><a href="../soap-soa/#soa---service-oriented-architecture">Microservices vs SOA</a></h2>
 <h2 id="benefits-of-microservice-architecture">Benefits of microservice architecture</h2>
 <ul>
 <li>It enables the continuous delivery and deployment of large, complex applications.</li>
@@ -1331,7 +1329,7 @@ Every so often, a bug in one module — for example, a memory leak — crashes a
 <li><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs">CQRS pattern</a>
 CQRS stands for <em>Command and Query Responsibility Segregation</em>, a pattern that separates read and update operations for a data store. Implementing CQRS in your application can maximize its performance, scalability, and security.</li>
 </ul>
-<h2 id="patterns-and-pattern-languages"><a href="/pages/patterns-pattern-languages">Patterns and Pattern languages</a></h2>
+<h2 id="patterns-and-pattern-languages"><a href="../patterns-pattern-languages/">Patterns and Pattern languages</a></h2>
 <h2 id="warning-distributed-monolith">Warning: distributed monolith</h2>
 <p>If you decompose a system incorrectly, you risk building a distributed monolith, a system consisting of coupled services that must be deployed together. This has the drawbacks of both monoliths and microservices.</p>
 <h2 id="dapr-distributed-application-runtime">Dapr - Distributed Application Runtime</h2>
