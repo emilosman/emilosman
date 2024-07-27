@@ -1,9 +1,9 @@
 # OOD - Designing Cost Effective Tests
-- see: [TDD - Test Driven Development](/pages/tdd-test-driven-development.md)
-- see: [BDD - Behavior Driven Development](/pages/bdd-behavior-driven-development.md)
+- see: [TDD - Test Driven Development](./tdd-test-driven-development.md)
+- see: [BDD - Behavior Driven Development](./bdd-behavior-driven-development.md)
 
 ## Refactoring
-- [Martin Fowler - Refactoring: Improving the Design of Existing Code](/pages/refactoring.md#martin-fowler---refactoring-improving-the-design-of-existing-code)
+- [Martin Fowler - Refactoring: Improving the Design of Existing Code](./refactoring.md#martin-fowler---refactoring-improving-the-design-of-existing-code)
 
 The art of changeable code requires the ability to write high-value tests.
 Tests give confidence to refactor code constantly.
@@ -117,8 +117,8 @@ Popular testing frameworks:
 - [RSpec](https://rspec.info/)
 
 Testing philosophies:
-- [TDD - Test Driven Development](/pages/tdd-test-driven-development.md) "inside-out"
-- [BDD - Behavior Driven Development](/pages/bdd-behavior-driven-development.md) "outside-in"
+- [TDD - Test Driven Development](./tdd-test-driven-development.md) "inside-out"
+- [BDD - Behavior Driven Development](./bdd-behavior-driven-development.md) "outside-in"
 
 ## Deleting Unused Interfaces
 - Incoming messages ought to have dependents.
@@ -128,9 +128,9 @@ Testing philosophies:
 ## Proving the Public Interface / Unit Test Example
 - Incoming messages are tested by making assertions about their value, their state, that invocation returns.
 - The first requirement for testing an incoming message is to prove that it returns the correct value every possible time.
-- see: [Unit Testing](/pages/unit-testing.md)
+- see: [Unit Testing](./unit-testing.md)
 
-A test of `Wheel.diameter` method from [Managing Dependencies](/pages/ood-managing-dependencies.md):
+A test of `Wheel.diameter` method from [Managing Dependencies](./ood-managing-dependencies.md):
 
 ```ruby
 class WheelTest < MiniTest::Unit::TestCase
@@ -157,7 +157,7 @@ Refactoring for Dependency Injection (DI) leads to decoupling, making it easier 
 Test should use the same collaborating objects as the code in the application. Test will break when they should!
 
 ## Creating Test Doubles
-- part of: [BDD](/pages/bdd-behavior-driven-development.md)
+- part of: [BDD](./bdd-behavior-driven-development.md)
 
 A fake object is a _test double_.
 A test double is a stylized instance of a role player that is used exclusively for testing.
@@ -188,7 +188,7 @@ end
 ```
 
 - __WARNING:__ Stubbing and mocking makes for brittle tests that pass even when the application is obviously broken.
-- DiameterDouble is not a [mock](/pages/tdd-test-driven-development.md#mocks--mocking)!
+- DiameterDouble is not a [mock](./tdd-test-driven-development.md#mocks--mocking)!
 
 ## Using Tests to Document Roles
 - Forgetting what roles _doubles_ play in test is inevitable.

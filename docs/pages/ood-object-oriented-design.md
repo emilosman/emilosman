@@ -1,6 +1,6 @@
 # OOD - Object Oriented Design
 - [x] [Sandi Metz - Practical Object Oriented Design in Ruby](https://www.poodr.com/) (200/241)
-- [Patterns](/pages/patterns-pattern-languages.md)
+- [Patterns](./patterns-pattern-languages.md)
 - The purpose of OOD is to reduce the cost of change.
 
 ## Designing Classes with a Single Responsibility
@@ -41,13 +41,13 @@ Code should be:
 - have names that don't change
 - take a hash as options parameter
 
-## [Managing Dependencies](/pages/ood-managing-dependencies.md)
+## [Managing Dependencies](./ood-managing-dependencies.md)
 
 ## Creating Flexible interfaces
-- use [UML](/pages/uml-unified-modeling-language-c4.md) sequence diagrams to illustrate passing messages
+- use [UML](./uml-unified-modeling-language-c4.md) sequence diagrams to illustrate passing messages
 
 ## Tests
-- see: [Designing Cost Effective Tests](/pages/ood-designing-cost-effective-tests.md)
+- see: [Designing Cost Effective Tests](./ood-designing-cost-effective-tests.md)
 - Test public interfaces only
 - Tests serve as documentation
 
@@ -71,23 +71,23 @@ Rails adds a leading "_" to the beginning of private methods: ._fun_factor
 - NO: `customer.bicycle.wheel.rotate`
 - YES: `customer.ride`
 
-## [Duck type](/pages/duck-type.md)
+## [Duck type](./duck-type.md)
 
 ## Antipattern
 - antipattern: a common pattern that appears to be beneficial but is actually detrimental, _and for which there is a well known alternative_.
 
 ## Polymorphism
 - morph (form), morphism (the state of having a form), polymorphism (state of having many forms)
-- polymorphism in OOP is the ability of many different objects to respond to the same message ([duck typing](/pages/duck-type.md), [inheritance via module, roles](/pages/ood-roles-modules.md) in Ruby)
+- polymorphism in OOP is the ability of many different objects to respond to the same message ([duck typing](./duck-type.md), [inheritance via module, roles](./ood-roles-modules.md) in Ruby)
 - senders do not care about the class of the receiver; receivers supply their own different versions of the behavior
 - a single message has many (poly) forms (morphs)
 - polymorphic methods are interchangeable from the senders point of view; objects implementing polymorphic methods can be substituted for one another
 
-## [Inheritance](/pages/ood-inheritance.md)
+## [Inheritance](./ood-inheritance.md)
 
-## [Sharing Role Behavior with Modules](/pages/ood-roles-modules.md)
+## [Sharing Role Behavior with Modules](./ood-roles-modules.md)
 
-## [Combining Objects With Composition](/pages/ood-composition.md)
+## [Combining Objects With Composition](./ood-composition.md)
 
 ## Deciding Between Inheritance and Composition
 1. Classical inheritance is a _code arrangement technique_
@@ -104,14 +104,14 @@ When to use which?
 - composition contains far fewer built-in dependencies than inheritance; often the better choice
 - inheritance is sometimes the better choice when it offers high reward and low risk
 
-- [Inheritance: Pros and Cons](/pages/ood-inheritance.md#accepting-the-consequences-of-inheritance)
-- [Composition: Pros and Cons](/pages/ood-composition.md#accepting-the-consequences-of-composition)
+- [Inheritance: Pros and Cons](./ood-inheritance.md#accepting-the-consequences-of-inheritance)
+- [Composition: Pros and Cons](./ood-composition.md#accepting-the-consequences-of-composition)
 
 ## Choosing Relationships
 These all solve different problems:
-- [Classical Inheritance](/pages/ood-inheritance.md)
-- [Roles and Modules](/pages/ood-roles-modules.md)
-- [Composition](/pages/ood-composition.md)
+- [Classical Inheritance](./ood-inheritance.md)
+- [Roles and Modules](./ood-roles-modules.md)
+- [Composition](./ood-composition.md)
 
 Tips on which one to choose:
 - "Inheritance is specialization."
@@ -119,12 +119,12 @@ Tips on which one to choose:
 when you use the most of the old code and add relatively small amounts of new code."
 - Use composition when behavior is more than the sum of its parts."
 
-1. [Use Inheritance for is-a Relationships](/pages/ood-inheritance.md#use-inheritance-for-is-a-relationships)
-2. [Use Duck Types for behaves-like-a Relationships](/pages/ood-roles-modules.md#use-duck-types-for-behaves-like-a-relationships)
-3. [Use Composition for has-a Relationships](/pages/ood-composition.md#use-composition-for-has-a-relationships)
+1. [Use Inheritance for is-a Relationships](./ood-inheritance.md#use-inheritance-for-is-a-relationships)
+2. [Use Duck Types for behaves-like-a Relationships](./ood-roles-modules.md#use-duck-types-for-behaves-like-a-relationships)
+3. [Use Composition for has-a Relationships](./ood-composition.md#use-composition-for-has-a-relationships)
 
 The _is-a_ versus _has-a_ distinction is the core of deciding between inheritance and composition.
 The more parts an object has, the more likely it should be modeled as a _composition_.
 If you drill down into individual parts and find specialized varieties of parts, the more likely it is _inheritance_.
 
-## [Desigining Cost Effective Tests](/pages/ood-designing-cost-effective-tests.md)
+## [Desigining Cost Effective Tests](./ood-designing-cost-effective-tests.md)

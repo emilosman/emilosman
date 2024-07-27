@@ -9,7 +9,7 @@
 ## Living in Monolithic Hell
 - monoliths have no fault isolation - because all modules are running within the same process.
 Every so often, a bug in one module — for example, a memory leak — crashes all instances of the application, one by one.
-- [functional / non-functional requirements](/pages/functional-non-functional-requirements.md)
+- [functional / non-functional requirements](./functional-non-functional-requirements.md)
 
 ## Scale Cube
 The scale cube defines three separate ways to scale an application:
@@ -57,7 +57,7 @@ The scale cube defines three separate ways to scale an application:
 - [CQRS pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs)
 CQRS stands for _Command and Query Responsibility Segregation_, a pattern that separates read and update operations for a data store. Implementing CQRS in your application can maximize its performance, scalability, and security.
 
-## [Patterns and Pattern languages](/pages/patterns-pattern-languages.md)
+## [Patterns and Pattern languages](./patterns-pattern-languages.md)
 
 ## Warning: distributed monolith
 If you decompose a system incorrectly, you risk building a distributed monolith, a system consisting of coupled services that must be deployed together. This has the drawbacks of both monoliths and microservices.

@@ -1,5 +1,5 @@
 # Software Architecture
-- see: [Functional / Non-functional Requirements in Software Architecture](/pages/functional-non-functional-requirements.md)
+- see: [Functional / Non-functional Requirements in Software Architecture](./functional-non-functional-requirements.md)
 - [Martin Fowler - Architecture](https://martinfowler.com/architecture/)
 
 ## Len Bass

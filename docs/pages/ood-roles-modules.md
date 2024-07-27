@@ -1,21 +1,21 @@
 # Roles and Modules
-- part of [OOD](/pages/ood-object-oriented-design.md#combining-objects-with-composition)
-- see: [Composition](/pages/ood-composition.md)
-- see: [Duck Types](/pages/duck-type.md)
+- part of [OOD](./ood-object-oriented-design.md#combining-objects-with-composition)
+- see: [Composition](./ood-composition.md)
+- see: [Duck Types](./duck-type.md)
 
 When objects that play a common role need to share behavior, they do so via a Ruby module.
 The code defined in a module can be added to any object, be it an instance of a class, the class itself, or another module.
 
 When a class includes a module, the methods in that module get put into the same lookup path as methods acquired via inheritance.
 
-Modules should use the [Template Method](/pages/ood-inheritance.md#template-method-pattern) pattern to invite those that include them
-to supply specializations and should implement [hook methods](/pages/ood-inheritance.md#decoupling-subclasses-using-hook-messages)
+Modules should use the [Template Method](./ood-inheritance.md#template-method-pattern) pattern to invite those that include them
+to supply specializations and should implement [hook methods](./ood-inheritance.md#decoupling-subclasses-using-hook-messages)
 to avoid includers to send `super` (and thus know the algorithm).
 
-When an object acquires behaviour through [classical inheritance](/pages/ood-inheritance.md#subclass-and-superclass)
+When an object acquires behaviour through [classical inheritance](./ood-inheritance.md#subclass-and-superclass)
 or an included module, it makes a commitment to honoring an implied contract.
 
-This contract is defined by [Liskov Substitution Principle](/pages/solid.md#l---liskov-substitution-principle)
+This contract is defined by [Liskov Substitution Principle](./solid.md#l---liskov-substitution-principle)
 which in mathematical terms says that a subtype should be substitutable for its supertype.
 In Ruby terms this means that an object should act like what it claims to be.
 
@@ -32,7 +32,7 @@ In Ruby terms this means that an object should act like what it claims to be.
 - Roles also create dependencies and this introduces risk.
 
 ## Finding Roles
-- Example: [`Preparer` duck type is a role](/pages/duck-type.md#example-of-duck-type-preparer)
+- Example: [`Preparer` duck type is a role](./duck-type.md#example-of-duck-type-preparer)
 
 Objects that implement `Preparer`s interface play the _role_ of `Preparer`: Mechanic, TripCoordinator...
 Because they each implement `prepare_trip`, other objects can interact with them _as if_ they were a `Preparer`.
@@ -121,7 +121,7 @@ There are two ways to recognize the existance of a role:
 1. "Although an object plays it, the role is not the object's main responsibility"
 - Example: [A bicycle behaves-like-a schedulable, but is-a bicycle](#finding-roles)
 2. "When many otherwise unrelated objects share a desire to play the same role"
-- Example: [Mechanic, TripCoordinator, Driver...](/pages/duck-type.md#example-of-duck-type-preparer)
+- Example: [Mechanic, TripCoordinator, Driver...](./duck-type.md#example-of-duck-type-preparer)
 
 Think of roles from the outside: from the point of view of a _holder of a role_, rather than the _player_ of a role.
 The holder of `schedulable` expects it to implement `Scheduleable`'s interface and to honor `Schedulable`'s contract.

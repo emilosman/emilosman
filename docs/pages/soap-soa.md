@@ -1,5 +1,5 @@
 # SOAP
-- [not SOPS!](/pages/sops.md)
+- [not SOPS!](./sops.md)
 
 ## [SOAP (Simple Object Access Protocol)](https://www.techtarget.com/searchapparchitecture/definition/SOAP-Simple-Object-Access-Protocol)
 

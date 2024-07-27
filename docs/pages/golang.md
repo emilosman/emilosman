@@ -41,7 +41,7 @@ go mod init github.com/emilosman/exo-cli
 - go get github.com/nsf/termbox-go@none
 
 ## rwxrob
-- [go](/pages/rwxrob.md#go)
+- [go](./rwxrob.md#go)
 - [Develop enterprise software in Go](https://skilstak.io/boost/go/)
 - [Where should I learn Go?](https://www.youtube.com/watch?v=zRxa224BG80)
 - [2023 Learn Go | Week 1](https://www.youtube.com/watch?v=rfspYuA-0EY)

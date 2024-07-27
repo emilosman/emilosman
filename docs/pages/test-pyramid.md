@@ -14,12 +14,12 @@ This increases speed of delivery and reduces cost.
 The shortened feedback loop of automated testing goes hand in hand with Agile, Continuous Delivery and DevOps culture.
 
 ## The Importance of Test Automation
-- see: [DevOps](/pages/devops.md)
-- see: [CI/CD](/pages/ci-cd.md)
+- see: [DevOps](./devops.md)
+- see: [CI/CD](./ci-cd.md)
 
 As the amount and sophistication of software grows, software must be delivered faster, without sacrificing quality.
 
-[Continuous Delivery](/pages/ci-cd.md#continuous-delivery) allows you to deliver software to production at any time.
+[Continuous Delivery](./ci-cd.md#continuous-delivery) allows you to deliver software to production at any time.
 CD uses a __build pipline__ to automatically test software and deploy it to _testing_ and _production_ environments.
 
 Doing all of this manually is impossible, as it requires manual repetative work.
@@ -50,7 +50,7 @@ Rules of the test pyramid:
 - the more high-level you get the fewer tests you should have
 
 ## Unit Test
-The foundation of your test suite is made up of [unit tests](/pages/unit-testing.md).
+The foundation of your test suite is made up of [unit tests](./unit-testing.md).
 A unit test makes sure that a certain unit (subject under test) of your codebase functions as intended.
 Unit tests have the narrowest scope of all the tests in your test suite.
 The number of unit tests will largely outnumber any other type of test.
@@ -59,7 +59,7 @@ In functional programming a unit will most likely be a single function.
 In OOP it can range from a single method to an entire class.
 
 ## Sociable and Solitary Unit Tests
-- see: [Mocks / Mocking](/pages/tdd-test-driven-development.md#mocks--mocking)
+- see: [Mocks / Mocking](./tdd-test-driven-development.md#mocks--mocking)
 - coined by: [Jay Fields - Working Effectively with Unit Tests](https://leanpub.com/wewut)
 
 Some argue that all collaborators (e.g. other classes that are called by your class under test)
@@ -73,9 +73,9 @@ Others argue that only collaborators that are slow or have bigger side-effects
 - __sociable unit tests__: tests that allow talking to real collaborators
 
 ## Mocking and Stubbing
-- see: TDD [Mocks / Mocking](/pages/tdd-test-driven-development.md#mocks--mocking)
+- see: TDD [Mocks / Mocking](./tdd-test-driven-development.md#mocks--mocking)
 
-_Mocks_ and _Stubs_ are two different kinds of [Test Doubles](/pages/bdd-behavior-driven-development.md#doubles--stubs--stubbing).
+_Mocks_ and _Stubs_ are two different kinds of [Test Doubles](./bdd-behavior-driven-development.md#doubles--stubs--stubbing).
 Doubles are used to replace objects used in production with an implementation that helps testing.
 
 Doubles replace real classes and modules with objects that answer the same method calls,
@@ -86,16 +86,16 @@ entire parts of a system in a controlled way.
 They are frequently encountered in unit testing, as testing frameworks make creating them easy.
 
 ## Testing Private Methods
-- see: [OOD: Ignoring Private Methods During Tests](/pages/ood-designing-cost-effective-tests.md#ignoring-private-methods-during-tests)
+- see: [OOD: Ignoring Private Methods During Tests](./ood-designing-cost-effective-tests.md#ignoring-private-methods-during-tests)
 
 You shouldn't test private methods!
 They are indicative of a design problem, rather than a scoping problem.
-Classes that are too complex violate the [Single Responsibility Principle](/pages/solid.md#s---single-responsiblity-principle), the S from [SOLID](/pages/solid.md).
+Classes that are too complex violate the [Single Responsibility Principle](./solid.md#s---single-responsiblity-principle), the S from [SOLID](./solid.md).
 
 The solution is to split the class and move the private method you wish to test to the public interface of a new class.
 
 ## What to Test?
-- see: [OOD: Knowing What to Test](/pages/ood-designing-cost-effective-tests.md#knowing-what-to-test)
+- see: [OOD: Knowing What to Test](./ood-designing-cost-effective-tests.md#knowing-what-to-test)
 
 Rules:
 - One test class per production class.
@@ -106,14 +106,14 @@ Rules:
 2. Call methods under test
 3. Assert that the expected results are returned
 
-Other mnemonics to remember, taken from [BDD - Behavior Driven Development](/pages/bdd-behavior-driven-development.md):
+Other mnemonics to remember, taken from [BDD - Behavior Driven Development](./bdd-behavior-driven-development.md):
 - "Arrange, Act, Assert"
 - "Given, When, Then"
 
 This pattern can be applied to high-level tests as well, not only to unit tests.
 
 ## Implementing a Unit Test
-- see: [Unit Test](/pages/unit-testing.md)
+- see: [Unit Test](./unit-testing.md)
 
 ## Integration Tests
 All non-trivial applications integrate with databases, filesystems, network calls to applications, etc.
@@ -157,10 +157,10 @@ to ensure that the fake in our integration tests is a faithful test double.
 ## Contract Tests
 _Contracts_ clearly specify the interface of services you integrate with.
 
-[Microservices architecture](/pages/microservice-architecture.md) requires you to interact with many
+[Microservices architecture](./microservice-architecture.md) requires you to interact with many
 different services using APIs, commonly using one of the following:
 - REST and JSON via HTTPS
-- [RPC -Remote Procedure Call](/pages/rpc-remote-procedure-call.md) using something like gRPC
+- [RPC -Remote Procedure Call](./rpc-remote-procedure-call.md) using something like gRPC
 - event-driven architecture using queues
 
 Here, a _consumer_ and a _provider_ communicate via API.
@@ -202,7 +202,7 @@ The more complex the UI, the harder it is to test.
 Quirks in browsers exacerbate these problems.
 
 Microservices also raise the question of who is responsible for writing these tests.
-See: [Centralised QA Team As Antipattern](/pages/qa.md#centralised-qa-team-as-antipattern)
+See: [Centralised QA Team As Antipattern](./qa.md#centralised-qa-team-as-antipattern)
 
 End-To-End tests requier a lot of maintenance and run slow.
 
@@ -219,7 +219,7 @@ These are called [Subcutaneous  Tests](https://martinfowler.com/bliki/Subcutaneo
 Tests that make sure things work from a user's perspective are called
 __functional test__ or __acceptance tests__.
 
-This falls under [BDD - Behavior Driven Development](/pages/bdd-behavior-driven-development.md), where you can use tools like
+This falls under [BDD - Behavior Driven Development](./bdd-behavior-driven-development.md), where you can use tools like
 [Cucumber](https://cucumber.io/)
 
 ## Exploratory Testing
@@ -235,7 +235,7 @@ Exploratory Testing emphasises the tester's freedom to dick around and find bugs
 The bugs you find through exploratory testing can be later covered with automated tests.
 
 ## Putting Tests Into a Deployment Pipeline
-Tests should run in [Deployment Pipelines](/pages/ci-cd.md#deployment-pipeline), as part of [CI/CD](/pages/ci-cd.md).
+Tests should run in [Deployment Pipelines](./ci-cd.md#deployment-pipeline), as part of [CI/CD](./ci-cd.md).
 These pipelines are split into several stages that ensure software is ready to be deployed to production.
 
 Tests should be placed in the deployment pipeline

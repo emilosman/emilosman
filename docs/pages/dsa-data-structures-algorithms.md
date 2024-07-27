@@ -1,8 +1,8 @@
 # DSA - Data Structures and Algorithms
-- [Algorithms](/pages/algorithms.md)
+- [Algorithms](./algorithms.md)
 
 ## Resources
-- [geeks4geeks](/pages/geeksforgeeks-geeks4geeks.md)
+- [geeks4geeks](./geeksforgeeks-geeks4geeks.md)
 - [ChatGPT discussion](https://chatgpt.com/c/ae84afad-0c77-4502-8c76-5132ad8b3367)
 - [Coding Interview University- Data Structures](https://github.com/jwasham/coding-interview-university?tab=readme-ov-file#data-structures)
 
@@ -17,14 +17,14 @@
 - Makes accessing and looping over them much easier
 
 ## Types
-- [Array](/pages/dsa-array.md)
-- [Linked List (Dynamic Array)](/pages/dsa-linked-list.md)
-- [Stack](/pages/dsa-stack.md)
-- [Queue](/pages/dsa-queue.md)
-- [Set](/pages/dsa-set.md)
-- [Collection](/pages/dsa-collection.md)
-- [Hash](/pages/dsa-hash.md)
-- [Graph](/pages/dsa-graph.md)
+- [Array](./dsa-array.md)
+- [Linked List (Dynamic Array)](./dsa-linked-list.md)
+- [Stack](./dsa-stack.md)
+- [Queue](./dsa-queue.md)
+- [Set](./dsa-set.md)
+- [Collection](./dsa-collection.md)
+- [Hash](./dsa-hash.md)
+- [Graph](./dsa-graph.md)
 
 ## Classes
 ```python

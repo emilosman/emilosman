@@ -20,4 +20,4 @@ Subdomains can be classified as follows:
 - [wiki](https://en.wikipedia.org/wiki/Anemic_domain_model)
 - [Martin Fowler - Anemic Domain Model](https://www.martinfowler.com/bliki/AnemicDomainModel.html)
 
-The anemic domain model is described as a programming [antipattern](/pages/ood-object-oriented-design.md#antipattern) where the domain objects contain little or no business logic like validations, calculations, rules, and so forth. The business logic is thus baked into the architecture of the program itself, making refactoring and maintenance more difficult and time-consuming. 
+The anemic domain model is described as a programming [antipattern](./ood-object-oriented-design.md#antipattern) where the domain objects contain little or no business logic like validations, calculations, rules, and so forth. The business logic is thus baked into the architecture of the program itself, making refactoring and maintenance more difficult and time-consuming. 

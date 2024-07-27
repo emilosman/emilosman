@@ -33,7 +33,7 @@
   - Worst case: O(n^2) when the list is sorted in reverse order.
   - Efficient for small or nearly sorted lists, but inefficient for large unsorted lists.
 
-## [Merge Sort](/pages/merge-sort.md)
+## [Merge Sort](./merge-sort.md)
 - A divide-and-conquer sorting algorithm that breaks the problem into smaller subproblems and solves them recursively.
 - Starts by splitting the array into halves recursively until each subarray consists of single elements.
 - Merges pairs of subarrays by comparing elements and placing them in sorted order.
