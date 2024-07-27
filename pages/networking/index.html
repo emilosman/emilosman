@@ -8,25 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://emilosman.com/study-notes/">
+        <link rel="canonical" href="https://emilosman.com/pages/networking/">
       
       
-        <link rel="prev" href="../personal-projects/">
+        <link rel="prev" href="../microservice-architecture/">
       
       
-        <link rel="next" href="../pages/algorithms/">
+        <link rel="next" href="../ood-composition/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
     
     
       
-        <title>Study Notes - Emil Oszmánbegovity</title>
+        <title>Networking - Emil Oszmánbegovity</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
       
 
@@ -47,7 +47,7 @@
     
       <link rel="stylesheet" href="/css/style.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#study-notes" class="md-skip">
+        <a href="#networking" class="md-skip">
           Skip to content
         </a>
       
@@ -82,7 +82,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Emil Oszmánbegovity" class="md-header__button md-logo" aria-label="Emil Oszmánbegovity" data-md-component="logo">
+    <a href="../.." title="Emil Oszmánbegovity" class="md-header__button md-logo" aria-label="Emil Oszmánbegovity" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Study Notes
+              Networking
             
           </span>
         </div>
@@ -189,7 +189,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Emil Oszmánbegovity" class="md-nav__button md-logo" aria-label="Emil Oszmánbegovity" data-md-component="logo">
+    <a href="../.." title="Emil Oszmánbegovity" class="md-nav__button md-logo" aria-label="Emil Oszmánbegovity" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -219,7 +219,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -239,7 +239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../personal-projects/" class="md-nav__link">
+      <a href="../../personal-projects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -256,19 +256,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../study-notes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -277,7 +268,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -286,17 +276,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -310,7 +302,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Pages
@@ -324,7 +316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/algorithms/" class="md-nav__link">
+      <a href="../algorithms/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -345,7 +337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/bdd-behavior-driven-development/" class="md-nav__link">
+      <a href="../bdd-behavior-driven-development/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -366,7 +358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/big-o-notation/" class="md-nav__link">
+      <a href="../big-o-notation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -387,7 +379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/ddd-domain-driven-design/" class="md-nav__link">
+      <a href="../ddd-domain-driven-design/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -408,7 +400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/di-dependency-injection/" class="md-nav__link">
+      <a href="../di-dependency-injection/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -429,7 +421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/dsa-data-structures-algorithms/" class="md-nav__link">
+      <a href="../dsa-data-structures-algorithms/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -450,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/duck-type/" class="md-nav__link">
+      <a href="../duck-type/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -471,7 +463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/functional-non-functional-requirements/" class="md-nav__link">
+      <a href="../functional-non-functional-requirements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -492,7 +484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/golang/" class="md-nav__link">
+      <a href="../golang/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -513,7 +505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/microservice-architecture/" class="md-nav__link">
+      <a href="../microservice-architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -531,10 +523,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../pages/networking/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Networking
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -543,6 +555,89 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#computer-networking-a-top-down-approach-jim-kurose-keith-ross" class="md-nav__link">
+    <span class="md-ellipsis">
+      Computer Networking: A Top-Down Approach - Jim Kurose &amp; Keith Ross
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pfsense" class="md-nav__link">
+    <span class="md-ellipsis">
+      pfSense
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Azure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#internets-5-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Internet's 5 layers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Terminology
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-edge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Edge
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -555,7 +650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/ood-composition/" class="md-nav__link">
+      <a href="../ood-composition/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -576,7 +671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/ood-designing-cost-effective-tests/" class="md-nav__link">
+      <a href="../ood-designing-cost-effective-tests/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -597,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/ood-inheritance/" class="md-nav__link">
+      <a href="../ood-inheritance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -618,7 +713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/ood-managing-dependencies/" class="md-nav__link">
+      <a href="../ood-managing-dependencies/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -639,7 +734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/ood-object-oriented-design/" class="md-nav__link">
+      <a href="../ood-object-oriented-design/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -660,7 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/ood-roles-modules/" class="md-nav__link">
+      <a href="../ood-roles-modules/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -681,7 +776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/oop-object-oriented-programming/" class="md-nav__link">
+      <a href="../oop-object-oriented-programming/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -702,7 +797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/patterns-pattern-languages/" class="md-nav__link">
+      <a href="../patterns-pattern-languages/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -723,7 +818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/soap-soa/" class="md-nav__link">
+      <a href="../soap-soa/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -744,7 +839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/software-architecture/" class="md-nav__link">
+      <a href="../software-architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -765,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/solid/" class="md-nav__link">
+      <a href="../solid/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -786,7 +881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/sops/" class="md-nav__link">
+      <a href="../sops/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -807,7 +902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/synchronous-asynchronous-reactive-push-pull/" class="md-nav__link">
+      <a href="../synchronous-asynchronous-reactive-push-pull/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -828,7 +923,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/tdd-test-driven-development/" class="md-nav__link">
+      <a href="../tdd-test-driven-development/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -849,7 +944,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/test-pyramid/" class="md-nav__link">
+      <a href="../test-pyramid/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -870,7 +965,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/tmux/" class="md-nav__link">
+      <a href="../tmux/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -891,7 +986,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/tools/" class="md-nav__link">
+      <a href="../tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -912,7 +1007,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/unit-testing/" class="md-nav__link">
+      <a href="../unit-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -933,7 +1028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/vim-nvim/" class="md-nav__link">
+      <a href="../vim-nvim/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -974,6 +1069,77 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#computer-networking-a-top-down-approach-jim-kurose-keith-ross" class="md-nav__link">
+    <span class="md-ellipsis">
+      Computer Networking: A Top-Down Approach - Jim Kurose &amp; Keith Ross
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pfsense" class="md-nav__link">
+    <span class="md-ellipsis">
+      pfSense
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Azure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#internets-5-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Internet's 5 layers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Terminology
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-edge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Edge
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -990,40 +1156,59 @@
   
 
 
-<h1 id="study-notes">Study Notes</h1>
-<p>Ripped straight from my notebooks, so excuse the shorthands, incompleteness, and mistakes.</p>
+<h1 id="networking">Networking</h1>
+<h2 id="computer-networking-a-top-down-approach-jim-kurose-keith-ross">Computer Networking: A Top-Down Approach - Jim Kurose &amp; Keith Ross</h2>
 <ul>
-<li><a href="/pages/algorithms">Algorithms</a></li>
-<li><a href="/pages/bdd-behavior-driven-development">BDD - Behavior Driven Development</a></li>
-<li><a href="/pages/big-o-notation">Big O Notation</a></li>
-<li><a href="/pages/ddd-domain-driven-design">DDD - Domain Driven Design</a></li>
-<li><a href="/pages/di-dependency-injection">DI - Dependency Injection</a></li>
-<li><a href="/pages/dsa-data-structures-algorithms">DSA - Data Structures and Algorithms</a></li>
-<li><a href="/pages/duck-type">Duck Type</a></li>
-<li><a href="/pages/functional-non-functional-requirements">Functional / Non-functional Requirements in Software Architecture</a></li>
-<li><a href="/pages/golang">Golang</a></li>
-<li><a href="/pages/microservice-architecture">Microservices Architecture</a></li>
-<li><a href="/pages/networking">Networking</a></li>
-<li><a href="/pages/ood-composition">OOD - Composition</a></li>
-<li><a href="/pages/ood-designing-cost-effective-tests">OOD - Designing Cost Effective Tests</a></li>
-<li><a href="/pages/ood-inheritance">OOD - Inheritance</a></li>
-<li><a href="/pages/ood-managing-dependencies">OOD - Managing Dependencies</a></li>
-<li><a href="/pages/ood-object-oriented-design">OOD - Object Oriented Design</a></li>
-<li><a href="/pages/ood-roles-modules">OOD - Roles and Modules</a></li>
-<li><a href="/pages/oop-object-oriented-programming">OOP - Object Oriented Programming</a></li>
-<li><a href="/pages/patterns-pattern-languages">Patterns and Pattern Languages</a></li>
-<li><a href="/pages/soap-soa">SOAP / SOA</a></li>
-<li><a href="/pages/software-architecture">Software Architecture</a></li>
-<li><a href="/pages/solid">SOLID</a></li>
-<li><a href="/pages/sops">SOPS</a></li>
-<li><a href="/pages/synchronous-asynchronous-reactive-push-pull">Synchronous vs Asynchronous (Reactive) programming</a></li>
-<li><a href="/pages/tdd-test-driven-development">TDD - Test Driven Development</a></li>
-<li><a href="/pages/test-pyramid">Test Pyramid</a></li>
-<li><a href="/pages/tmux">tmux - terminal multiplexer</a></li>
-<li><a href="/pages/tools">Tools I Use Daily</a></li>
-<li><a href="/pages/unit-testing">Unit Testing</a></li>
-<li><a href="/pages/vim-nvim">vim</a></li>
+<li><a href="https://gaia.cs.umass.edu/kurose_ross/online_lectures.htm">Online lectures</a></li>
+<li><a href="https://www.youtube.com/@JimKurose/videos">Jim Kurose yt channel</a></li>
+<li><a href="https://cet.rs/proizvod/umrezavanje-racunara-od-vrha-ka-dnu-prevod-7-izdanja/">Umrežavanje računara: Od vrha ka dnu, prevod 7. izdanja</a></li>
 </ul>
+<h2 id="pfsense">pfSense</h2>
+<ul>
+<li>pfSense is an open-source firewall and router software distribution based on FreeBSD</li>
+<li><a href="https://www.pfsense.org/">web</a></li>
+</ul>
+<h2 id="azure">Azure</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=9DuTWSvsLXM">John Savill: Azure Master Class v2 - Module 6 - Networking</a></li>
+</ul>
+<h2 id="internets-5-layers">Internet's 5 layers</h2>
+<ul>
+<li>application</li>
+<li>transport</li>
+<li>network</li>
+<li>link</li>
+<li>physical</li>
+</ul>
+<h2 id="terminology">Terminology</h2>
+<ul>
+<li>hosts + end systems</li>
+<li>end systems are connected via communication links + packet switches</li>
+<li>communication links transmit data at different rates</li>
+<li>transmission rates are measured in bits/second</li>
+<li>packets: when sending data from one end system to another, the transmitter sends packets</li>
+<li>packet: header + segment of data</li>
+<li>packet switch: takes packet of data and transmits it</li>
+<li>packet switches: routers, link-layer switches</li>
+<li>link-layer switch: used to access network</li>
+<li>router: used in network core</li>
+<li>route or path:  sequence of links a packet travels through a network</li>
+<li>end systems access the internet through ISPs (Internet Service Providers)</li>
+<li>protocols: the internet runs on protocols that control the sending and receiving of data</li>
+<li>TCP: Transmission Control Protocol</li>
+<li>IP: Internet Protocol</li>
+<li>IP specifies the format of the packets sent and received between end systems</li>
+<li>these principal protocols are known together as TCP/IP</li>
+<li>IETF (Internet Engineering Task Force): enforces internet standards</li>
+<li>IETF standards documents are called RFCs (Requests for Comment)</li>
+<li>RFCs define standards like: IP, TCP, HTTP, SMTP...</li>
+<li>over 7000 RFCs exist (2017) !</li>
+<li>other bodies standardize network components: IEEE 802 LAN/MAN Standards Committee</li>
+<li>IEEE 802 2016 standardizes WIFI and Ethernet</li>
+</ul>
+<h2 id="protocol">Protocol</h2>
+<p>A protocol defines the format and order of messages exchanged between two or more communicating entities, as well as the action taken upon receipt or transmission of messages and events.</p>
+<h2 id="network-edge">Network Edge</h2>
 
 
 
@@ -1070,10 +1255,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   </body>
