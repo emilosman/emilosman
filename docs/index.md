@@ -1,4 +1,4 @@
-# Senior Ruby Developer / Cloud Technology Specialist
+# Senior Software Developer / Cloud Technology Specialist
 ## __Emil Oszmánbegovity__
 ![emil](/assets/profile.jpg)
 
@@ -13,21 +13,21 @@ Specialized in Ruby development and cloud technologies.
 Skilled communicator with in-depth technical knowledge.
 
 ## Tech skills
-- Ruby, Rails
+- Ruby on Rails
+- Go
 - JavaScript, TypeScript, React, Next.js
 - PostgreSQL, MongoDB
 - Refactoring
-- Test Driven Development
 - Git, Version Control
 - HTML5, CSS3, SCSS
-- Agile Development Practices
-- Software Architecture Patterns and Pattern Languages
+- Agile and Test Driven Development Practices
 - Microservices Architecture
-- Virtualization, Hyper-V
-- Containerization, Docker, k8s
+- Virtualization, QEMU, libvirt
+- Containerization, Docker, Podman
+- Terraform, Ansible
 - CI/CD, GitHub Actions, Automation
-- Linux and Unix systems
-- Scripting in Bash, Go, Ruby, Python
+- Linux and Unix Systems
+- Bash
 
 ## Soft Skills
 - Excellent written and spoken English
