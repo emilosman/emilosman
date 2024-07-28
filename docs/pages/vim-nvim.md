@@ -79,6 +79,11 @@ vnoremap <Right> <NOP>
 ## syntax highlighting
 - :syntax on
 
+## syntax highlighting engine
+- set re=0
+- [How to fix slow Typescript syntax highlighting in Vim](https://jameschambers.co.uk/vim-typescript-slow)
+- [github issue: redrawtime exceeded syntax highlighting disabled](https://github.com/prabirshrestha/vim-lsp/issues/786)
+
 ## plugins
 - ~/.vim/plugins
 - [checkbox toggle](https://vimtricks.com/p/vim-checkbox-toggle/) \tt
@@ -115,3 +120,4 @@ vnoremap <Right> <NOP>
 ## list - show hidden characters
 - :set list
 - :set nolist
+

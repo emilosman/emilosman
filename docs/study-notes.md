@@ -4,6 +4,7 @@ Ripped straight from my notebooks, so excuse the shorthands, incompleteness, and
 - [Algorithms](/pages/algorithms)
 - [BDD - Behavior Driven Development](/pages/bdd-behavior-driven-development)
 - [Big O Notation](/pages/big-o-notation)
+- [CI/CD](/pages/ci-cd)
 - [DDD - Domain Driven Design](/pages/ddd-domain-driven-design)
 - [DI - Dependency Injection](/pages/di-dependency-injection)
 - [DSA - Data Structures and Algorithms](/pages/dsa-data-structures-algorithms)

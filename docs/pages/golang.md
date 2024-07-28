@@ -11,6 +11,9 @@
 ## Install
 - [All releases](https://go.dev/dl/)
 
+## go mod init
+go mod init github.com/emilosman/exo-cli
+
 ## Compile and run temp executable
 go run plot.go
 
@@ -32,9 +35,6 @@ export GOROOT=/usr/lib/go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 ```
-
-## go mod init
-go mod init github.com/emilosman/exo-cli
 
 ## adding and removing packages
 - go get github.com/nsf/termbox-go
@@ -62,3 +62,7 @@ go mod init github.com/emilosman/exo-cli
 - [Install](https://github.com/go-delve/delve/tree/master/Documentation/installation)
 - [Getting Started](https://github.com/go-delve/delve/blob/master/Documentation/cli/getting_started.md)
 - dlv debug ./cmd/exo-cli/main.go
+
+## json
+- [json-iterator, jsoniter](https://github.com/json-iterator/go)
+- [Consider Not Using encoding/json in Go](https://rwxrob.github.io/zet/1329/)

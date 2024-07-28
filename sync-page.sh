@@ -6,6 +6,7 @@ pages=(
 "algorithms"
 "bdd-behavior-driven-development"
 "big-o-notation"
+"ci-cd"
 "ddd-domain-driven-design"
 "di-dependency-injection"
 "dsa-data-structures-algorithms"
