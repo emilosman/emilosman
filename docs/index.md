@@ -1,4 +1,4 @@
-# Senior Software Developer / Cloud Technology Specialist
+# Senior Software Developer | Ruby, Golang | Cloud Technology Specialist
 ## __Emil Oszmánbegovity__
 ![emil](/assets/profile.jpg)
 
