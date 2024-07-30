@@ -42,10 +42,9 @@ Skilled communicator with in-depth technical knowledge.
 
 ## __Experience__
 
-## Senior Ruby Developer - [OSMAN EMIL KFT](https://emilosman.com)
+## Senior Software Developer - [OSMAN EMIL KFT](https://emilosman.com)
 `December 2022 to present`
 
-Full-time Ruby developer working on freelance projects.  
 Clients include:
 
 - [Beeple](https://www.beeple.eu/) `(Antwerp, Belgium)`
