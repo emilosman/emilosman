@@ -1,6 +1,6 @@
 # Senior Software Developer | Ruby, Golang | Cloud Technology Specialist
 ## __Emil Oszmánbegovity__
-![emil](/assets/profile.jpg)
+![emil](./assets/profile.jpg)
 
 - website: [emilosman.com](https://emilosman.com)
 - email: [hello@emilosman.com](mailto:hello@emilosman.com)
@@ -122,5 +122,5 @@ I continually strive to advance my knowledge with industry standard resources.
 - [My Microsoft Learn profile](https://learn.microsoft.com/en-us/users/emilosman/)
 - Actively pursuing: _AWS Certified Developer - Associate - DVA-C02_
 
-![cert](assets/az-900.svg)
-![cert](assets/ibm-enterprise-thinking.png)
+![cert](./assets/az-900.png)
+![cert](./assets/ibm-enterprise-thinking.png)
