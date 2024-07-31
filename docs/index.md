@@ -106,13 +106,13 @@ I publish my open-source work on GitHub: [emilosman](https://www.github.com/emil
 ## [Personal Projects and Experiments](https://emilosman.com/personal-projects)
 Various projects meant to make life easier with automation and data analysis.  
 Some open-source, some closed-source, most for fun.  
-[View my projects here.](https://emilosman.com/personal-projects)
+[View my projects here »](https://emilosman.com/personal-projects)
 
 ## [Study Notes](https://emilosman.com/study-notes)
 I publish my study notes online.  
 I do this as proof of work and to potentially inspire others to do their own research.  
 Topics covered: Programming, Design, Linux, Tooling, etc.  
-[Read my notes here.](https://emilosman.com/study-notes)
+[Read my notes here »](https://emilosman.com/study-notes)
 
 ## Education and Certification
 I continually strive to advance my knowledge with industry standard resources.
