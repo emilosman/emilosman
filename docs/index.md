@@ -45,6 +45,7 @@ Skilled communicator with in-depth technical knowledge.
 ## Senior Software Developer - [OSMAN EMIL KFT](https://emilosman.com)
 `December 2022 to present`
 
+Freelancing on Ruby, Go, and DevOps oriented projects.  
 Clients include:
 
 - [Beeple](https://www.beeple.eu/) `(Antwerp, Belgium)`
