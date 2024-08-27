@@ -4,7 +4,7 @@ repo_url: https://github.com/emilosman/emilosman
 repo_name: emilosman
 
 theme:
-  icon: assets/monogram.png
+  logo: assets/monogram.png
   favicon: assets/monogram.png
   name: material
 
