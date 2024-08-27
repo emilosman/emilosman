@@ -5,9 +5,15 @@
 - [x] [How to Write Go Code](https://go.dev/doc/code)
 - [ ] [Effective Go](https://go.dev/doc/effective_go)
 - [ ] [Go 101](https://go101.org/article/101.html)
+- [ ] [Go package sources](https://go.dev/src/)
+- [ ] [Go standard library](https://pkg.go.dev/std)
 - [ ] [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/html/split/)
 - [golang nuts newsgroup](https://groups.google.com/g/golang-nuts)
-- [ebnf](https://pkg.go.dev/golang.org/x/exp/ebnf)
+- [EBNF - Extended Backus–Naur form](https://pkg.go.dev/golang.org/x/exp/ebnf)
+- [ ] [gRPC Microservices in Go](https://www.manning.com/books/grpc-microservices-in-go)
+- [ ] [Organizing a Go module](https://go.dev/doc/modules/layout)
+- [ ] [Using Go Modules](https://go.dev/blog/using-go-modules)
+- [ ] [Error handling and Go](https://go.dev/blog/error-handling-and-go)
 
 ## Install
 - [All releases](https://go.dev/dl/)
@@ -86,3 +92,12 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 ## GCP - Google Cloud Client Libraries for Go
 - [gh](https://github.com/googleapis/google-cloud-go)
 - [docs](https://pkg.go.dev/cloud.google.com/go)
+
+## termui
+- [gh](https://github.com/gizak/termui)
+
+## gin
+- [gh](https://github.com/gin-gonic/gin)
+- [docs](https://gin-gonic.com/docs/)
+- go get -u github.com/gin-gonic/gin
+- go install github.com/gin-gonic/gin@latest

@@ -17,6 +17,9 @@
 ## session list
 - CTRL+b s
 
+## status bar position
+set-option -g status-position top
+
 ## plugins
 - [tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
 - ~/.tmux.conf
@@ -62,6 +65,12 @@ set -g @resurrect-strategy-nvim 'session'
 
 ## move window to index
 - CTRL+b .
+
+## swap window
+- CTRL+b :swap-window -t 2
+
+## reindex windows
+- CTRL+b :move-window -r
 
 ## kill session
 - CTRL+b :kill-session
