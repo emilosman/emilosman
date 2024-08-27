@@ -36,6 +36,10 @@ Some open-source, some closed-source, most for fun.
 - Test bed for practicing virtualization and containerization of my home servers
 - Tech used: `Ansible, Terraform, Bash, Podman, QEMU, libvirt`
 
+## [monkey](https://github.com/emilosman/monkey)
+- A test API for a CRM service written in Go
+- Tech used: `Go, gin, OAuth 2.0, postgres, sqlc, golang-migrate, podman, bash`
+
 ## fintra
 ![project](assets/fintra.jpg)
 
