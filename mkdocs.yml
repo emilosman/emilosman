@@ -4,6 +4,8 @@ repo_url: https://github.com/emilosman/emilosman
 repo_name: emilosman
 
 theme:
+  icon: assets/monogram.png
+  favicon: assets/monogram.png
   name: material
 
 extra_css:
