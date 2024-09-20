@@ -22,7 +22,7 @@ Skilled communicator with in-depth technical knowledge.
 - HTML5, CSS3, SCSS
 - Agile and Test Driven Development Practices
 - Microservices Architecture
-- Virtualization, QEMU, libvirt
+- Virtualization, QEMU, libvirt, Proxmox
 - Containerization, Docker, Podman
 - Terraform, Ansible
 - CI/CD, GitHub Actions, Automation
