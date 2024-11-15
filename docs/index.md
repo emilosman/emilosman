@@ -1,5 +1,5 @@
 # Senior Software Developer | Ruby, Golang | Cloud Technology Specialist
-## __Emil Oszmánbegovity__
+## Emil Oszmánbegovity
 ![emil](./assets/profile.jpg)
 
 - website: [emilosman.com](https://emilosman.com)
