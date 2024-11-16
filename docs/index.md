@@ -48,6 +48,8 @@ Skilled communicator with in-depth technical knowledge.
 Freelancing on Ruby, Go, and DevOps oriented projects.  
 Clients include:
 
+- [DataArt](https://www.dataart.com/) `(Munich, Germany)`
+  Senior Ruby developer.
 - [Beeple](https://www.beeple.eu/) `(Antwerp, Belgium)`
   Rails backend developer at startup helping companies schedule temp workers.
 - [CoverWallet](https://www.coverwallet.com/) `(Madrid, Spain)`
@@ -110,7 +112,6 @@ I continually strive to advance my knowledge with industry standard resources.
 - [Microsoft Certified: Azure Fundamentals](https://learn.microsoft.com/en-us/users/emilosman/credentials/5b393ffcfcac8312)
 - [IBM: Enterprise Design Thinking Practitioner](https://www.credly.com/badges/351edaee-062d-45e6-b948-f798e7c598f4)
 - [My Microsoft Learn profile](https://learn.microsoft.com/en-us/users/emilosman/)
-- Actively pursuing: _AWS Certified Developer - Associate - DVA-C02_
 
 ![cert](./assets/az-900.png)
 ![cert](./assets/ibm-enterprise-thinking.png)
