@@ -3,7 +3,7 @@
 ![emil](./assets/profile.jpg)
 
 - website: [emilosman.com](https://emilosman.com)
-- email: [hello@emilosman.com](mailto:hello@emilosman.com)
+- email: [emil@emilosman.com](mailto:emil@emilosman.com)
 - github: [emilosman](https://github.com/emilosman)
 - linkedin: [in/emilosman](https://www.linkedin.com/in/emilosman/)
 
