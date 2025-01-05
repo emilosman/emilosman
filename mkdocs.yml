@@ -6,8 +6,6 @@ theme:
   logo: assets/monogram.png
   favicon: assets/monogram.png
   name: material
-  font:
-    text: Georgia
 
 extra_css:
   - /css/style.css
