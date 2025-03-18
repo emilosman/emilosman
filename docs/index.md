@@ -1,4 +1,4 @@
-# Senior Software Developer | Ruby, Golang | Cloud Technology Specialist
+# Senior Software Developer | Ruby and Cloud Technologies
 ## Emil Oszmánbegovity
 ![emil](./assets/profile.jpg)
 
@@ -7,14 +7,13 @@
 - github: [emilosman](https://github.com/emilosman)
 - linkedin: [in/emilosman](https://www.linkedin.com/in/emilosman/)
 
-## Summary
+### Summary
 Focused creative problem solver, working in software development since 2016.  
 Specialized in Ruby development and cloud technologies.  
 Skilled communicator with in-depth technical knowledge.
 
-## Tech skills
+### Tech skills
 - Ruby on Rails
-- Go
 - JavaScript, TypeScript, React, Next.js
 - PostgreSQL, MongoDB
 - Refactoring
@@ -29,7 +28,7 @@ Skilled communicator with in-depth technical knowledge.
 - Linux and Unix Systems
 - Bash
 
-## Soft Skills
+### Soft Skills
 - Excellent written and spoken English
 - Willingness to share knowledge and mentor juniors
 - Comfortable communicating with clients
@@ -40,12 +39,12 @@ Skilled communicator with in-depth technical knowledge.
 - Performing highly open-ended and conscientious work
 - Hungarian and Serbian native speaker
 
-## __Experience__
+## Experience
 
-## Senior Software Developer - [OSMAN EMIL KFT](https://emilosman.com)
+### Senior Software Developer - [OSMAN EMIL KFT](https://emilosman.com)
 `December 2022 to present`
 
-Freelancing on Ruby, Go, and DevOps oriented projects.  
+Contracting on Ruby and DevOps oriented projects.  
 Clients include:
 
 - [DataArt](https://www.dataart.com/) `(Munich, Germany)`
@@ -57,7 +56,7 @@ Clients include:
   Wrote integrations for APIs of multiple insurance companies.  
   Tech used: Google Cloud Platform, k8s, Microservices, Ruby
 
-## Technical Architect - [MentorMate](https://mentormate.com/)
+### Technical Architect - [MentorMate](https://mentormate.com/)
 `March 2022 to November 2022 - Sofia, Bulgaria`
 
 Projects:
@@ -75,13 +74,13 @@ Responsibilities:
 - Communicating effectively with both technical and non-technical stakeholders
 - Collaborating with Designers, Business Analysts, and Project Managers across various departments
 
-## Senior Ruby Developer - [MentorMate](https://mentormate.com/)
+### Senior Ruby Developer - [MentorMate](https://mentormate.com/)
 `November 2020 to November 2022 - Sofia, Bulgaria`
 
 Backend Ruby on Rails developer handling both core application features and custom client enhancements and integrations.  
 Taking on leadership roles and mentoring junior developers and bootcampers.
 
-## Full-stack Web Developer - [Sideqik](https://www.sideqik.com/)
+### Full-stack Web Developer - [Sideqik](https://www.sideqik.com/)
 `November 2018 to March 2020 - Atlanta, USA`
 
 Worked full-stack in a startup environment, developing an influencer marketing platform.
@@ -91,12 +90,12 @@ Responsibilities:
 - Frontend Overhaul - Contributed to migration of frontend from Rails server-side rendering / Spine.js to Ember, then used Ember to build and document a component library and accelerate future development.
 - Major Features - Contributed to the frontend and backend development of: 1-on-1 and bulk messaging with merge tags, let customers do much more of their marketing process without leaving the app • Ember, Rails, Gmail API, Twitter DM API, SMTP
 
-## Web Developer - [aac.digital](http://aac.digital/)
+### Web Developer - [aac.digital](http://aac.digital/)
 `July 2017 to October 2018 - Budapest, Hungary`
 
 Full-time Rails developer. Worked on projects for clients like METRO, Telenor, Jamie Oliver, BRF S.A., Zsidai Group. Learned the Ember.js frontend framework.
 
-## Freelance Web Developer
+### Freelance Web Developer
 `November 2016 to July 2017`
 
 Started professional career building Ruby on Rails applications. Worked with the Hungarian company [aac.digital](https://aac.digital/) as a freelancer. Roles on projects included frontend and backend development.
