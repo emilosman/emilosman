@@ -1,4 +1,4 @@
-site_name: emilosman
+site_name: Emil Oszmánbegovity | Senior Software Developer | emilosman
 site_url: https://emilosman.com
 site_author: Emil Oszmánbegovity
 site_description: >-
@@ -18,3 +18,5 @@ extra_css:
 
 markdown_extensions:
   - pymdownx.tasklist
+
+not_in_nav: index.md
