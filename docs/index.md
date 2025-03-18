@@ -2,10 +2,10 @@
 ## Emil Oszmánbegovity
 ![emil](./assets/profile.jpg)
 
-- website: [emilosman.com](https://emilosman.com)
-- email: [emil@emilosman.com](mailto:emil@emilosman.com)
-- github: [emilosman](https://github.com/emilosman)
-- linkedin: [in/emilosman](https://www.linkedin.com/in/emilosman/)
+- Website: [emilosman.com](https://emilosman.com)
+- Email: [emil@emilosman.com](mailto:emil@emilosman.com)
+- GitHub: [emilosman](https://github.com/emilosman)
+- LinkedIn: [in/emilosman](https://www.linkedin.com/in/emilosman/)
 
 ### Summary
 Focused creative problem solver, working in software development since 2016.  

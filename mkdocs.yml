@@ -20,3 +20,7 @@ markdown_extensions:
   - pymdownx.tasklist
 
 not_in_nav: index.md
+
+nav:
+  - GitHub: https://github.com/emilosman
+  - LinkedIn: https://www.linkedin.com/in/emilosman/
