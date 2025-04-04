@@ -8,37 +8,23 @@
 - LinkedIn: [in/emilosman](https://www.linkedin.com/in/emilosman/)
 
 ### Summary
-Focused creative problem solver, working in software development since 2016.  
-Specialized in Ruby development and cloud technologies.  
-Skilled communicator with in-depth technical knowledge.
+A results-driven Senior Software Developer with over 8 years of experience specializing in Ruby on Rails, cloud technologies, and DevOps practices. Skilled in driving innovation, improving systems, and solving complex problems with creative technical solutions. Passionate about continuous learning, automation, and delivering high-quality solutions.
 
 ### Tech skills
-- Ruby on Rails
-- JavaScript, TypeScript, React, Next.js
-- PostgreSQL, MongoDB
-- Automated Testing: RSpec, Test-Driven Development (TDD)
-- Agile Delopment Practices
-- Issue Tracking: Jira
-- Version Control: Git
-- HTML5, CSS3, SCSS
-- Microservices Architecture
-- Virtualization: QEMU, libvirt, Proxmox
-- Containerization: Docker, Podman
-- Terraform, Ansible
-- CI/CD, GitHub Actions, Automation
-- Linux and Unix Systems
-- Bash
+- Languages & Frameworks: Ruby, Ruby on Rails, JavaScript, TypeScript, React, Next.js
+- Databases: PostgreSQL, MongoDB
+- DevOps & Cloud: Kubernetes (k8s), Docker, Terraform, Ansible, CI/CD, GitHub Actions
+- Testing & Methodologies: RSpec, Test-Driven Development (TDD), Agile
 
 ### Soft Skills
-- Excellent written and spoken English
-- Willingness to share knowledge and mentor juniors
-- Comfortable communicating with clients
-- Managerial experience
-- Diligent note-taker and archivist
-- Passion for learning and continuous improvement
-- Systems thinking
-- Performing highly open-ended and conscientious work
-- Hungarian and Serbian native speaker
+- Strong communication skills, both written and verbal, in English, Hungarian, and Serbian
+- Experienced in mentoring juniors and sharing technical knowledge
+- Effective at client communication and fostering positive relationships
+- Proven managerial experience, leading teams and projects to success
+- Detail-oriented with a strong focus on documentation and organization
+- Passionate about continuous learning and professional growth
+- Skilled in systems thinking and addressing complex challenges
+- Capable of working independently and tackling open-ended, high-responsibility tasks
 
 ## Experience
 
