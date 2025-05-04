@@ -28,7 +28,7 @@ A results-driven Senior Software Developer with over 8 years of experience speci
 
 ## Experience
 
-### Senior Software Developer @ [Osman Emil Kft.](https://emilosman.com)
+### Senior Software Developer, Owner @ [Osman Emil Kft.](https://emilosman.com)
 `December 2022 to present`
 
 Contracting on Ruby and DevOps oriented projects.  
