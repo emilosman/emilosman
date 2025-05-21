@@ -1,6 +1,5 @@
 # Senior Software Developer | Ruby and Cloud Technologies
 ## Emil Oszmánbegovity
-![emil](./assets/profile.jpg)
 
 - Website: [emilosman.com](https://emilosman.com)
 - Email: [emil@emilosman.com](mailto:emil@emilosman.com)
