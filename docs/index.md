@@ -1,84 +1,84 @@
-# Senior Software Developer | Ruby and Cloud Technologies
-## Emil Oszmánbegovity
+# Emil Oszmánbegovity
 
-- Website: [emilosman.com](https://emilosman.com)
-- Email: [emil@emilosman.com](mailto:emil@emilosman.com)
-- GitHub: [emilosman](https://github.com/emilosman)
-- LinkedIn: [in/emilosman](https://www.linkedin.com/in/emilosman/)
+- [emil@emilosman.com](mailto:emil@emilosman.com)
+- [emilosman.com](https://emilosman.com)
+- [github.com/emilosman](https://github.com/emilosman)
 
-### Summary
-A results-driven Senior Software Developer with over 8 years of experience specializing in Ruby on Rails, cloud technologies, and DevOps practices. Skilled in driving innovation, improving systems, and solving complex problems with creative technical solutions. Passionate about continuous learning, automation, and delivering high-quality solutions.
+---
 
-### Tech skills
-- Languages & Frameworks: Ruby, Ruby on Rails, JavaScript, TypeScript, React, Next.js
-- Databases: PostgreSQL, MongoDB
-- DevOps & Cloud: Kubernetes (k8s), Docker, Terraform, Ansible, CI/CD, GitHub Actions
-- Testing & Methodologies: RSpec, Test-Driven Development (TDD), Agile
+## Skills
 
-### Soft Skills
-- Strong communication skills, both written and verbal, in English, Hungarian, and Serbian
-- Experienced in mentoring juniors and sharing technical knowledge
-- Effective at client communication and fostering positive relationships
-- Proven managerial experience, leading teams and projects to success
-- Detail-oriented with a strong focus on documentation and organization
-- Passionate about continuous learning and professional growth
-- Skilled in systems thinking and addressing complex challenges
-- Capable of working independently and tackling open-ended, high-responsibility tasks
+__Languages & Frameworks:__  
+Ruby, Ruby on Rails, Golang, JavaScript, TypeScript, React, Next.js
+
+__Databases:__  
+PostgreSQL, MongoDB
+
+__DevOps & Cloud:__  
+Docker, Podman, Terraform, Ansible, CI/CD, GitHub Actions, Linux, Bash
+
+__Testing & Methodologies:__  
+RSpec, Postman, Test-Driven Development (TDD), Agile, Jira
+
+---
 
 ## Experience
 
-### Senior Software Developer, Owner @ [Osman Emil Kft.](https://emilosman.com)
-`December 2022 to present`
+### Senior Software Developer, Owner
+__Osman Emil Kft.__ – Szeged, Hungary  
+_December 2022 – Present_
 
-Contracting on Ruby and DevOps oriented projects.  
 Clients include:
 
-- [DataArt](https://www.dataart.com/)
-    - Utilized RSpec for writing comprehensive automated tests in a TDD-driven development process.
-    - Worked closely with QA teams and tracked bugs and tasks using Jira, ensuring smooth communication and issue resolution.
-- [Beeple](https://www.beeple.eu/)
-    - Rails backend developer at startup helping companies schedule temp workers.
-- [CoverWallet](https://www.coverwallet.com/)
-    - Software engineer in the insurance industry with exposure to complex cloud systems.
-    - Wrote integrations for APIs of multiple insurance companies.
-    - Tech used: Google Cloud Platform, k8s, Microservices, Ruby
+- __DataArt__ – Built comprehensive test coverage that reduced QA-reported regressions, by writing RSpec tests in TDD
+- Resolved critical bugs and improved delivery speed, reducing issue turnaround time in Jira, by collaborating with QAs
+- __Beeple__ – Developed backend features for workforce scheduling, leading to successful feature rollouts and client adoption, by contributing to a Rails-based API
+- __CoverWallet__ – Integrated insurance APIs, increasing provider coverage and system interoperability with microservices
+- Deployed and maintained cloud infrastructure, improving system reliability and uptime, by working with GCP, Kubernetes, and a microservice architecture
 
-### Technical Architect @ [MentorMate](https://mentormate.com/)
-`March 2022 to November 2022`
+### Technical Architect
+__MentorMate__ – Sofia, Bulgaria  
+_March 2022 – November 2022_
 
-Projects:
+- Architected hybrid deployments on Azure by mapping on-premise systems, by working closely with DevOps Engineers
+- Analyzed software stacks, maintenance, security and encryption, finances and spending, and regulatory compliance
+- Improved knowledge base of development team by conducting deep interviews with key technical personnel
+- Implemented functional and non-functional needs of the clients on greenfield projects
 
-- Mapping of existing on-premise architecture and working closely with DevOps specialists and Technical Architects to create hybrid deployments on Azure.
-- Conducted deep interviews with key technical personnel to assess software stacks, maintenance, security and encryption, finances and spending, and regulatory compliance.
-- Consulted on greenfield projects taking into account client's functional and non-functional requirements.
+### Senior Ruby Developer
+__MentorMate__ – Sofia, Bulgaria  
+_November 2020 – November 2022_
 
-Responsibilities:
+- Developed core application features and custom client enhancements in a multi-tenant system
+- Led and mentored junior developers and bootcampers that successfully integrated into development teams
 
-- Creating technical and solution architectures
-- Facilitating client communication and meetings
-- Generating architecture diagrams
-- Composing documentation and delivering presentations
-- Communicating effectively with both technical and non-technical stakeholders
-- Collaborating with Designers, Business Analysts, and Project Managers across various departments
+### Full-stack Web Developer
+__Sideqik__ – Atlanta, USA  
+_November 2018 – March 2020_
 
-### Senior Ruby Developer @ [MentorMate](https://mentormate.com/)
-`November 2020 to November 2022`
+- Migrated frontend from Rails to Ember.js, improved developer velocity with a documented component library
+- Developed 1-on-1 and bulk messaging features that increased in-app engagement and reduced reliance on external tools, with merge tag support across both the Ember.js frontend and Rails backend
 
-- Backend Ruby on Rails developer handling both core application features and custom client enhancements and integrations.
-- Taking on leadership roles and mentoring junior developers and bootcampers.
+### Full-stack Web Developer
+__aac.digital__ – Budapest, Hungary  
+_July 2017 – October 2018_
 
-## Earlier Experience
-`2016 - 2020`
+- Developed Rails apps for high-profile clients including METRO, Telenor, Jamie Oliver, BRF S.A., and Zsidai Group
+- Learned Ember.js in a production environment, completed frontend features and improved responsive interfaces
 
-- [Sideqik](https://www.sideqik.com)
-    - Contributed to frontend and backend development, including API integrations and feature enhancements.
-    - Participated in the full software development lifecycle, with a focus on client-facing features and application performance.
-- [aac.digital](https://aac.digital)
-    - Worked on a variety of Ruby on Rails and JavaScript/Ember.js applications for clients including METRO, Telenor, and Jamie Oliver.
+---
 
-## Education and Certification
-I continually strive to advance my knowledge with industry standard resources.
+## Projects
 
-- [Microsoft Certified: Azure Fundamentals](https://learn.microsoft.com/en-us/users/emilosman/credentials/5b393ffcfcac8312)
-- [IBM: Enterprise Design Thinking Practitioner](https://www.credly.com/badges/351edaee-062d-45e6-b948-f798e7c598f4)
-- [My Microsoft Learn profile](https://learn.microsoft.com/en-us/users/emilosman/)
+### Homelab
+- Built and maintained a homelab environment, with stable uptime and rapid test deployments, by running Proxmox for virtualization and managing multiple VMs and containers
+- Implemented secure network segmentation and traffic filtering, with a reduced attack surface and controlled internal access, by configuring OPNSense as a firewall and router
+- Automated data backup and recovery processes, with successful test restores and minimized data loss risk, by using TrueNAS for ZFS-backed storage and scheduled snapshot replication
+
+---
+
+## Certification
+
+- __Microsoft Certified__ – Azure Fundamentals
+- __IBM__ – Enterprise Design Thinking Practitioner
+
