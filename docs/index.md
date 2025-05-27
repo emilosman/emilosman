@@ -3,6 +3,7 @@
 - [emil@emilosman.com](mailto:emil@emilosman.com)
 - [emilosman.com](https://emilosman.com)
 - [github.com/emilosman](https://github.com/emilosman)
+- [LinkedIn](https://www.linkedin.com/in/emilosman/)
 
 ---
 
