@@ -31,7 +31,7 @@ _December 2022 – Present_
 
 Clients include:
 
-- __DataArt__ – Built comprehensive test coverage that reduced QA-reported regressions, by writing RSpec tests in TDD
+- __DataArt__ – Built comprehensive test coverage that reduced QA-reported regressions, by writing RSpec unit tests in TDD
 - Resolved critical bugs and improved delivery speed, reducing issue turnaround time in Jira, by collaborating with QAs
 - __Beeple__ – Developed backend features for workforce scheduling, leading to successful feature rollouts and client adoption, by contributing to a Rails-based API
 - __CoverWallet__ – Integrated insurance APIs, increasing provider coverage and system interoperability with microservices
