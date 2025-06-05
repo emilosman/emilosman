@@ -1,4 +1,5 @@
 # Emil Oszmánbegovity
+Senior software developer with a passion for automation and cloud technologies.
 
 - [emil@emilosman.com](mailto:emil@emilosman.com)
 - [emilosman.com](https://emilosman.com)
