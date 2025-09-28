@@ -10,8 +10,11 @@ Senior software developer with a passion for automation and cloud technologies.
 
 ## Skills
 
-__Languages & Frameworks:__  
-Ruby, Ruby on Rails, Golang, JavaScript, TypeScript, React, Next.js
+__Languages:__  
+Ruby, Golang, Python, JavaScript, TypeScript
+
+__Frameworks & Libraries:__  
+Ruby on Rails, Bubble Tea, React, Next.js
 
 __Databases:__  
 PostgreSQL, MongoDB
@@ -72,6 +75,9 @@ _July 2017 – October 2018_
 
 ## Projects
 
+### [rssboat](https://github.com/emilosman/rssboat)
+- Performant RSS reader written in Go with a [Bubble Tea](https://github.com/charmbracelet/bubbletea) TUI inspired by Newsboat
+
 ### Homelab
 - Built and maintained a homelab environment, with stable uptime and rapid test deployments, by running Proxmox for virtualization and managing multiple VMs and containers
 - Implemented secure network segmentation and traffic filtering, with a reduced attack surface and controlled internal access, by configuring OPNSense as a firewall and router
@@ -81,6 +87,6 @@ _July 2017 – October 2018_
 
 ## Certification
 
-- __Microsoft Certified__ – Azure Fundamentals
-- __IBM__ – Enterprise Design Thinking Practitioner
+- [__Microsoft Certified__ – Azure Fundamentals](https://learn.microsoft.com/en-us/users/emilosman/credentials/5b393ffcfcac8312)
+- [__IBM__ – Enterprise Design Thinking Practitioner](https://www.credly.com/badges/351edaee-062d-45e6-b948-f798e7c598f4)
 
