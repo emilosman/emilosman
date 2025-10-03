@@ -33,12 +33,10 @@ RSpec, Postman, Test-Driven Development (TDD), Agile, Jira
 __Osman Emil Kft.__ – Szeged, Hungary  
 _December 2022 – Present_
 
-Clients include:
-
-- __DataArt__ – Built comprehensive test coverage that reduced QA-reported regressions, by writing RSpec unit tests in TDD
+- Built comprehensive test coverage that reduced QA-reported regressions, by writing RSpec unit tests in TDD
 - Resolved critical bugs and improved delivery speed, reducing issue turnaround time in Jira, by collaborating with QAs
-- __Beeple__ – Developed backend features for workforce scheduling, leading to successful feature rollouts and client adoption, by contributing to a Rails-based API
-- __CoverWallet__ – Integrated insurance APIs, increasing provider coverage and system interoperability with microservices
+- Developed backend features for workforce scheduling, leading to successful feature rollouts and client adoption, by contributing to a Rails-based API
+- Integrated insurance APIs, increasing provider coverage and system interoperability with microservices
 - Deployed and maintained cloud infrastructure, improving system reliability and uptime, by working with GCP, Kubernetes, and a microservice architecture
 
 ### Technical Architect
