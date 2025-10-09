@@ -42,7 +42,7 @@ Clients include:
 - Deployed and maintained cloud infrastructure, improving system reliability and uptime, by working with GCP, Kubernetes, and a microservice architecture
 
 ### Technical Architect
-__MentorMate__ – Sofia, Bulgaria  
+__[MentorMate](https://mentormate.com)__ – Sofia, Bulgaria  
 _March 2022 – November 2022_
 
 - Architected hybrid deployments on Azure by mapping on-premise systems, by working closely with DevOps Engineers
@@ -51,21 +51,21 @@ _March 2022 – November 2022_
 - Implemented functional and non-functional needs of the clients on greenfield projects
 
 ### Senior Ruby Developer
-__MentorMate__ – Sofia, Bulgaria  
+__[MentorMate](https://mentormate.com)__ – Sofia, Bulgaria  
 _November 2020 – November 2022_
 
 - Developed core application features and custom client enhancements in a multi-tenant system
 - Led and mentored junior developers and bootcampers that successfully integrated into development teams
 
 ### Full-stack Web Developer
-__Sideqik__ – Atlanta, USA  
+__[Sideqik](https://www.sideqik.com)__ – Atlanta, USA  
 _November 2018 – March 2020_
 
 - Migrated frontend from Rails to Ember.js, improved developer velocity with a documented component library
 - Developed 1-on-1 and bulk messaging features that increased in-app engagement and reduced reliance on external tools, with merge tag support across both the Ember.js frontend and Rails backend
 
 ### Full-stack Web Developer
-__aac.digital__ – Budapest, Hungary  
+__[aac.digital](https://aac.digital)__ – Budapest, Hungary  
 _July 2017 – October 2018_
 
 - Developed Rails apps for high-profile clients including METRO, Telenor, Jamie Oliver, BRF S.A., and Zsidai Group
