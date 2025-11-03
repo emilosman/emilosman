@@ -11,7 +11,7 @@ Senior software developer with a passion for automation and cloud technologies.
 ## Skills
 
 __Languages:__  
-Ruby, Golang, Python, JavaScript, TypeScript
+Golang, Ruby, Python, JavaScript, TypeScript
 
 __Frameworks & Libraries:__  
 Ruby on Rails, Bubble Tea, React, Next.js
