@@ -75,7 +75,7 @@ _July 2017 – October 2018_
 
 ## Projects
 
-### [rssboat](https://github.com/emilosman/rssboat)
+### [rssr](https://github.com/emilosman/rssr)
 - Performant RSS reader written in Go with a [Bubble Tea](https://github.com/charmbracelet/bubbletea) TUI inspired by Newsboat
 
 ### Homelab
