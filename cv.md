@@ -1,11 +1,9 @@
-# Emil Oszmánbegovity
+Senior Go-focused Software Developer and Owner with 10 years of experience,  
+Linux enthusiast, technical architect, and mentor thriving in complex, client-facing environments
 
 - [emil@emilosman.com](mailto:emil@emilosman.com)
 - [emilosman.com](https://emilosman.com)
 - [github.com/emilosman](https://github.com/emilosman)
-
-Senior Go-focused Software Developer and Owner with 10 years of experience,  
-Linux enthusiast, technical architect, and mentor thriving in complex, client-facing environments
 
 ---
 
