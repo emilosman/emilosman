@@ -29,16 +29,20 @@ December 2022 – Present
 Selected projects:  
 
 **Payments**, EU (remote)
+
 - Integrated payment service providers in emerging markets, expanding market share and increasing revenue
 
 **Parking services**, EU (remote)
+
 - Built comprehensive test coverage reducing QA-reported regressions, writing RSpec unit tests in TDD  
 - Resolved critical bugs improving delivery speed, reducing issue turnaround time in Jira, collaborating with QAs  
 
 **Staff management**, Belgium (remote)
+
 - Developed backend features for workforce scheduling, leading to successful feature rollouts and client adoption, contributing to a Rails-based API  
 
 **Insurance industry**, Spain (remote)
+
 - Integrated insurance APIs, increasing provider coverage and interoperability with microservices  
 - Deployed and maintained cloud infrastructure, improving system reliability and uptime, working with GCP, Kubernetes, and a microservice architecture  
 
