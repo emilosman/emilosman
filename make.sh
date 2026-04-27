@@ -8,5 +8,5 @@ pandoc cv.md \
   --metadata title="Emil Oszmánbegovity" \
   --section-divs \
   --strip-comments \
-  --no-highlight \
+  --syntax-highlighting=none \
   --embed-resources --standalone
