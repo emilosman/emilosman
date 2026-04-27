@@ -9,44 +9,44 @@ Linux enthusiast, technical architect, and mentor thriving in complex, client-fa
 
 ## Skills
 
-**Programming**: Golang, Ruby, JavaScript, TypeScript  
-**Databases**: PostgreSQL, MongoDB  
-**DevOps & Cloud**: Docker, Podman, Terraform, Ansible, CI/CD, GitHub Actions, Linux, Bash  
-**Monitoring & Observability**: Prometheus, Grafana  
-**Testing & Methodologies**: RSpec, Postman, Test-Driven Development (TDD), Agile  
-**Languages**: English, Serbian, Hungarian  
+__Programming__: Golang, Ruby, JavaScript, TypeScript  
+__Databases__: PostgreSQL, MongoDB  
+__DevOps & Cloud__: Docker, Podman, Terraform, Ansible, CI/CD, GitHub Actions, Linux, Bash  
+__Monitoring & Observability__: Prometheus, Grafana  
+__Testing & Methodologies__: RSpec, Postman, Test-Driven Development (TDD), Agile  
+__Languages__: English, Serbian, Hungarian  
 
 ---
 
 ## Experience
 
-**Senior Software Developer, Owner**  
+__Senior Software Developer, Owner__  
 [Osman Emil Kft.](https://emilosman.com) – Szeged, Hungary  
 December 2022 – Present  
 
 Selected projects:  
 
-**Payments**, EU (remote)
+_Payments_, EU (remote)
 
 - Integrated payment service providers in emerging markets, expanding market share and increasing revenue
 
-**Parking services**, EU (remote)
+_Parking services_, EU (remote)
 
 - Built comprehensive test coverage reducing QA-reported regressions, writing RSpec unit tests in TDD  
 - Resolved critical bugs improving delivery speed, reducing issue turnaround time in Jira, collaborating with QAs  
 
-**Staff management**, Belgium (remote)
+_Staff management_, Belgium (remote)
 
 - Developed backend features for workforce scheduling, leading to successful feature rollouts and client adoption, contributing to a Rails-based API  
 
-**Insurance industry**, Spain (remote)
+_Insurance industry_, Spain (remote)
 
 - Integrated insurance APIs, increasing provider coverage and interoperability with microservices  
 - Deployed and maintained cloud infrastructure, improving system reliability and uptime, working with GCP, Kubernetes, and a microservice architecture  
 
 ---
 
-**Technical Architect**  
+__Technical Architect__  
 [MentorMate](https://mentormate.com) – Sofia, Bulgaria (remote)  
 March 2022 – November 2022  
 
@@ -57,7 +57,7 @@ March 2022 – November 2022
 
 ---
 
-**Senior Ruby Developer**  
+__Senior Ruby Developer__  
 [MentorMate](https://mentormate.com) – Sofia, Bulgaria (remote)  
 November 2020 – November 2022  
 
@@ -66,7 +66,7 @@ November 2020 – November 2022
 
 ---
 
-**Full-stack Web Developer**  
+__Full-stack Web Developer__  
 [Sideqik](https://sideqik.com) – Atlanta, USA (remote)  
 November 2018 – March 2020  
 
@@ -75,7 +75,7 @@ November 2018 – March 2020
 
 ---
 
-**Full-stack Web Developer**  
+__Full-stack Web Developer__  
 [aac.digital](https://aac.digital) – Budapest, Hungary (on-site)  
 July 2017 – October 2018  
 
@@ -86,10 +86,10 @@ July 2017 – October 2018
 
 ## Projects
 
-**[rssr](https://github.com/emilosman/rssr)**
+__[rssr](https://github.com/emilosman/rssr)__
 - Wrote a performant Golang open-source RSS reader for the terminal  
 
-**Homelab**
+__Homelab__
 - Architected Proxmox services, VMs, and containers with stable uptime and fast deployments  
 - Implemented monitoring and observability with Prometheus and Grafana to control resource usage  
 - Created ZFS backups on TrueNAS with snapshot replication, tested recovery processes to reduce data loss  
@@ -99,5 +99,5 @@ July 2017 – October 2018
 
 ## Certification
 
-[**Microsoft Certified – Azure Fundamentals**](https://learn.microsoft.com/en-us/users/emilosman/credentials/5b393ffcfcac8312)  
-[**IBM – Enterprise Design Thinking Practitioner**](https://www.credly.com/badges/351edaee-062d-45e6-b948-f798e7c598f4)
+[__Microsoft Certified – Azure Fundamentals__](https://learn.microsoft.com/en-us/users/emilosman/credentials/5b393ffcfcac8312)  
+[__IBM – Enterprise Design Thinking Practitioner__](https://www.credly.com/badges/351edaee-062d-45e6-b948-f798e7c598f4)
