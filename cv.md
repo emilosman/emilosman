@@ -20,7 +20,7 @@ __Languages__: English, Serbian, Hungarian
 
 ## Experience
 
-__Senior Software Developer, Owner__  
+__Owner, Senior Software Developer__  
 [Osman Emil Kft.](https://emilosman.com) – Szeged, Hungary  
 December 2022 – Present  
 
